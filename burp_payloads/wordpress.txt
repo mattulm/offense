@@ -1,0 +1,8 @@
+post
+page
+fellows
+category
+edit
+gallery
+video
+media

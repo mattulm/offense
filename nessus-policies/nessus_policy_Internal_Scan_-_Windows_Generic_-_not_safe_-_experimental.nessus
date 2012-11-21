@@ -1,0 +1,3708 @@
+<NessusClientData_v2>
+<Policy><policyName>Internal Scan - Windows Generic - not safe - experimental</policyName>
+<policyOwner>mtju</policyOwner>
+<visibility>shared</visibility>
+<policyComments>This scan is setup for a generic scan of windows systems. Uses a blank Admin password for SMB tests. uses a blank &apos;su&apos; account for MS-SQL. Uses unsafe and experimental checks.</policyComments>
+<Preferences>
+<ServerPreferences>
+<preference>
+<name>max_simult_tcp_sessions</name>
+<value>unlimited</value>
+</preference>
+<preference>
+<name>use_mac_addr</name>
+<value>no</value>
+</preference>
+<preference>
+<name>throttle_scan</name>
+<value>yes</value>
+</preference>
+<preference>
+<name>listen_address</name>
+<value>0.0.0.0</value>
+</preference>
+<preference>
+<name>slice_network_addresses</name>
+<value>no</value>
+</preference>
+<preference>
+<name>non_simult_ports</name>
+<value>139, 445, 3389</value>
+</preference>
+<preference>
+<name>max_checks</name>
+<value>5</value>
+</preference>
+<preference>
+<name>stop_scan_on_disconnect</name>
+<value>no</value>
+</preference>
+<preference>
+<name>report_crashes</name>
+<value>yes</value>
+</preference>
+<preference>
+<name>host.max_simult_tcp_sessions</name>
+<value>unlimited</value>
+</preference>
+<preference>
+<name>audit_trail</name>
+<value>no</value>
+</preference>
+<preference>
+<name>reverse_lookup</name>
+<value>no</value>
+</preference>
+<preference>
+<name>optimize_test</name>
+<value>yes</value>
+</preference>
+<preference>
+<name>log_whole_attack</name>
+<value>no</value>
+</preference>
+<preference>
+<name>ssl_cipher_list</name>
+<value>strong</value>
+</preference>
+<preference>
+<name>cgi_path</name>
+<value>/cgi-bin:/scripts</value>
+</preference>
+<preference>
+<name>unscanned_closed</name>
+<value>no</value>
+</preference>
+<preference>
+<name>save_knowledge_base</name>
+<value>no</value>
+</preference>
+<preference>
+<name>use_kernel_congestion_detection</name>
+<value>no</value>
+</preference>
+<preference>
+<name>xmlrpc_no_referrer_check</name>
+<value>yes</value>
+</preference>
+<preference>
+<name>listen_port</name>
+<value>1241</value>
+</preference>
+<preference>
+<name>auto_update</name>
+<value>yes</value>
+</preference>
+<preference>
+<name>checks_read_timeout</name>
+<value>5</value>
+</preference>
+<preference>
+<name>plugins_timeout</name>
+<value>320</value>
+</preference>
+<preference>
+<name>auto_enable_dependencies</name>
+<value>yes</value>
+</preference>
+<preference>
+<name>safe_checks</name>
+<value>no</value>
+</preference>
+<preference>
+<name>allow_post_scan_editing</name>
+<value>yes</value>
+</preference>
+<preference>
+<name>stop_scan_on_hang</name>
+<value>no</value>
+</preference>
+<preference>
+<name>max_hosts</name>
+<value>80</value>
+</preference>
+<preference>
+<name>reduce_connections_on_congestion</name>
+<value>no</value>
+</preference>
+<preference>
+<name>seq</name>
+<value>3700</value>
+</preference>
+<preference>
+<name>silent_dependencies</name>
+<value>yes</value>
+</preference>
+<preference>
+<name>port_range</name>
+<value>default</value>
+</preference>
+<preference>
+<name>plugin_upload</name>
+<value>yes</value>
+</preference>
+<preference>
+<name>xmlrpc_listen_port</name>
+<value>8834</value>
+</preference>
+<preference>
+<name>feed_type</name>
+<value>HomeFeed</value>
+</preference>
+</ServerPreferences>
+<PluginsPreferences>
+<item>
+ <pluginName>ADSI Settings</pluginName>
+ <pluginId>60024</pluginId>
+<fullName>ADSI Settings[entry]:Domain Controller :</fullName>
+<preferenceName>Domain Controller :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>ADSI Settings</pluginName>
+ <pluginId>60024</pluginId>
+<fullName>ADSI Settings[entry]:Domain :</fullName>
+<preferenceName>Domain :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>ADSI Settings</pluginName>
+ <pluginId>60024</pluginId>
+<fullName>ADSI Settings[entry]:Domain Username :</fullName>
+<preferenceName>Domain Username :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>ADSI Settings</pluginName>
+ <pluginId>60024</pluginId>
+<fullName>ADSI Settings[password]:Domain Password :</fullName>
+<preferenceName>Domain Password :</preferenceName>
+<preferenceType>password</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>ADSI Settings</pluginName>
+ <pluginId>60024</pluginId>
+<fullName>ADSI Settings[entry]:Domain Controller 2:</fullName>
+<preferenceName>Domain Controller 2:</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>ADSI Settings</pluginName>
+ <pluginId>60024</pluginId>
+<fullName>ADSI Settings[entry]:Domain 2:</fullName>
+<preferenceName>Domain 2:</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>ADSI Settings</pluginName>
+ <pluginId>60024</pluginId>
+<fullName>ADSI Settings[entry]:Domain Username 2:</fullName>
+<preferenceName>Domain Username 2:</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>ADSI Settings</pluginName>
+ <pluginId>60024</pluginId>
+<fullName>ADSI Settings[password]:Domain Password 2:</fullName>
+<preferenceName>Domain Password 2:</preferenceName>
+<preferenceType>password</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>ADSI Settings</pluginName>
+ <pluginId>60024</pluginId>
+<fullName>ADSI Settings[entry]:Domain Controller 3:</fullName>
+<preferenceName>Domain Controller 3:</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>ADSI Settings</pluginName>
+ <pluginId>60024</pluginId>
+<fullName>ADSI Settings[entry]:Domain 3:</fullName>
+<preferenceName>Domain 3:</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>ADSI Settings</pluginName>
+ <pluginId>60024</pluginId>
+<fullName>ADSI Settings[entry]:Domain Username 3:</fullName>
+<preferenceName>Domain Username 3:</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>ADSI Settings</pluginName>
+ <pluginId>60024</pluginId>
+<fullName>ADSI Settings[password]:Domain Password 3:</fullName>
+<preferenceName>Domain Password 3:</preferenceName>
+<preferenceType>password</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>ADSI Settings</pluginName>
+ <pluginId>60024</pluginId>
+<fullName>ADSI Settings[entry]:Domain Controller 4:</fullName>
+<preferenceName>Domain Controller 4:</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>ADSI Settings</pluginName>
+ <pluginId>60024</pluginId>
+<fullName>ADSI Settings[entry]:Domain 4:</fullName>
+<preferenceName>Domain 4:</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>ADSI Settings</pluginName>
+ <pluginId>60024</pluginId>
+<fullName>ADSI Settings[entry]:Domain Username 4:</fullName>
+<preferenceName>Domain Username 4:</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>ADSI Settings</pluginName>
+ <pluginId>60024</pluginId>
+<fullName>ADSI Settings[password]:Domain Password 4:</fullName>
+<preferenceName>Domain Password 4:</preferenceName>
+<preferenceType>password</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>ADSI Settings</pluginName>
+ <pluginId>60024</pluginId>
+<fullName>ADSI Settings[entry]:Domain Controller 5:</fullName>
+<preferenceName>Domain Controller 5:</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>ADSI Settings</pluginName>
+ <pluginId>60024</pluginId>
+<fullName>ADSI Settings[entry]:Domain 5:</fullName>
+<preferenceName>Domain 5:</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>ADSI Settings</pluginName>
+ <pluginId>60024</pluginId>
+<fullName>ADSI Settings[entry]:Domain Username 5:</fullName>
+<preferenceName>Domain Username 5:</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>ADSI Settings</pluginName>
+ <pluginId>60024</pluginId>
+<fullName>ADSI Settings[password]:Domain Password 5:</fullName>
+<preferenceName>Domain Password 5:</preferenceName>
+<preferenceType>password</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Apple Profile Manager API Settings</pluginName>
+ <pluginId>60032</pluginId>
+<fullName>Apple Profile Manager API Settings[entry]:Apple Profile Manager server :</fullName>
+<preferenceName>Apple Profile Manager server :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Apple Profile Manager API Settings</pluginName>
+ <pluginId>60032</pluginId>
+<fullName>Apple Profile Manager API Settings[entry]:Apple Profile Manager port :</fullName>
+<preferenceName>Apple Profile Manager port :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues>443</preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Apple Profile Manager API Settings</pluginName>
+ <pluginId>60032</pluginId>
+<fullName>Apple Profile Manager API Settings[entry]:Apple Profile Manager username :</fullName>
+<preferenceName>Apple Profile Manager username :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Apple Profile Manager API Settings</pluginName>
+ <pluginId>60032</pluginId>
+<fullName>Apple Profile Manager API Settings[password]:Apple Profile Manager password :</fullName>
+<preferenceName>Apple Profile Manager password :</preferenceName>
+<preferenceType>password</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Apple Profile Manager API Settings</pluginName>
+ <pluginId>60032</pluginId>
+<fullName>Apple Profile Manager API Settings[checkbox]:SSL :</fullName>
+<preferenceName>SSL :</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>yes</preferenceValues>
+<selectedValue>no</selectedValue>
+</item><item>
+ <pluginName>Apple Profile Manager API Settings</pluginName>
+ <pluginId>60032</pluginId>
+<fullName>Apple Profile Manager API Settings[checkbox]:Verify SSL Certificate :</fullName>
+<preferenceName>Verify SSL Certificate :</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>no</preferenceValues>
+<selectedValue>no</selectedValue>
+</item><item>
+ <pluginName>Apple Profile Manager API Settings</pluginName>
+ <pluginId>60032</pluginId>
+<fullName>Apple Profile Manager API Settings[checkbox]:Force Device Updates :</fullName>
+<preferenceName>Force Device Updates :</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>yes</preferenceValues>
+<selectedValue>no</selectedValue>
+</item><item>
+ <pluginName>Apple Profile Manager API Settings</pluginName>
+ <pluginId>60032</pluginId>
+<fullName>Apple Profile Manager API Settings[entry]:Device Update Timeout (Minutes) :</fullName>
+<preferenceName>Device Update Timeout (Minutes) :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues>5</preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Cleartext protocols settings</pluginName>
+ <pluginId>21744</pluginId>
+<fullName>Cleartext protocols settings[entry]:User name :</fullName>
+<preferenceName>User name :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue>Administrator</selectedValue>
+</item><item>
+ <pluginName>Cleartext protocols settings</pluginName>
+ <pluginId>21744</pluginId>
+<fullName>Cleartext protocols settings[password]:Password (unsafe!) :</fullName>
+<preferenceName>Password (unsafe!) :</preferenceName>
+<preferenceType>password</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Cleartext protocols settings</pluginName>
+ <pluginId>21744</pluginId>
+<fullName>Cleartext protocols settings[checkbox]:Try to perform patch level checks over telnet</fullName>
+<preferenceName>Try to perform patch level checks over telnet</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>no</preferenceValues>
+<selectedValue>no</selectedValue>
+</item><item>
+ <pluginName>Cleartext protocols settings</pluginName>
+ <pluginId>21744</pluginId>
+<fullName>Cleartext protocols settings[checkbox]:Try to perform patch level checks over rsh</fullName>
+<preferenceName>Try to perform patch level checks over rsh</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>no</preferenceValues>
+<selectedValue>no</selectedValue>
+</item><item>
+ <pluginName>Cleartext protocols settings</pluginName>
+ <pluginId>21744</pluginId>
+<fullName>Cleartext protocols settings[checkbox]:Try to perform patch level checks over rexec</fullName>
+<preferenceName>Try to perform patch level checks over rexec</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>no</preferenceValues>
+<selectedValue>no</selectedValue>
+</item><item>
+ <pluginName>Database settings</pluginName>
+ <pluginId>33815</pluginId>
+<fullName>Database settings[entry]:Login :</fullName>
+<preferenceName>Login :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue>su</selectedValue>
+</item><item>
+ <pluginName>Database settings</pluginName>
+ <pluginId>33815</pluginId>
+<fullName>Database settings[password]:Password :</fullName>
+<preferenceName>Password :</preferenceName>
+<preferenceType>password</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Database settings</pluginName>
+ <pluginId>33815</pluginId>
+<fullName>Database settings[radio]:DB Type :</fullName>
+<preferenceName>DB Type :</preferenceName>
+<preferenceType>radio</preferenceType>
+<preferenceValues>Oracle;SQL Server;MySQL;DB2;Informix/DRDA;PostgreSQL</preferenceValues>
+<selectedValue>SQL Server</selectedValue>
+</item><item>
+ <pluginName>Database settings</pluginName>
+ <pluginId>33815</pluginId>
+<fullName>Database settings[entry]:Database SID :</fullName>
+<preferenceName>Database SID :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Database settings</pluginName>
+ <pluginId>33815</pluginId>
+<fullName>Database settings[entry]:Database port to use :</fullName>
+<preferenceName>Database port to use :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Database settings</pluginName>
+ <pluginId>33815</pluginId>
+<fullName>Database settings[radio]:Oracle auth type:</fullName>
+<preferenceName>Oracle auth type:</preferenceName>
+<preferenceType>radio</preferenceType>
+<preferenceValues>NORMAL;SYSOPER;SYSDBA</preferenceValues>
+<selectedValue>NORMAL</selectedValue>
+</item><item>
+ <pluginName>Database settings</pluginName>
+ <pluginId>33815</pluginId>
+<fullName>Database settings[radio]:SQL Server auth type:</fullName>
+<preferenceName>SQL Server auth type:</preferenceName>
+<preferenceType>radio</preferenceType>
+<preferenceValues>Windows;SQL</preferenceValues>
+<selectedValue>Windows</selectedValue>
+</item><item>
+ <pluginName>Do not scan fragile devices</pluginName>
+ <pluginId>22481</pluginId>
+<fullName>Do not scan fragile devices[checkbox]:Scan Network Printers</fullName>
+<preferenceName>Scan Network Printers</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>no</preferenceValues>
+<selectedValue>no</selectedValue>
+</item><item>
+ <pluginName>Do not scan fragile devices</pluginName>
+ <pluginId>22481</pluginId>
+<fullName>Do not scan fragile devices[checkbox]:Scan Novell Netware hosts</fullName>
+<preferenceName>Scan Novell Netware hosts</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>no</preferenceValues>
+<selectedValue>no</selectedValue>
+</item><item>
+ <pluginName>Service Detection</pluginName>
+ <pluginId>22964</pluginId>
+<fullName>Service Detection[radio]:Test SSL based services</fullName>
+<preferenceName>Test SSL based services</preferenceName>
+<preferenceType>radio</preferenceType>
+<preferenceValues>Known SSL ports;All;None</preferenceValues>
+<selectedValue>All</selectedValue>
+</item><item>
+ <pluginName>Global variable settings</pluginName>
+ <pluginId>12288</pluginId>
+<fullName>Global variable settings[checkbox]:Probe services on every port</fullName>
+<preferenceName>Probe services on every port</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>yes</preferenceValues>
+<selectedValue>yes</selectedValue>
+</item><item>
+ <pluginName>Global variable settings</pluginName>
+ <pluginId>12288</pluginId>
+<fullName>Global variable settings[checkbox]:Do not log in with user accounts not specified in the policy</fullName>
+<preferenceName>Do not log in with user accounts not specified in the policy</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>no</preferenceValues>
+<selectedValue>no</selectedValue>
+</item><item>
+ <pluginName>Global variable settings</pluginName>
+ <pluginId>12288</pluginId>
+<fullName>Global variable settings[checkbox]:Enable CGI scanning</fullName>
+<preferenceName>Enable CGI scanning</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>no</preferenceValues>
+<selectedValue>yes</selectedValue>
+</item><item>
+ <pluginName>Global variable settings</pluginName>
+ <pluginId>12288</pluginId>
+<fullName>Global variable settings[radio]:Network type</fullName>
+<preferenceName>Network type</preferenceName>
+<preferenceType>radio</preferenceType>
+<preferenceValues>Mixed (use RFC 1918);Private LAN;Public WAN (Internet)</preferenceValues>
+<selectedValue>Mixed (use RFC 1918)</selectedValue>
+</item><item>
+ <pluginName>Global variable settings</pluginName>
+ <pluginId>12288</pluginId>
+<fullName>Global variable settings[checkbox]:Enable experimental scripts</fullName>
+<preferenceName>Enable experimental scripts</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>no</preferenceValues>
+<selectedValue>yes</selectedValue>
+</item><item>
+ <pluginName>Global variable settings</pluginName>
+ <pluginId>12288</pluginId>
+<fullName>Global variable settings[checkbox]:Thorough tests (slow)</fullName>
+<preferenceName>Thorough tests (slow)</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>no</preferenceValues>
+<selectedValue>yes</selectedValue>
+</item><item>
+ <pluginName>Global variable settings</pluginName>
+ <pluginId>12288</pluginId>
+<fullName>Global variable settings[radio]:Report verbosity</fullName>
+<preferenceName>Report verbosity</preferenceName>
+<preferenceType>radio</preferenceType>
+<preferenceValues>Normal;Quiet;Verbose</preferenceValues>
+<selectedValue>Verbose</selectedValue>
+</item><item>
+ <pluginName>Global variable settings</pluginName>
+ <pluginId>12288</pluginId>
+<fullName>Global variable settings[radio]:Report paranoia</fullName>
+<preferenceName>Report paranoia</preferenceName>
+<preferenceType>radio</preferenceType>
+<preferenceValues>Normal;Avoid false alarms;Paranoid (more false alarms)</preferenceValues>
+<selectedValue>Paranoid (more false alarms)</selectedValue>
+</item><item>
+ <pluginName>Global variable settings</pluginName>
+ <pluginId>12288</pluginId>
+<fullName>Global variable settings[entry]:HTTP User-Agent</fullName>
+<preferenceName>HTTP User-Agent</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues>Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)</preferenceValues>
+<selectedValue>Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)</selectedValue>
+</item><item>
+ <pluginName>Global variable settings</pluginName>
+ <pluginId>12288</pluginId>
+<fullName>Global variable settings[file]:SSL certificate to use :</fullName>
+<preferenceName>SSL certificate to use :</preferenceName>
+<preferenceType>file</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Global variable settings</pluginName>
+ <pluginId>12288</pluginId>
+<fullName>Global variable settings[file]:SSL CA to trust :</fullName>
+<preferenceName>SSL CA to trust :</preferenceName>
+<preferenceType>file</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Global variable settings</pluginName>
+ <pluginId>12288</pluginId>
+<fullName>Global variable settings[file]:SSL key to use :</fullName>
+<preferenceName>SSL key to use :</preferenceName>
+<preferenceType>file</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Global variable settings</pluginName>
+ <pluginId>12288</pluginId>
+<fullName>Global variable settings[password]:SSL password for SSL key :</fullName>
+<preferenceName>SSL password for SSL key :</preferenceName>
+<preferenceType>password</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>HTTP cookies import</pluginName>
+ <pluginId>42893</pluginId>
+<fullName>HTTP cookies import[file]:Cookies file :</fullName>
+<preferenceName>Cookies file :</preferenceName>
+<preferenceType>file</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>HTTP login page</pluginName>
+ <pluginId>11149</pluginId>
+<fullName>HTTP login page[entry]:Login page :</fullName>
+<preferenceName>Login page :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues>/</preferenceValues>
+<selectedValue>/</selectedValue>
+</item><item>
+ <pluginName>HTTP login page</pluginName>
+ <pluginId>11149</pluginId>
+<fullName>HTTP login page[entry]:Login form :</fullName>
+<preferenceName>Login form :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>HTTP login page</pluginName>
+ <pluginId>11149</pluginId>
+<fullName>HTTP login page[entry]:Login form fields :</fullName>
+<preferenceName>Login form fields :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues>user=%USER%&amp;pass=%PASS%</preferenceValues>
+<selectedValue>user=%USER%&amp;pass=%PASS%</selectedValue>
+</item><item>
+ <pluginName>HTTP login page</pluginName>
+ <pluginId>11149</pluginId>
+<fullName>HTTP login page[radio]:Login form method :</fullName>
+<preferenceName>Login form method :</preferenceName>
+<preferenceType>radio</preferenceType>
+<preferenceValues>POST;GET</preferenceValues>
+<selectedValue>POST</selectedValue>
+</item><item>
+ <pluginName>HTTP login page</pluginName>
+ <pluginId>11149</pluginId>
+<fullName>HTTP login page[checkbox]:Automated login page search</fullName>
+<preferenceName>Automated login page search</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>no</preferenceValues>
+<selectedValue>no</selectedValue>
+</item><item>
+ <pluginName>HTTP login page</pluginName>
+ <pluginId>11149</pluginId>
+<fullName>HTTP login page[entry]:Re-authenticate delay (seconds) :</fullName>
+<preferenceName>Re-authenticate delay (seconds) :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>HTTP login page</pluginName>
+ <pluginId>11149</pluginId>
+<fullName>HTTP login page[entry]:Check authentication on page :</fullName>
+<preferenceName>Check authentication on page :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>HTTP login page</pluginName>
+ <pluginId>11149</pluginId>
+<fullName>HTTP login page[entry]:Follow 30x redirections (# of levels) :</fullName>
+<preferenceName>Follow 30x redirections (# of levels) :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues>2</preferenceValues>
+<selectedValue>2</selectedValue>
+</item><item>
+ <pluginName>HTTP login page</pluginName>
+ <pluginId>11149</pluginId>
+<fullName>HTTP login page[entry]:Authenticated regex :</fullName>
+<preferenceName>Authenticated regex :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>HTTP login page</pluginName>
+ <pluginId>11149</pluginId>
+<fullName>HTTP login page[checkbox]:Invert test (disconnected if regex matches)</fullName>
+<preferenceName>Invert test (disconnected if regex matches)</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>no</preferenceValues>
+<selectedValue>no</selectedValue>
+</item><item>
+ <pluginName>HTTP login page</pluginName>
+ <pluginId>11149</pluginId>
+<fullName>HTTP login page[checkbox]:Match regex on HTTP headers</fullName>
+<preferenceName>Match regex on HTTP headers</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>no</preferenceValues>
+<selectedValue>yes</selectedValue>
+</item><item>
+ <pluginName>HTTP login page</pluginName>
+ <pluginId>11149</pluginId>
+<fullName>HTTP login page[checkbox]:Case insensitive regex</fullName>
+<preferenceName>Case insensitive regex</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>no</preferenceValues>
+<selectedValue>no</selectedValue>
+</item><item>
+ <pluginName>HTTP login page</pluginName>
+ <pluginId>11149</pluginId>
+<fullName>HTTP login page[checkbox]:Abort web application tests if login fails</fullName>
+<preferenceName>Abort web application tests if login fails</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>no</preferenceValues>
+<selectedValue>no</selectedValue>
+</item><item>
+ <pluginName>Patch Management: IBM Tivoli Endpoint Manager Server Settings</pluginName>
+ <pluginId>62558</pluginId>
+<fullName>Patch Management: IBM Tivoli Endpoint Manager Server Settings[entry]:Web Reports Server :</fullName>
+<preferenceName>Web Reports Server :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Patch Management: IBM Tivoli Endpoint Manager Server Settings</pluginName>
+ <pluginId>62558</pluginId>
+<fullName>Patch Management: IBM Tivoli Endpoint Manager Server Settings[entry]:Web Reports Port :</fullName>
+<preferenceName>Web Reports Port :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Patch Management: IBM Tivoli Endpoint Manager Server Settings</pluginName>
+ <pluginId>62558</pluginId>
+<fullName>Patch Management: IBM Tivoli Endpoint Manager Server Settings[entry]:Web Reports Username :</fullName>
+<preferenceName>Web Reports Username :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Patch Management: IBM Tivoli Endpoint Manager Server Settings</pluginName>
+ <pluginId>62558</pluginId>
+<fullName>Patch Management: IBM Tivoli Endpoint Manager Server Settings[password]:Web Reports Password :</fullName>
+<preferenceName>Web Reports Password :</preferenceName>
+<preferenceType>password</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Patch Management: IBM Tivoli Endpoint Manager Server Settings</pluginName>
+ <pluginId>62558</pluginId>
+<fullName>Patch Management: IBM Tivoli Endpoint Manager Server Settings[checkbox]:SSL :</fullName>
+<preferenceName>SSL :</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>no</preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>IBM iSeries Credentials</pluginName>
+ <pluginId>57861</pluginId>
+<fullName>IBM iSeries Credentials[entry]:Login :</fullName>
+<preferenceName>Login :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>IBM iSeries Credentials</pluginName>
+ <pluginId>57861</pluginId>
+<fullName>IBM iSeries Credentials[password]:Password :</fullName>
+<preferenceName>Password :</preferenceName>
+<preferenceType>password</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Kerberos configuration</pluginName>
+ <pluginId>17351</pluginId>
+<fullName>Kerberos configuration[entry]:Kerberos Key Distribution Center (KDC) :</fullName>
+<preferenceName>Kerberos Key Distribution Center (KDC) :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Kerberos configuration</pluginName>
+ <pluginId>17351</pluginId>
+<fullName>Kerberos configuration[entry]:Kerberos KDC Port :</fullName>
+<preferenceName>Kerberos KDC Port :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues>88</preferenceValues>
+<selectedValue>88</selectedValue>
+</item><item>
+ <pluginName>Kerberos configuration</pluginName>
+ <pluginId>17351</pluginId>
+<fullName>Kerberos configuration[radio]:Kerberos KDC Transport :</fullName>
+<preferenceName>Kerberos KDC Transport :</preferenceName>
+<preferenceType>radio</preferenceType>
+<preferenceValues>udp;tcp</preferenceValues>
+<selectedValue>udp</selectedValue>
+</item><item>
+ <pluginName>Kerberos configuration</pluginName>
+ <pluginId>17351</pluginId>
+<fullName>Kerberos configuration[entry]:Kerberos Realm (SSH only) :</fullName>
+<preferenceName>Kerberos Realm (SSH only) :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>LDAP &apos;Domain Admins&apos; Group Membership Enumeration</pluginName>
+ <pluginId>58038</pluginId>
+<fullName>LDAP &apos;Domain Admins&apos; Group Membership Enumeration[entry]:LDAP user :</fullName>
+<preferenceName>LDAP user :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>LDAP &apos;Domain Admins&apos; Group Membership Enumeration</pluginName>
+ <pluginId>58038</pluginId>
+<fullName>LDAP &apos;Domain Admins&apos; Group Membership Enumeration[password]:LDAP password :</fullName>
+<preferenceName>LDAP password :</preferenceName>
+<preferenceType>password</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>LDAP &apos;Domain Admins&apos; Group Membership Enumeration</pluginName>
+ <pluginId>58038</pluginId>
+<fullName>LDAP &apos;Domain Admins&apos; Group Membership Enumeration[entry]:Max results :</fullName>
+<preferenceName>Max results :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues>1000</preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Login configurations</pluginName>
+ <pluginId>10870</pluginId>
+<fullName>Login configurations[entry]:HTTP account :</fullName>
+<preferenceName>HTTP account :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Login configurations</pluginName>
+ <pluginId>10870</pluginId>
+<fullName>Login configurations[password]:HTTP password (sent in clear) :</fullName>
+<preferenceName>HTTP password (sent in clear) :</preferenceName>
+<preferenceType>password</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Login configurations</pluginName>
+ <pluginId>10870</pluginId>
+<fullName>Login configurations[entry]:NNTP account :</fullName>
+<preferenceName>NNTP account :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Login configurations</pluginName>
+ <pluginId>10870</pluginId>
+<fullName>Login configurations[password]:NNTP password (sent in clear) :</fullName>
+<preferenceName>NNTP password (sent in clear) :</preferenceName>
+<preferenceType>password</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Login configurations</pluginName>
+ <pluginId>10870</pluginId>
+<fullName>Login configurations[entry]:FTP account :</fullName>
+<preferenceName>FTP account :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues>anonymous</preferenceValues>
+<selectedValue>anonymous</selectedValue>
+</item><item>
+ <pluginName>Login configurations</pluginName>
+ <pluginId>10870</pluginId>
+<fullName>Login configurations[password]:FTP password (sent in clear) :</fullName>
+<preferenceName>FTP password (sent in clear) :</preferenceName>
+<preferenceType>password</preferenceType>
+<preferenceValues>nessus@nessus.org</preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Login configurations</pluginName>
+ <pluginId>10870</pluginId>
+<fullName>Login configurations[entry]:FTP writeable directory :</fullName>
+<preferenceName>FTP writeable directory :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues>/incoming</preferenceValues>
+<selectedValue>/incoming</selectedValue>
+</item><item>
+ <pluginName>Login configurations</pluginName>
+ <pluginId>10870</pluginId>
+<fullName>Login configurations[entry]:POP2 account :</fullName>
+<preferenceName>POP2 account :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Login configurations</pluginName>
+ <pluginId>10870</pluginId>
+<fullName>Login configurations[password]:POP2 password (sent in clear) :</fullName>
+<preferenceName>POP2 password (sent in clear) :</preferenceName>
+<preferenceType>password</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Login configurations</pluginName>
+ <pluginId>10870</pluginId>
+<fullName>Login configurations[entry]:POP3 account :</fullName>
+<preferenceName>POP3 account :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Login configurations</pluginName>
+ <pluginId>10870</pluginId>
+<fullName>Login configurations[password]:POP3 password (sent in clear) :</fullName>
+<preferenceName>POP3 password (sent in clear) :</preferenceName>
+<preferenceType>password</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Login configurations</pluginName>
+ <pluginId>10870</pluginId>
+<fullName>Login configurations[entry]:IMAP account :</fullName>
+<preferenceName>IMAP account :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Login configurations</pluginName>
+ <pluginId>10870</pluginId>
+<fullName>Login configurations[password]:IMAP password (sent in clear) :</fullName>
+<preferenceName>IMAP password (sent in clear) :</preferenceName>
+<preferenceType>password</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Login configurations</pluginName>
+ <pluginId>10870</pluginId>
+<fullName>Login configurations[entry]:SMB account :</fullName>
+<preferenceName>SMB account :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue>Administrator</selectedValue>
+</item><item>
+ <pluginName>Login configurations</pluginName>
+ <pluginId>10870</pluginId>
+<fullName>Login configurations[password]:SMB password :</fullName>
+<preferenceName>SMB password :</preferenceName>
+<preferenceType>password</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Login configurations</pluginName>
+ <pluginId>10870</pluginId>
+<fullName>Login configurations[entry]:SMB domain (optional) :</fullName>
+<preferenceName>SMB domain (optional) :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Login configurations</pluginName>
+ <pluginId>10870</pluginId>
+<fullName>Login configurations[radio]:SMB password type :</fullName>
+<preferenceName>SMB password type :</preferenceName>
+<preferenceType>radio</preferenceType>
+<preferenceValues>Password;LM Hash;NTLM Hash</preferenceValues>
+<selectedValue>Password</selectedValue>
+</item><item>
+ <pluginName>Login configurations</pluginName>
+ <pluginId>10870</pluginId>
+<fullName>Login configurations[entry]:Additional SMB account (1) :</fullName>
+<preferenceName>Additional SMB account (1) :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Login configurations</pluginName>
+ <pluginId>10870</pluginId>
+<fullName>Login configurations[password]:Additional SMB password (1) :</fullName>
+<preferenceName>Additional SMB password (1) :</preferenceName>
+<preferenceType>password</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Login configurations</pluginName>
+ <pluginId>10870</pluginId>
+<fullName>Login configurations[entry]:Additional SMB domain (optional) (1) :</fullName>
+<preferenceName>Additional SMB domain (optional) (1) :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Login configurations</pluginName>
+ <pluginId>10870</pluginId>
+<fullName>Login configurations[entry]:Additional SMB account (2) :</fullName>
+<preferenceName>Additional SMB account (2) :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Login configurations</pluginName>
+ <pluginId>10870</pluginId>
+<fullName>Login configurations[password]:Additional SMB password (2) :</fullName>
+<preferenceName>Additional SMB password (2) :</preferenceName>
+<preferenceType>password</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Login configurations</pluginName>
+ <pluginId>10870</pluginId>
+<fullName>Login configurations[entry]:Additional SMB domain (optional) (2) :</fullName>
+<preferenceName>Additional SMB domain (optional) (2) :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Login configurations</pluginName>
+ <pluginId>10870</pluginId>
+<fullName>Login configurations[entry]:Additional SMB account (3) :</fullName>
+<preferenceName>Additional SMB account (3) :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Login configurations</pluginName>
+ <pluginId>10870</pluginId>
+<fullName>Login configurations[password]:Additional SMB password (3) :</fullName>
+<preferenceName>Additional SMB password (3) :</preferenceName>
+<preferenceType>password</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Login configurations</pluginName>
+ <pluginId>10870</pluginId>
+<fullName>Login configurations[entry]:Additional SMB domain (optional) (3) :</fullName>
+<preferenceName>Additional SMB domain (optional) (3) :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Login configurations</pluginName>
+ <pluginId>10870</pluginId>
+<fullName>Login configurations[checkbox]:Never send SMB credentials in clear text</fullName>
+<preferenceName>Never send SMB credentials in clear text</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>yes</preferenceValues>
+<selectedValue>no</selectedValue>
+</item><item>
+ <pluginName>Login configurations</pluginName>
+ <pluginId>10870</pluginId>
+<fullName>Login configurations[checkbox]:Only use NTLMv2</fullName>
+<preferenceName>Only use NTLMv2</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>no</preferenceValues>
+<selectedValue>no</selectedValue>
+</item><item>
+ <pluginName>Nessus TCP scanner</pluginName>
+ <pluginId>10335</pluginId>
+<fullName>Nessus TCP scanner[radio]:Firewall detection :</fullName>
+<preferenceName>Firewall detection :</preferenceName>
+<preferenceType>radio</preferenceType>
+<preferenceValues>Automatic (normal);Disabled (softer);Do not detect RST rate limitation (soft);Ignore closed ports (aggressive)</preferenceValues>
+<selectedValue>Automatic (normal)</selectedValue>
+</item><item>
+ <pluginName>Nessus SYN scanner</pluginName>
+ <pluginId>11219</pluginId>
+<fullName>Nessus SYN scanner[radio]:Firewall detection :</fullName>
+<preferenceName>Firewall detection :</preferenceName>
+<preferenceType>radio</preferenceType>
+<preferenceValues>Automatic (normal);Disabled (softer);Do not detect RST rate limitation (soft);Ignore closed ports (aggressive)</preferenceValues>
+<selectedValue>Automatic (normal)</selectedValue>
+</item><item>
+ <pluginName>News Server (NNTP) Information Disclosure</pluginName>
+ <pluginId>11033</pluginId>
+<fullName>News Server (NNTP) Information Disclosure[entry]:From address :</fullName>
+<preferenceName>From address :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues>Nobody &lt;nobody@example.com&gt;</preferenceValues>
+<selectedValue>Nobody &lt;sec.edelman@gmail.com&gt;</selectedValue>
+</item><item>
+ <pluginName>News Server (NNTP) Information Disclosure</pluginName>
+ <pluginId>11033</pluginId>
+<fullName>News Server (NNTP) Information Disclosure[entry]:Test group name regex :</fullName>
+<preferenceName>Test group name regex :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues>f[a-z]\.tests?</preferenceValues>
+<selectedValue>f[a-z]\.tests?</selectedValue>
+</item><item>
+ <pluginName>News Server (NNTP) Information Disclosure</pluginName>
+ <pluginId>11033</pluginId>
+<fullName>News Server (NNTP) Information Disclosure[entry]:Max crosspost :</fullName>
+<preferenceName>Max crosspost :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues>7</preferenceValues>
+<selectedValue>7</selectedValue>
+</item><item>
+ <pluginName>News Server (NNTP) Information Disclosure</pluginName>
+ <pluginId>11033</pluginId>
+<fullName>News Server (NNTP) Information Disclosure[checkbox]:Local distribution</fullName>
+<preferenceName>Local distribution</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>yes</preferenceValues>
+<selectedValue>yes</selectedValue>
+</item><item>
+ <pluginName>News Server (NNTP) Information Disclosure</pluginName>
+ <pluginId>11033</pluginId>
+<fullName>News Server (NNTP) Information Disclosure[checkbox]:No archive</fullName>
+<preferenceName>No archive</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>no</preferenceValues>
+<selectedValue>no</selectedValue>
+</item><item>
+ <pluginName>Oracle Settings</pluginName>
+ <pluginId>22076</pluginId>
+<fullName>Oracle Settings[entry]:Oracle SID :</fullName>
+<preferenceName>Oracle SID :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Oracle Settings</pluginName>
+ <pluginId>22076</pluginId>
+<fullName>Oracle Settings[checkbox]:Test default accounts (slow)</fullName>
+<preferenceName>Test default accounts (slow)</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>no</preferenceValues>
+<selectedValue>no</selectedValue>
+</item><item>
+ <pluginName>Ping the remote host</pluginName>
+ <pluginId>10180</pluginId>
+<fullName>Ping the remote host[entry]:TCP ping destination port(s) :</fullName>
+<preferenceName>TCP ping destination port(s) :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues>built-in</preferenceValues>
+<selectedValue>built-in</selectedValue>
+</item><item>
+ <pluginName>Ping the remote host</pluginName>
+ <pluginId>10180</pluginId>
+<fullName>Ping the remote host[checkbox]:Do an ARP ping</fullName>
+<preferenceName>Do an ARP ping</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>yes</preferenceValues>
+<selectedValue>yes</selectedValue>
+</item><item>
+ <pluginName>Ping the remote host</pluginName>
+ <pluginId>10180</pluginId>
+<fullName>Ping the remote host[checkbox]:Do a TCP ping</fullName>
+<preferenceName>Do a TCP ping</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>yes</preferenceValues>
+<selectedValue>yes</selectedValue>
+</item><item>
+ <pluginName>Ping the remote host</pluginName>
+ <pluginId>10180</pluginId>
+<fullName>Ping the remote host[checkbox]:Do an ICMP ping</fullName>
+<preferenceName>Do an ICMP ping</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>yes</preferenceValues>
+<selectedValue>yes</selectedValue>
+</item><item>
+ <pluginName>Ping the remote host</pluginName>
+ <pluginId>10180</pluginId>
+<fullName>Ping the remote host[entry]:Number of retries (ICMP) :</fullName>
+<preferenceName>Number of retries (ICMP) :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues>2</preferenceValues>
+<selectedValue>2</selectedValue>
+</item><item>
+ <pluginName>Ping the remote host</pluginName>
+ <pluginId>10180</pluginId>
+<fullName>Ping the remote host[checkbox]:Do an applicative UDP ping (DNS,RPC...)</fullName>
+<preferenceName>Do an applicative UDP ping (DNS,RPC...)</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>no</preferenceValues>
+<selectedValue>yes</selectedValue>
+</item><item>
+ <pluginName>Ping the remote host</pluginName>
+ <pluginId>10180</pluginId>
+<fullName>Ping the remote host[checkbox]:Make the dead hosts appear in the report</fullName>
+<preferenceName>Make the dead hosts appear in the report</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>no</preferenceValues>
+<selectedValue>no</selectedValue>
+</item><item>
+ <pluginName>Ping the remote host</pluginName>
+ <pluginId>10180</pluginId>
+<fullName>Ping the remote host[checkbox]:Log live hosts in the report</fullName>
+<preferenceName>Log live hosts in the report</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>no</preferenceValues>
+<selectedValue>no</selectedValue>
+</item><item>
+ <pluginName>Ping the remote host</pluginName>
+ <pluginId>10180</pluginId>
+<fullName>Ping the remote host[checkbox]:Test the local Nessus host</fullName>
+<preferenceName>Test the local Nessus host</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>yes</preferenceValues>
+<selectedValue>yes</selectedValue>
+</item><item>
+ <pluginName>Ping the remote host</pluginName>
+ <pluginId>10180</pluginId>
+<fullName>Ping the remote host[checkbox]:Fast network discovery</fullName>
+<preferenceName>Fast network discovery</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>no</preferenceValues>
+<selectedValue>yes</selectedValue>
+</item><item>
+ <pluginName>Port scanners settings</pluginName>
+ <pluginId>33812</pluginId>
+<fullName>Port scanners settings[checkbox]:Check open TCP ports found by local port enumerators</fullName>
+<preferenceName>Check open TCP ports found by local port enumerators</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>no</preferenceValues>
+<selectedValue>yes</selectedValue>
+</item><item>
+ <pluginName>Port scanners settings</pluginName>
+ <pluginId>33812</pluginId>
+<fullName>Port scanners settings[checkbox]:Only run network port scanners if local port enumeration failed</fullName>
+<preferenceName>Only run network port scanners if local port enumeration failed</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>yes</preferenceValues>
+<selectedValue>yes</selectedValue>
+</item><item>
+ <pluginName>Patch Management: Red Hat Satellite Server Settings</pluginName>
+ <pluginId>57063</pluginId>
+<fullName>Patch Management: Red Hat Satellite Server Settings[entry]:Red Hat Satellite server(s) [separated w/ semicolons] :</fullName>
+<preferenceName>Red Hat Satellite server(s) [separated w/ semicolons] :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Patch Management: Red Hat Satellite Server Settings</pluginName>
+ <pluginId>57063</pluginId>
+<fullName>Patch Management: Red Hat Satellite Server Settings[entry]:Red Hat Satellite port(s) :</fullName>
+<preferenceName>Red Hat Satellite port(s) :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues>443</preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Patch Management: Red Hat Satellite Server Settings</pluginName>
+ <pluginId>57063</pluginId>
+<fullName>Patch Management: Red Hat Satellite Server Settings[entry]:Red Hat Satellite username(s) :</fullName>
+<preferenceName>Red Hat Satellite username(s) :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Patch Management: Red Hat Satellite Server Settings</pluginName>
+ <pluginId>57063</pluginId>
+<fullName>Patch Management: Red Hat Satellite Server Settings[password]:Red Hat Satellite password(s) :</fullName>
+<preferenceName>Red Hat Satellite password(s) :</preferenceName>
+<preferenceType>password</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Patch Management: SCCM Server Settings</pluginName>
+ <pluginId>57029</pluginId>
+<fullName>Patch Management: SCCM Server Settings[entry]:SCCM Server :</fullName>
+<preferenceName>SCCM Server :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Patch Management: SCCM Server Settings</pluginName>
+ <pluginId>57029</pluginId>
+<fullName>Patch Management: SCCM Server Settings[entry]:SCCM Domain :</fullName>
+<preferenceName>SCCM Domain :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Patch Management: SCCM Server Settings</pluginName>
+ <pluginId>57029</pluginId>
+<fullName>Patch Management: SCCM Server Settings[entry]:SCCM Username :</fullName>
+<preferenceName>SCCM Username :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Patch Management: SCCM Server Settings</pluginName>
+ <pluginId>57029</pluginId>
+<fullName>Patch Management: SCCM Server Settings[password]:SCCM Password :</fullName>
+<preferenceName>SCCM Password :</preferenceName>
+<preferenceType>password</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Patch Management: VMware Go Server Settings</pluginName>
+ <pluginId>57026</pluginId>
+<fullName>Patch Management: VMware Go Server Settings[entry]:Host :</fullName>
+<preferenceName>Host :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues>services.shavlik.com</preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Patch Management: VMware Go Server Settings</pluginName>
+ <pluginId>57026</pluginId>
+<fullName>Patch Management: VMware Go Server Settings[entry]:Port :</fullName>
+<preferenceName>Port :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues>443</preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Patch Management: VMware Go Server Settings</pluginName>
+ <pluginId>57026</pluginId>
+<fullName>Patch Management: VMware Go Server Settings[entry]:Username :</fullName>
+<preferenceName>Username :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Patch Management: VMware Go Server Settings</pluginName>
+ <pluginId>57026</pluginId>
+<fullName>Patch Management: VMware Go Server Settings[password]:Password :</fullName>
+<preferenceName>Password :</preferenceName>
+<preferenceType>password</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Patch Management: VMware Go Server Settings</pluginName>
+ <pluginId>57026</pluginId>
+<fullName>Patch Management: VMware Go Server Settings[entry]:Domain :</fullName>
+<preferenceName>Domain :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Patch Management: VMware Go Server Settings</pluginName>
+ <pluginId>57026</pluginId>
+<fullName>Patch Management: VMware Go Server Settings[entry]:API path :</fullName>
+<preferenceName>API path :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues>/api/authenticationbroker/account/httpIssue.svc/</preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Patch Management: VMware Go Server Settings</pluginName>
+ <pluginId>57026</pluginId>
+<fullName>Patch Management: VMware Go Server Settings[entry]:Authentication realm :</fullName>
+<preferenceName>Authentication realm :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues>https://services.shavlik.com/api/dataservices/v1r1/default.aspx</preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Patch Management: VMware Go Server Settings</pluginName>
+ <pluginId>57026</pluginId>
+<fullName>Patch Management: VMware Go Server Settings[entry]:Service path :</fullName>
+<preferenceName>Service path :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues>/api/dataservices/v1r1/OData.svc/</preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>SMB Scope</pluginName>
+ <pluginId>10917</pluginId>
+<fullName>SMB Scope[checkbox]:Request information about the domain</fullName>
+<preferenceName>Request information about the domain</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>yes</preferenceValues>
+<selectedValue>yes</selectedValue>
+</item><item>
+ <pluginName>SMB Use Domain SID to Enumerate Users</pluginName>
+ <pluginId>10399</pluginId>
+<fullName>SMB Use Domain SID to Enumerate Users[entry]:Start UID :</fullName>
+<preferenceName>Start UID :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues>1000</preferenceValues>
+<selectedValue>1000</selectedValue>
+</item><item>
+ <pluginName>SMB Use Domain SID to Enumerate Users</pluginName>
+ <pluginId>10399</pluginId>
+<fullName>SMB Use Domain SID to Enumerate Users[entry]:End UID :</fullName>
+<preferenceName>End UID :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues>1200</preferenceValues>
+<selectedValue>1200</selectedValue>
+</item><item>
+ <pluginName>SMB Use Host SID to Enumerate Local Users</pluginName>
+ <pluginId>10860</pluginId>
+<fullName>SMB Use Host SID to Enumerate Local Users[entry]:Start UID :</fullName>
+<preferenceName>Start UID :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues>1000</preferenceValues>
+<selectedValue>1000</selectedValue>
+</item><item>
+ <pluginName>SMB Use Host SID to Enumerate Local Users</pluginName>
+ <pluginId>10860</pluginId>
+<fullName>SMB Use Host SID to Enumerate Local Users[entry]:End UID :</fullName>
+<preferenceName>End UID :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues>1200</preferenceValues>
+<selectedValue>1200</selectedValue>
+</item><item>
+ <pluginName>SMTP settings</pluginName>
+ <pluginId>11038</pluginId>
+<fullName>SMTP settings[entry]:Third party domain :</fullName>
+<preferenceName>Third party domain :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues>example.com</preferenceValues>
+<selectedValue>example.com</selectedValue>
+</item><item>
+ <pluginName>SMTP settings</pluginName>
+ <pluginId>11038</pluginId>
+<fullName>SMTP settings[entry]:From address :</fullName>
+<preferenceName>From address :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues>nobody@example.com</preferenceValues>
+<selectedValue>sec.edelman@gmail.com</selectedValue>
+</item><item>
+ <pluginName>SMTP settings</pluginName>
+ <pluginId>11038</pluginId>
+<fullName>SMTP settings[entry]:To address :</fullName>
+<preferenceName>To address :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues>postmaster@[AUTO_REPLACED_IP]</preferenceValues>
+<selectedValue>sec.edelman@gmail.com</selectedValue>
+</item><item>
+ <pluginName>SNMP settings</pluginName>
+ <pluginId>19762</pluginId>
+<fullName>SNMP settings[entry]:Community name :</fullName>
+<preferenceName>Community name :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues>public</preferenceValues>
+<selectedValue>public</selectedValue>
+</item><item>
+ <pluginName>SNMP settings</pluginName>
+ <pluginId>19762</pluginId>
+<fullName>SNMP settings[entry]:Community name (1) :</fullName>
+<preferenceName>Community name (1) :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>SNMP settings</pluginName>
+ <pluginId>19762</pluginId>
+<fullName>SNMP settings[entry]:Community name (2) :</fullName>
+<preferenceName>Community name (2) :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>SNMP settings</pluginName>
+ <pluginId>19762</pluginId>
+<fullName>SNMP settings[entry]:Community name (3) :</fullName>
+<preferenceName>Community name (3) :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>SNMP settings</pluginName>
+ <pluginId>19762</pluginId>
+<fullName>SNMP settings[entry]:UDP port :</fullName>
+<preferenceName>UDP port :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues>161</preferenceValues>
+<selectedValue>161</selectedValue>
+</item><item>
+ <pluginName>SNMP settings</pluginName>
+ <pluginId>19762</pluginId>
+<fullName>SNMP settings[entry]:SNMPv3 user name :</fullName>
+<preferenceName>SNMPv3 user name :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>SNMP settings</pluginName>
+ <pluginId>19762</pluginId>
+<fullName>SNMP settings[password]:SNMPv3 authentication password :</fullName>
+<preferenceName>SNMPv3 authentication password :</preferenceName>
+<preferenceType>password</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>SNMP settings</pluginName>
+ <pluginId>19762</pluginId>
+<fullName>SNMP settings[radio]:SNMPv3 authentication algorithm :</fullName>
+<preferenceName>SNMPv3 authentication algorithm :</preferenceName>
+<preferenceType>radio</preferenceType>
+<preferenceValues>MD5;SHA1</preferenceValues>
+<selectedValue>MD5</selectedValue>
+</item><item>
+ <pluginName>SNMP settings</pluginName>
+ <pluginId>19762</pluginId>
+<fullName>SNMP settings[password]:SNMPv3 privacy password :</fullName>
+<preferenceName>SNMPv3 privacy password :</preferenceName>
+<preferenceType>password</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>SNMP settings</pluginName>
+ <pluginId>19762</pluginId>
+<fullName>SNMP settings[radio]:SNMPv3 privacy algorithm :</fullName>
+<preferenceName>SNMPv3 privacy algorithm :</preferenceName>
+<preferenceType>radio</preferenceType>
+<preferenceValues>DES</preferenceValues>
+<selectedValue>DES</selectedValue>
+</item><item>
+ <pluginName>SSH settings</pluginName>
+ <pluginId>14273</pluginId>
+<fullName>SSH settings[entry]:SSH user name :</fullName>
+<preferenceName>SSH user name :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues>root</preferenceValues>
+<selectedValue>root</selectedValue>
+</item><item>
+ <pluginName>SSH settings</pluginName>
+ <pluginId>14273</pluginId>
+<fullName>SSH settings[password]:SSH password (unsafe!) :</fullName>
+<preferenceName>SSH password (unsafe!) :</preferenceName>
+<preferenceType>password</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>SSH settings</pluginName>
+ <pluginId>14273</pluginId>
+<fullName>SSH settings[file]:SSH public key to use :</fullName>
+<preferenceName>SSH public key to use :</preferenceName>
+<preferenceType>file</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>SSH settings</pluginName>
+ <pluginId>14273</pluginId>
+<fullName>SSH settings[file]:SSH private key to use :</fullName>
+<preferenceName>SSH private key to use :</preferenceName>
+<preferenceType>file</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>SSH settings</pluginName>
+ <pluginId>14273</pluginId>
+<fullName>SSH settings[password]:Passphrase for SSH key :</fullName>
+<preferenceName>Passphrase for SSH key :</preferenceName>
+<preferenceType>password</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>SSH settings</pluginName>
+ <pluginId>14273</pluginId>
+<fullName>SSH settings[radio]:Elevate privileges with :</fullName>
+<preferenceName>Elevate privileges with :</preferenceName>
+<preferenceType>radio</preferenceType>
+<preferenceValues>Nothing;sudo;su;su+sudo;dzdo;pbrun;Cisco &apos;enable&apos;</preferenceValues>
+<selectedValue>Nothing;sudo;su;su+sudo;Cisco &apos;enable&apos;</selectedValue>
+</item><item>
+ <pluginName>SSH settings</pluginName>
+ <pluginId>14273</pluginId>
+<fullName>SSH settings[entry]:su login :</fullName>
+<preferenceName>su login :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>SSH settings</pluginName>
+ <pluginId>14273</pluginId>
+<fullName>SSH settings[entry]:Escalation account :</fullName>
+<preferenceName>Escalation account :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues>root</preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>SSH settings</pluginName>
+ <pluginId>14273</pluginId>
+<fullName>SSH settings[password]:Escalation password :</fullName>
+<preferenceName>Escalation password :</preferenceName>
+<preferenceType>password</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>SSH settings</pluginName>
+ <pluginId>14273</pluginId>
+<fullName>SSH settings[file]:SSH known_hosts file :</fullName>
+<preferenceName>SSH known_hosts file :</preferenceName>
+<preferenceType>file</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>SSH settings</pluginName>
+ <pluginId>14273</pluginId>
+<fullName>SSH settings[entry]:Preferred SSH port :</fullName>
+<preferenceName>Preferred SSH port :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues>22</preferenceValues>
+<selectedValue>22</selectedValue>
+</item><item>
+ <pluginName>SSH settings</pluginName>
+ <pluginId>14273</pluginId>
+<fullName>SSH settings[entry]:Client version :</fullName>
+<preferenceName>Client version :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues>OpenSSH_5.0</preferenceValues>
+<selectedValue>OpenSSH_5.0</selectedValue>
+</item><item>
+ <pluginName>SMB Registry : Start the Registry Service during the scan</pluginName>
+ <pluginId>35703</pluginId>
+<fullName>SMB Registry : Start the Registry Service during the scan[checkbox]:Start the registry service during the scan</fullName>
+<preferenceName>Start the registry service during the scan</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>no</preferenceValues>
+<selectedValue>yes</selectedValue>
+</item><item>
+ <pluginName>SMB Registry : Start the Registry Service during the scan</pluginName>
+ <pluginId>35703</pluginId>
+<fullName>SMB Registry : Start the Registry Service during the scan[checkbox]:Enable administrative shares during the scan</fullName>
+<preferenceName>Enable administrative shares during the scan</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>no</preferenceValues>
+<selectedValue>yes</selectedValue>
+</item><item>
+ <pluginName>VMware SOAP API Settings</pluginName>
+ <pluginId>57395</pluginId>
+<fullName>VMware SOAP API Settings[entry]:VMware user name :</fullName>
+<preferenceName>VMware user name :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>VMware SOAP API Settings</pluginName>
+ <pluginId>57395</pluginId>
+<fullName>VMware SOAP API Settings[password]:VMware password (unsafe!) :</fullName>
+<preferenceName>VMware password (unsafe!) :</preferenceName>
+<preferenceType>password</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>VMware SOAP API Settings</pluginName>
+ <pluginId>57395</pluginId>
+<fullName>VMware SOAP API Settings[checkbox]:Ignore SSL Certificate :</fullName>
+<preferenceName>Ignore SSL Certificate :</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>no</preferenceValues>
+<selectedValue>no</selectedValue>
+</item><item>
+ <pluginName>Web Application Tests Settings</pluginName>
+ <pluginId>39471</pluginId>
+<fullName>Web Application Tests Settings[checkbox]:Enable web applications tests</fullName>
+<preferenceName>Enable web applications tests</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>no</preferenceValues>
+<selectedValue>yes</selectedValue>
+</item><item>
+ <pluginName>Web Application Tests Settings</pluginName>
+ <pluginId>39471</pluginId>
+<fullName>Web Application Tests Settings[entry]:Maximum run time (min) :</fullName>
+<preferenceName>Maximum run time (min) :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues>60</preferenceValues>
+<selectedValue>60</selectedValue>
+</item><item>
+ <pluginName>Web Application Tests Settings</pluginName>
+ <pluginId>39471</pluginId>
+<fullName>Web Application Tests Settings[checkbox]:Try all HTTP methods</fullName>
+<preferenceName>Try all HTTP methods</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>no</preferenceValues>
+<selectedValue>yes</selectedValue>
+</item><item>
+ <pluginName>Web Application Tests Settings</pluginName>
+ <pluginId>39471</pluginId>
+<fullName>Web Application Tests Settings[radio]:Combinations of arguments values</fullName>
+<preferenceName>Combinations of arguments values</preferenceName>
+<preferenceType>radio</preferenceType>
+<preferenceValues>one value;some pairs;all pairs (slower but efficient);some combinations;all combinations (extremely slow)</preferenceValues>
+<selectedValue>one value</selectedValue>
+</item><item>
+ <pluginName>Web Application Tests Settings</pluginName>
+ <pluginId>39471</pluginId>
+<fullName>Web Application Tests Settings[checkbox]:HTTP Parameter Pollution</fullName>
+<preferenceName>HTTP Parameter Pollution</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>no</preferenceValues>
+<selectedValue>yes</selectedValue>
+</item><item>
+ <pluginName>Web Application Tests Settings</pluginName>
+ <pluginId>39471</pluginId>
+<fullName>Web Application Tests Settings[radio]:Stop at first flaw</fullName>
+<preferenceName>Stop at first flaw</preferenceName>
+<preferenceType>radio</preferenceType>
+<preferenceValues>per CGI;per port (quicker);per parameter (slow);look for all flaws (slower)</preferenceValues>
+<selectedValue>per CGI</selectedValue>
+</item><item>
+ <pluginName>Web Application Tests Settings</pluginName>
+ <pluginId>39471</pluginId>
+<fullName>Web Application Tests Settings[checkbox]:Test embedded web servers</fullName>
+<preferenceName>Test embedded web servers</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>no</preferenceValues>
+<selectedValue>yes</selectedValue>
+</item><item>
+ <pluginName>Web Application Tests Settings</pluginName>
+ <pluginId>39471</pluginId>
+<fullName>Web Application Tests Settings[entry]:URL for Remote File Inclusion :</fullName>
+<preferenceName>URL for Remote File Inclusion :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues>http://rfi.nessus.org/rfi.txt</preferenceValues>
+<selectedValue>http://rfi.nessus.org/rfi.txt</selectedValue>
+</item><item>
+ <pluginName>Web mirroring</pluginName>
+ <pluginId>10662</pluginId>
+<fullName>Web mirroring[entry]:Number of pages to mirror :</fullName>
+<preferenceName>Number of pages to mirror :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues>1000</preferenceValues>
+<selectedValue>1000</selectedValue>
+</item><item>
+ <pluginName>Web mirroring</pluginName>
+ <pluginId>10662</pluginId>
+<fullName>Web mirroring[entry]:Maximum depth :</fullName>
+<preferenceName>Maximum depth :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues>6</preferenceValues>
+<selectedValue>6</selectedValue>
+</item><item>
+ <pluginName>Web mirroring</pluginName>
+ <pluginId>10662</pluginId>
+<fullName>Web mirroring[entry]:Start page :</fullName>
+<preferenceName>Start page :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues>/</preferenceValues>
+<selectedValue>/</selectedValue>
+</item><item>
+ <pluginName>Web mirroring</pluginName>
+ <pluginId>10662</pluginId>
+<fullName>Web mirroring[entry]:Excluded items regex :</fullName>
+<preferenceName>Excluded items regex :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues>/server_privileges\.php|logout</preferenceValues>
+<selectedValue>/server_privileges\.php|logout</selectedValue>
+</item><item>
+ <pluginName>Web mirroring</pluginName>
+ <pluginId>10662</pluginId>
+<fullName>Web mirroring[checkbox]:Follow dynamic pages :</fullName>
+<preferenceName>Follow dynamic pages :</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>no</preferenceValues>
+<selectedValue>no</selectedValue>
+</item><item>
+ <pluginName>Wake-on-LAN</pluginName>
+ <pluginId>52616</pluginId>
+<fullName>Wake-on-LAN[file]:List of MAC addresses for Wake-on-LAN:</fullName>
+<preferenceName>List of MAC addresses for Wake-on-LAN:</preferenceName>
+<preferenceType>file</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Wake-on-LAN</pluginName>
+ <pluginId>52616</pluginId>
+<fullName>Wake-on-LAN[entry]:Time to wait (in minutes) for the systems to boot:</fullName>
+<preferenceName>Time to wait (in minutes) for the systems to boot:</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues>5</preferenceValues>
+<selectedValue>5</selectedValue>
+</item><item>
+ <pluginName>Patch Management: WSUS Server Settings</pluginName>
+ <pluginId>57031</pluginId>
+<fullName>Patch Management: WSUS Server Settings[entry]:WSUS Server :</fullName>
+<preferenceName>WSUS Server :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Patch Management: WSUS Server Settings</pluginName>
+ <pluginId>57031</pluginId>
+<fullName>Patch Management: WSUS Server Settings[entry]:WSUS Port :</fullName>
+<preferenceName>WSUS Port :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Patch Management: WSUS Server Settings</pluginName>
+ <pluginId>57031</pluginId>
+<fullName>Patch Management: WSUS Server Settings[entry]:WSUS Username :</fullName>
+<preferenceName>WSUS Username :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Patch Management: WSUS Server Settings</pluginName>
+ <pluginId>57031</pluginId>
+<fullName>Patch Management: WSUS Server Settings[password]:WSUS Password :</fullName>
+<preferenceName>WSUS Password :</preferenceName>
+<preferenceType>password</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Patch Management: WSUS Server Settings</pluginName>
+ <pluginId>57031</pluginId>
+<fullName>Patch Management: WSUS Server Settings[checkbox]:SSL :</fullName>
+<preferenceName>SSL :</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>no</preferenceValues>
+<selectedValue>no</selectedValue>
+</item></PluginsPreferences>
+</Preferences>
+<FamilySelection>
+<FamilyItem>
+<FamilyName>MacOS X Local Security Checks</FamilyName>
+<Status>disabled</Status>
+</FamilyItem>
+<FamilyItem>
+<FamilyName>DNS</FamilyName>
+<Status>mixed</Status>
+</FamilyItem>
+<FamilyItem>
+<FamilyName>Gain a shell remotely</FamilyName>
+<Status>mixed</Status>
+</FamilyItem>
+<FamilyItem>
+<FamilyName>Solaris Local Security Checks</FamilyName>
+<Status>disabled</Status>
+</FamilyItem>
+<FamilyItem>
+<FamilyName>Port scanners</FamilyName>
+<Status>enabled</Status>
+</FamilyItem>
+<FamilyItem>
+<FamilyName>Web Servers</FamilyName>
+<Status>mixed</Status>
+</FamilyItem>
+<FamilyItem>
+<FamilyName>SMTP problems</FamilyName>
+<Status>mixed</Status>
+</FamilyItem>
+<FamilyItem>
+<FamilyName>Service detection</FamilyName>
+<Status>mixed</Status>
+</FamilyItem>
+<FamilyItem>
+<FamilyName>CGI abuses : XSS</FamilyName>
+<Status>mixed</Status>
+</FamilyItem>
+<FamilyItem>
+<FamilyName>Debian Local Security Checks</FamilyName>
+<Status>disabled</Status>
+</FamilyItem>
+<FamilyItem>
+<FamilyName>Mandriva Local Security Checks</FamilyName>
+<Status>disabled</Status>
+</FamilyItem>
+<FamilyItem>
+<FamilyName>Databases</FamilyName>
+<Status>mixed</Status>
+</FamilyItem>
+<FamilyItem>
+<FamilyName>Denial of Service</FamilyName>
+<Status>mixed</Status>
+</FamilyItem>
+<FamilyItem>
+<FamilyName>Default Unix Accounts</FamilyName>
+<Status>disabled</Status>
+</FamilyItem>
+<FamilyItem>
+<FamilyName>Settings</FamilyName>
+<Status>enabled</Status>
+</FamilyItem>
+<FamilyItem>
+<FamilyName>Backdoors</FamilyName>
+<Status>enabled</Status>
+</FamilyItem>
+<FamilyItem>
+<FamilyName>HP-UX Local Security Checks</FamilyName>
+<Status>disabled</Status>
+</FamilyItem>
+<FamilyItem>
+<FamilyName>VMware ESX Local Security Checks</FamilyName>
+<Status>mixed</Status>
+</FamilyItem>
+<FamilyItem>
+<FamilyName>SCADA</FamilyName>
+<Status>disabled</Status>
+</FamilyItem>
+<FamilyItem>
+<FamilyName>General</FamilyName>
+<Status>enabled</Status>
+</FamilyItem>
+<FamilyItem>
+<FamilyName>Red Hat Local Security Checks</FamilyName>
+<Status>disabled</Status>
+</FamilyItem>
+<FamilyItem>
+<FamilyName>FreeBSD Local Security Checks</FamilyName>
+<Status>disabled</Status>
+</FamilyItem>
+<FamilyItem>
+<FamilyName>CGI abuses</FamilyName>
+<Status>mixed</Status>
+</FamilyItem>
+<FamilyItem>
+<FamilyName>Windows : User management</FamilyName>
+<Status>enabled</Status>
+</FamilyItem>
+<FamilyItem>
+<FamilyName>Netware</FamilyName>
+<Status>mixed</Status>
+</FamilyItem>
+<FamilyItem>
+<FamilyName>Peer-To-Peer File Sharing</FamilyName>
+<Status>enabled</Status>
+</FamilyItem>
+<FamilyItem>
+<FamilyName>Slackware Local Security Checks</FamilyName>
+<Status>disabled</Status>
+</FamilyItem>
+<FamilyItem>
+<FamilyName>SNMP</FamilyName>
+<Status>mixed</Status>
+</FamilyItem>
+<FamilyItem>
+<FamilyName>Gentoo Local Security Checks</FamilyName>
+<Status>disabled</Status>
+</FamilyItem>
+<FamilyItem>
+<FamilyName>Fedora Local Security Checks</FamilyName>
+<Status>disabled</Status>
+</FamilyItem>
+<FamilyItem>
+<FamilyName>Misc.</FamilyName>
+<Status>mixed</Status>
+</FamilyItem>
+<FamilyItem>
+<FamilyName>Ubuntu Local Security Checks</FamilyName>
+<Status>disabled</Status>
+</FamilyItem>
+<FamilyItem>
+<FamilyName>FTP</FamilyName>
+<Status>mixed</Status>
+</FamilyItem>
+<FamilyItem>
+<FamilyName>Firewalls</FamilyName>
+<Status>mixed</Status>
+</FamilyItem>
+<FamilyItem>
+<FamilyName>Windows : Microsoft Bulletins</FamilyName>
+<Status>enabled</Status>
+</FamilyItem>
+<FamilyItem>
+<FamilyName>Junos Local Security Checks</FamilyName>
+<Status>disabled</Status>
+</FamilyItem>
+<FamilyItem>
+<FamilyName>Mobile Devices</FamilyName>
+<Status>mixed</Status>
+</FamilyItem>
+<FamilyItem>
+<FamilyName>Windows</FamilyName>
+<Status>enabled</Status>
+</FamilyItem>
+<FamilyItem>
+<FamilyName>Policy Compliance</FamilyName>
+<Status>disabled</Status>
+</FamilyItem>
+<FamilyItem>
+<FamilyName>SuSE Local Security Checks</FamilyName>
+<Status>disabled</Status>
+</FamilyItem>
+<FamilyItem>
+<FamilyName>RPC</FamilyName>
+<Status>mixed</Status>
+</FamilyItem>
+<FamilyItem>
+<FamilyName>CentOS Local Security Checks</FamilyName>
+<Status>disabled</Status>
+</FamilyItem>
+<FamilyItem>
+<FamilyName>AIX Local Security Checks</FamilyName>
+<Status>disabled</Status>
+</FamilyItem>
+<FamilyItem>
+<FamilyName>Scientific Linux Local Security Checks</FamilyName>
+<Status>disabled</Status>
+</FamilyItem>
+<FamilyItem>
+<FamilyName>CISCO</FamilyName>
+<Status>disabled</Status>
+</FamilyItem>
+</FamilySelection>
+<IndividualPluginSelection>
+<PluginItem><PluginId>10297</PluginId>
+<PluginName>Web Server Directory Traversal Arbitrary File Access</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>21208</PluginId>
+<PluginName>Skype Stack Version Detection</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>35709</PluginId>
+<PluginName>UPnP Internet Gateway Device (IGD) Protocol Detection</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10781</PluginId>
+<PluginName>Microsoft Outlook Web Access (OWA) Anonymous Access</PluginName>
+<Family>CGI abuses</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10266</PluginId>
+<PluginName>SNMP Zero Length UDP Packet Remote DoS</PluginName>
+<Family>SNMP</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11160</PluginId>
+<PluginName>Windows FTP Server NULL Administrator Password</PluginName>
+<Family>FTP</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>40448</PluginId>
+<PluginName>SNMP Supported Protocols Detection</PluginName>
+<Family>SNMP</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11053</PluginId>
+<PluginName>MS02-037: Microsoft Exchange EHLO Long Hostname Overflow</PluginName>
+<Family>SMTP problems</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>24260</PluginId>
+<PluginName>HyperText Transfer Protocol (HTTP) Information</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>23751</PluginId>
+<PluginName>XEROX WorkCentre Multiple Vulnerabilities (XRX06-006)</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11443</PluginId>
+<PluginName>MS00-019: Microsoft IIS ISAPI Virtual Directory UNC Mapping ASP Source Disclosure (uncredentialed check)</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10703</PluginId>
+<PluginName>Microsoft Windows SMTP Incorrect Credentials Authentication Bypass</PluginName>
+<Family>SMTP problems</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11129</PluginId>
+<PluginName>Web Server HTTP 1.1 Header Remote Overflow</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>15464</PluginId>
+<PluginName>Microsoft Windows/Exchange SMTP DNS Lookup Overflow (885881)</PluginName>
+<Family>SMTP problems</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>58182</PluginId>
+<PluginName>DNSChanger Malware Detection</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>26194</PluginId>
+<PluginName>Web Server Uses Plain Text Authentication Forms</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>33482</PluginId>
+<PluginName>.NET NegotiateStream Server Detection</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10194</PluginId>
+<PluginName>HTTP Proxy POST Request Relaying</PluginName>
+<Family>Firewalls</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10537</PluginId>
+<PluginName>Microsoft IIS Unicode Remote Command Execution</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>43111</PluginId>
+<PluginName>HTTP Methods Allowed (per directory)</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10818</PluginId>
+<PluginName>Alchemy Eye/Network Monitor Traversal Arbitrary Command Execution</PluginName>
+<Family>CGI abuses</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>15854</PluginId>
+<PluginName>POP2 Cleartext Logins Permitted</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10104</PluginId>
+<PluginName>HP LaserJet Direct Print Filter Bypass</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11801</PluginId>
+<PluginName>HTTP Method Remote Format String</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>19782</PluginId>
+<PluginName>FTP Writable Directories</PluginName>
+<Family>FTP</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11903</PluginId>
+<PluginName>TCP/IP Ping of Death Remote DoS (jolt)</PluginName>
+<Family>Denial of Service</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>42799</PluginId>
+<PluginName>Broken Web Servers</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10685</PluginId>
+<PluginName>Microsoft IIS ISAPI Filter Multiple Vulnerabilities (MS01-044)</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>12200</PluginId>
+<PluginName>Web Server Incomplete Basic Authentication DoS</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11779</PluginId>
+<PluginName>FTP Server Copyrighted Material Present</PluginName>
+<Family>FTP</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>57335</PluginId>
+<PluginName>NNTP Service Cleartext Login Permitted</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>43829</PluginId>
+<PluginName>Kerberos Information Disclosure</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10758</PluginId>
+<PluginName>VNC HTTP Server Detection</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10116</PluginId>
+<PluginName>Microsoft IIS ISM.DLL HTR Request Remote Overflow</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10092</PluginId>
+<PluginName>FTP Server Detection</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10722</PluginId>
+<PluginName>LDAP NULL BASE Search Access</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>43067</PluginId>
+<PluginName>Web Application Tests Disabled</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11901</PluginId>
+<PluginName>TCP/IP Multicast Address Handling Remote DoS (spank.c)</PluginName>
+<Family>Denial of Service</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>14819</PluginId>
+<PluginName>Canon ImageRUNNER SMTP Arbitrary Content Printing</PluginName>
+<Family>SMTP problems</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>53333</PluginId>
+<PluginName>Detect RPC over TCP</PluginName>
+<Family>RPC</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11112</PluginId>
+<PluginName>FTP Server Traversal Arbitrary File Access</PluginName>
+<Family>FTP</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>61708</PluginId>
+<PluginName>VNC Server &apos;password&apos; Password</PluginName>
+<Family>Gain a shell remotely</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10932</PluginId>
+<PluginName>Microsoft IIS .HTR ISAPI Filter Enabled</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>12238</PluginId>
+<PluginName>NIS passwd.byname Map Disclosure</PluginName>
+<Family>RPC</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>20391</PluginId>
+<PluginName>WinProxy &lt; 6.1a HTTP Proxy Multiple Vulnerabilities</PluginName>
+<Family>Firewalls</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>27576</PluginId>
+<PluginName>Firewall Detection</PluginName>
+<Family>Firewalls</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10079</PluginId>
+<PluginName>Anonymous FTP Enabled</PluginName>
+<Family>FTP</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>42329</PluginId>
+<PluginName>LDAP Service STARTTLS Command Support</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10121</PluginId>
+<PluginName>Microsoft IIS /scripts Directory Browsable</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10814</PluginId>
+<PluginName>Allaire JRun Encoded JSP Request Arbitrary Directory Listing</PluginName>
+<Family>CGI abuses</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>38808</PluginId>
+<PluginName>Microsoft IIS WebDAV Unicode Request Directory Security Bypass</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11357</PluginId>
+<PluginName>Multiple Vendor NFS CD Command Arbitrary File/Directory Access</PluginName>
+<Family>RPC</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>20870</PluginId>
+<PluginName>LDAP Server Detection</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10061</PluginId>
+<PluginName>Echo Service Detection</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10794</PluginId>
+<PluginName>Symantec pcAnywhere Detection (TCP)</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10280</PluginId>
+<PluginName>Telnet Service Detection</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>58453</PluginId>
+<PluginName>Terminal Services Doesn&apos;t Use Network Level Authentication (NLA)</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10223</PluginId>
+<PluginName>RPC portmapper Service Detection</PluginName>
+<Family>RPC</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>51890</PluginId>
+<PluginName>Telnet Service START_TLS Support</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10312</PluginId>
+<PluginName>WindowsNT DNS Server Character Saturation DoS</PluginName>
+<Family>DNS</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10575</PluginId>
+<PluginName>Microsoft IIS Multiple .cnf File Information Disclosure</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>29830</PluginId>
+<PluginName>ClamAV clamav-milter black-hole-mode Sendmail Recipient Field Arbitrary Command Execution</PluginName>
+<Family>SMTP problems</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>46172</PluginId>
+<PluginName>ClamAV Virus Database (daily.cvd) Out Of Date</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10371</PluginId>
+<PluginName>Microsoft IIS /iisadmpwd/aexp2.htr Password Policy Bypass</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11424</PluginId>
+<PluginName>WebDAV Detection</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>34460</PluginId>
+<PluginName>Obsolete Web Server Detection</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11565</PluginId>
+<PluginName>FTP Server root Directory .forward File Present</PluginName>
+<Family>FTP</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>32374</PluginId>
+<PluginName>FTP Server No Command Accepted (possible backdoor/proxy)</PluginName>
+<Family>FTP</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>12113</PluginId>
+<PluginName>Web Server PROPFIND Method Internal IP Disclosure</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>30150</PluginId>
+<PluginName>VNCviewer in Listen Mode Detection</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11061</PluginId>
+<PluginName>Web Server HTTP GET Request Version Number Handling Remote Overflow</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>39437</PluginId>
+<PluginName>ClamAV &lt; 0.95.2 Multiple Scan Evasion Vulnerabilities</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>29965</PluginId>
+<PluginName>XEROX WorkCentre Multiple Samba Vulnerabilities (XRX08-001)</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>57608</PluginId>
+<PluginName>SMB Signing Disabled</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>47580</PluginId>
+<PluginName>Microsoft SharePoint Services Help.aspx &apos;cid0&apos; Parameter XSS</PluginName>
+<Family>CGI abuses : XSS</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11213</PluginId>
+<PluginName>HTTP TRACE / TRACK Methods Allowed</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>22964</PluginId>
+<PluginName>Service Detection</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>15588</PluginId>
+<PluginName>Web Server SSL Port HTTP Traffic Detection</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>18267</PluginId>
+<PluginName>XEROX WorkCentre Multi-Page Document Scan/Fax Information Disclosure (XRX05-002)</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11308</PluginId>
+<PluginName>Microsoft Windows SMTP Service NTLM Null Session Authorization Bypass (uncredentialed check)</PluginName>
+<Family>SMTP problems</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11566</PluginId>
+<PluginName>FTP Server root Directory .rhosts File Present</PluginName>
+<Family>FTP</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11714</PluginId>
+<PluginName>Nonexistent Page (404) Physical Path Disclosure</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10956</PluginId>
+<PluginName>Microsoft IIS / Site Server codebrws.asp Arbitrary Source Disclosure</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>20982</PluginId>
+<PluginName>BlackBerry Enterprise Server PNG Attachment Buffer Overflow</PluginName>
+<Family>Gain a shell remotely</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>32375</PluginId>
+<PluginName>FTP Server Bad Command Sequence Accepted (possible backdoor/proxy)</PluginName>
+<Family>FTP</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>19763</PluginId>
+<PluginName>SNMP Query Installed Software Disclosure</PluginName>
+<Family>SNMP</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>21564</PluginId>
+<PluginName>VNC Security Type Enforcement Failure Remote Authentication Bypass</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>34850</PluginId>
+<PluginName>Web Server Uses Basic Authentication Without HTTPS</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>40382</PluginId>
+<PluginName>VMSA-2008-0014 : Updates to VMware Workstation, VMware Player, VMware ACE, VMware Server, VMware ESX, VMware VCB address information disclosure, privilege escalation and other security issues.</PluginName>
+<Family>VMware ESX Local Security Checks</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>14773</PluginId>
+<PluginName>Service Detection: 3 ASCII Digit Code Responses</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>33392</PluginId>
+<PluginName>Microsoft Dynamics GP Distributed Process Manager Detection</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11874</PluginId>
+<PluginName>Microsoft IIS 404 Response Service Pack Signature</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>35087</PluginId>
+<PluginName>ClamAV &lt; 0.94 Multiple Vulnerabilities</PluginName>
+<Family>Gain a shell remotely</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11134</PluginId>
+<PluginName>QMTP/QMQP Server Detection</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>12243</PluginId>
+<PluginName>H323 Protocol / VoIP Application Detection</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10484</PluginId>
+<PluginName>Multiple Web Server ~nobody/ Request Arbitrary File Access</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10369</PluginId>
+<PluginName>Microsoft FrontPage dvwssr.dll Multiple Vulnerabilities</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>15640</PluginId>
+<PluginName>HTTP URI Handling Format String</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10030</PluginId>
+<PluginName>TCP/IP IP Fragmentation Remote DoS (bonk)</PluginName>
+<Family>Denial of Service</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11512</PluginId>
+<PluginName>Kerberos 5 &lt; 1.3.5 Multiple Vulnerabilities</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>58601</PluginId>
+<PluginName>Microsoft ASP.NET ValidateRequest Filters Bypass</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10357</PluginId>
+<PluginName>Microsoft IIS MDAC RDS (msadcs.dll) Arbitrary Remote Command Execution</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10550</PluginId>
+<PluginName>SNMP Query Running Process List Disclosure</PluginName>
+<Family>SNMP</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10120</PluginId>
+<PluginName>Microsoft IIS perl.exe HTTP Path Disclosure</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>12224</PluginId>
+<PluginName>Web Server Load Balancer Detection</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>45437</PluginId>
+<PluginName>ClamAV &lt; 0.96 Multiple Vulnerabilities</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>55926</PluginId>
+<PluginName>Citrix EdgeSight Load Tester (ESLT) version detection</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11317</PluginId>
+<PluginName>HP JetDirect Device SNMP Request Cleartext Admin Credential Disclosure</PluginName>
+<Family>SNMP</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10800</PluginId>
+<PluginName>SNMP Query System Information Disclosure</PluginName>
+<Family>SNMP</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10166</PluginId>
+<PluginName>Windows NT FTP &apos;guest&apos; Account Present</PluginName>
+<Family>FTP</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10582</PluginId>
+<PluginName>HTTP Protocol Version Detection</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10193</PluginId>
+<PluginName>HTTP Proxy Arbitrary Site/Port Relaying</PluginName>
+<Family>Firewalls</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11217</PluginId>
+<PluginName>Microsoft SQL Server Version Query (credentialed check)</PluginName>
+<Family>Databases</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10214</PluginId>
+<PluginName>RPC database Service Detection</PluginName>
+<Family>RPC</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11902</PluginId>
+<PluginName>TCP/IP IP Fragmentation Remote DoS (jolt2)</PluginName>
+<Family>Denial of Service</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11161</PluginId>
+<PluginName>Microsoft Data Access Components RDS Data Stub Remote Overflow</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10437</PluginId>
+<PluginName>NFS Share Export List</PluginName>
+<Family>RPC</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10526</PluginId>
+<PluginName>Microsoft IIS WebDAV SEARCH Method Arbitrary Directory Forced Listing</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10680</PluginId>
+<PluginName>Microsoft IIS Source Fragment Disclosure</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10081</PluginId>
+<PluginName>FTP Privileged Port Bounce Scan</PluginName>
+<Family>FTP</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>52655</PluginId>
+<PluginName>HP StorageWorks File Migration Agent Unauthorized Access</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10695</PluginId>
+<PluginName>Microsoft IIS .IDA ISAPI Filter Enabled</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10184</PluginId>
+<PluginName>Multiple Vendor POP3 Remote Overflows</PluginName>
+<Family>Gain a shell remotely</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>23972</PluginId>
+<PluginName>Teredo Server Detection</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>40405</PluginId>
+<PluginName>Web Server Detection (HTTP/1.1)</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>54586</PluginId>
+<PluginName>Multiple Vendor RPC portmapper Access Restriction Bypass</PluginName>
+<Family>RPC</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>18366</PluginId>
+<PluginName>Web Server GET Request Saturation Remote DoS</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>58977</PluginId>
+<PluginName>VMSA-2012-0009 : VMware Workstation, Player, Fusion, ESXi and ESX patches address critical security issues</PluginName>
+<Family>VMware ESX Local Security Checks</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>34324</PluginId>
+<PluginName>FTP Supports Clear Text Authentication</PluginName>
+<Family>FTP</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10746</PluginId>
+<PluginName>HP System Management Homepage Detection</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11065</PluginId>
+<PluginName>Web Server HTTP Method Handling Remote Overflow</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10362</PluginId>
+<PluginName>Microsoft IIS ASP::$DATA ASP Source Disclosure</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>14255</PluginId>
+<PluginName>Microsoft Outlook Web Access (OWA) Version Detection</PluginName>
+<Family>CGI abuses</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10251</PluginId>
+<PluginName>Multiple Vendor rpc.nisd Long NIS+ Argument Remote Overflow</PluginName>
+<Family>RPC</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>49218</PluginId>
+<PluginName>Web Application Session Cookies Not Marked Secure</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>18141</PluginId>
+<PluginName>XEROX WorkCentre Device Detection</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>25490</PluginId>
+<PluginName>Symantec Ghost Solution Locate Server Detection</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11870</PluginId>
+<PluginName>Microsoft SQL Server &lt; 7 Local Privilege Escalation</PluginName>
+<Family>Databases</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10144</PluginId>
+<PluginName>Microsoft SQL Server TCP/IP Listener Detection</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>42256</PluginId>
+<PluginName>NFS Shares World Readable</PluginName>
+<Family>RPC</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11356</PluginId>
+<PluginName>NFS Exported Share Information Disclosure</PluginName>
+<Family>RPC</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>15855</PluginId>
+<PluginName>POP3 Cleartext Logins Permitted</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>56983</PluginId>
+<PluginName>SIP Username Enumeration</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11511</PluginId>
+<PluginName>Kerberos 4 Realm Principle Impersonation</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10158</PluginId>
+<PluginName>NIS Server Detection</PluginName>
+<Family>RPC</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11040</PluginId>
+<PluginName>HTTP Reverse Proxy Detection</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10687</PluginId>
+<PluginName>Web Server HTTP POST Method Handling Remote Overflow</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>40378</PluginId>
+<PluginName>VMSA-2008-0009 : Updates to VMware Workstation, VMware Player, VMware ACE, VMware Fusion, VMware Server, VMware VIX API, VMware ESX, VMware ESXi resolve critical security issues</PluginName>
+<Family>VMware ESX Local Security Checks</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>18206</PluginId>
+<PluginName>XEROX WorkCentre MicroServer Multiple Vulnerabilities (XRX05-005)</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>14772</PluginId>
+<PluginName>Service Detection (2nd Pass)</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11783</PluginId>
+<PluginName>Multiple Vendor IRC Daemon Debug Format String</PluginName>
+<Family>Gain a shell remotely</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10577</PluginId>
+<PluginName>Microsoft IIS bdir.htr Arbitrary Directory Listing</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>62517</PluginId>
+<PluginName>Windows Phone7 &lt; 7.10.8107 Out-of-Date SSL Certificate Blacklist</PluginName>
+<Family>Mobile Devices</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10210</PluginId>
+<PluginName>RPC alis Service Detection</PluginName>
+<Family>RPC</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>34245</PluginId>
+<PluginName>ISC BIND 9 for Windows UDP Client Handler Remote DoS</PluginName>
+<Family>DNS</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>25037</PluginId>
+<PluginName>Printer Job Language (PJL) Detection</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>57572</PluginId>
+<PluginName>MS12-007: Vulnerability in AntiXSS Library Could Allow Information Disclosure (2607664) (uncredentialed check)</PluginName>
+<Family>CGI abuses</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10031</PluginId>
+<PluginName>RPC bootparamd Service Information Disclosure</PluginName>
+<Family>RPC</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10497</PluginId>
+<PluginName>Microsoft FrontPage Extensions MS-DOS Device Request DoS</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>21165</PluginId>
+<PluginName>ZoneAlarm VSMON.exe Local Privilege Escalation</PluginName>
+<Family>Firewalls</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>57333</PluginId>
+<PluginName>NNTP Authentication Methods</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10558</PluginId>
+<PluginName>Exchange Malformed MIME Header Handling DoS</PluginName>
+<Family>SMTP problems</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10657</PluginId>
+<PluginName>Microsoft IIS 5.0 Malformed HTTP Printer Request Header Remote Buffer Overflow</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11311</PluginId>
+<PluginName>MS02-053: Microsoft FrontPage Extensions shtml.exe Remote Overflow (uncredentialed check)</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11871</PluginId>
+<PluginName>Microsoft IIS Authentication Method Enumeration</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>58363</PluginId>
+<PluginName>IIS Detailed Error Information Disclosure</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>42263</PluginId>
+<PluginName>Unencrypted Telnet Server</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11197</PluginId>
+<PluginName>Multiple Ethernet Driver Frame Padding Information Disclosure (Etherleak)</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>39463</PluginId>
+<PluginName>HTTP Server Cookies Set</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10107</PluginId>
+<PluginName>HTTP Server Type and Version</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>35322</PluginId>
+<PluginName>HTTP Backdoor Detection</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>45477</PluginId>
+<PluginName>LDAP Group Enumeration</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10302</PluginId>
+<PluginName>Web Server robots.txt Information Disclosure</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>14381</PluginId>
+<PluginName>Samba smbd FindNextPrintChangeNotify() Request Remote DoS</PluginName>
+<Family>Denial of Service</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10491</PluginId>
+<PluginName>Microsoft IIS Translate f: ASP/ASA Source Disclosure</PluginName>
+<Family>CGI abuses</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>42149</PluginId>
+<PluginName>FTP Service AUTH TLS Command Support</PluginName>
+<Family>FTP</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>48350</PluginId>
+<PluginName>FuseTalk Detection</PluginName>
+<Family>CGI abuses</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>31657</PluginId>
+<PluginName>Web Server Uses Non Random Session IDs</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10759</PluginId>
+<PluginName>Web Server HTTP Header Internal IP Disclosure</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>58038</PluginId>
+<PluginName>LDAP &apos;Domain Admins&apos; Group Membership Enumeration</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11084</PluginId>
+<PluginName>Web Server HTTP Header Memory Exhaustion DoS</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11238</PluginId>
+<PluginName>Anti-Nessus Defense Detection</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>20951</PluginId>
+<PluginName>XEROX WorkCentre Multiple Vulnerabilities (XRX06-001)</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11077</PluginId>
+<PluginName>Web Server HTTP Cookie Header Remote Overflow</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>17154</PluginId>
+<PluginName>HTTP Proxy CONNECT Loop DoS</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>31648</PluginId>
+<PluginName>Microsoft IIS webhits.dll Hit-Highlighting Authentication Bypass</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>48264</PluginId>
+<PluginName>VxWorks WDB Debug Service Detection</PluginName>
+<Family>RPC</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>54580</PluginId>
+<PluginName>SMTP Authentication Methods</PluginName>
+<Family>SMTP problems</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>57561</PluginId>
+<PluginName>MS11-100: ASP.NET Could Allow Denial of Service (2638420) (uncredentialed check)</PluginName>
+<Family>CGI abuses</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10674</PluginId>
+<PluginName>Microsoft SQL Server UDP Query Remote Version Disclosure</PluginName>
+<Family>Databases</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>25953</PluginId>
+<PluginName>Timbuktu Detection (UDP)</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>26026</PluginId>
+<PluginName>Tor Server Detection</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10264</PluginId>
+<PluginName>SNMP Agent Default Community Names</PluginName>
+<Family>SNMP</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>50811</PluginId>
+<PluginName>FTP Server Traversal Arbitrary File Access (RETR)</PluginName>
+<Family>FTP</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>58185</PluginId>
+<PluginName>HP Printer Firmware Signing Disabled</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>24243</PluginId>
+<PluginName>Microsoft .NET Version Information Disclosure</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>51998</PluginId>
+<PluginName>MediaWiki CSS Comments XSS</PluginName>
+<Family>CGI abuses : XSS</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10077</PluginId>
+<PluginName>Microsoft FrontPage Extensions Check</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>20108</PluginId>
+<PluginName>Web Server / Application favicon.ico Vendor Fingerprinting</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10281</PluginId>
+<PluginName>Telnet Server Detection</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10406</PluginId>
+<PluginName>Microsoft IIS Malformed File Extension URL DoS</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11313</PluginId>
+<PluginName>Microsoft Content Management Server (MCMS) 2001 Multiple Remote Vulnerabilities</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10942</PluginId>
+<PluginName>Citrix Server Detection</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>45022</PluginId>
+<PluginName>SNMP Query Airport Version</PluginName>
+<Family>SNMP</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11421</PluginId>
+<PluginName>smtpscan SMTP Fingerprinting</PluginName>
+<Family>SMTP problems</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>19548</PluginId>
+<PluginName>BNBT EasyTracker Malformed GET Request Remote DoS</PluginName>
+<Family>Denial of Service</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10858</PluginId>
+<PluginName>Multiple Vendor Malformed SNMP Trap Handling DoS</PluginName>
+<Family>SNMP</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>20759</PluginId>
+<PluginName>RPC rpcbind Non-standard Port Assignment Filter Bypass</PluginName>
+<Family>RPC</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>15469</PluginId>
+<PluginName>IceWarp Web Mail Multiple Flaws (1)</PluginName>
+<Family>CGI abuses</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11140</PluginId>
+<PluginName>Web Server UDDI Detection</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>26925</PluginId>
+<PluginName>VNC Server Unauthenticated Access</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10857</PluginId>
+<PluginName>Multiple Vendor Malformed SNMP Message-Handling DoS</PluginName>
+<Family>SNMP</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11358</PluginId>
+<PluginName>NFS portmapper localhost Mount Request Restricted Host Access</PluginName>
+<Family>RPC</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>51935</PluginId>
+<PluginName>ClamAV &lt; 0.97 Multiple Vulnerabilities</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>25637</PluginId>
+<PluginName>XEROX WorkCentre Multiple OpenSSL Vulnerabilities (XRX07-001)</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>35712</PluginId>
+<PluginName>Web Server UPnP Detection</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10885</PluginId>
+<PluginName>Microsoft Windows SMTP Service Malformed BDAT Request Remote DoS</PluginName>
+<Family>SMTP problems</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>21205</PluginId>
+<PluginName>Microsoft Commerce Server 2002 authfiles/login.asp Authentication Bypass</PluginName>
+<Family>CGI abuses</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>12229</PluginId>
+<PluginName>Microsoft IIS Cookie information disclosure</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>35707</PluginId>
+<PluginName>UPnP Internet Gateway Device (IGD) Port Mapping Manipulation</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>57690</PluginId>
+<PluginName>Terminal Services Encryption Level is Medium or Low</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10148</PluginId>
+<PluginName>TCP/IP Fragmentation DoS (nestea)</PluginName>
+<Family>Denial of Service</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>17975</PluginId>
+<PluginName>Service Detection (GET request)</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10159</PluginId>
+<PluginName>NNTP Server Detection</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10937</PluginId>
+<PluginName>Microsoft IIS Multiple Remote DoS (MS02-018 / Q319733)</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>34474</PluginId>
+<PluginName>Broken Web Server Detection</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>51834</PluginId>
+<PluginName>Microsoft Office Document Conversions Load Balancer Detection</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11239</PluginId>
+<PluginName>Web Server Crafted Request Vendor/Version Information Disclosure</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>12225</PluginId>
+<PluginName>Web Server Reverse Proxy Detection</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10969</PluginId>
+<PluginName>SNMP Request Cisco Router Information Disclosure</PluginName>
+<Family>SNMP</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10492</PluginId>
+<PluginName>MS00-006: Microsoft IIS IDA/IDQ Multiple Vulnerabilities (uncredentialed check)</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10935</PluginId>
+<PluginName>Microsoft IIS ASP ISAPI Filter Multiple Overflows</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11396</PluginId>
+<PluginName>HP JetDirect &lt; Q.24.09 Multiple Vulnerabilities</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10934</PluginId>
+<PluginName>MS02-018: Microsoft IIS FTP Status Request DoS (uncredentialed check)</PluginName>
+<Family>FTP</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>35713</PluginId>
+<PluginName>Scan for UPnP hosts (multicast)</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10699</PluginId>
+<PluginName>MS01-035: Microsoft IIS FrontPage fp30reg.dll Remote Overflow (uncredentialed check)</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>19288</PluginId>
+<PluginName>VNC Server Security Type Detection</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>58651</PluginId>
+<PluginName>Netstat Active Connections</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11069</PluginId>
+<PluginName>Web Server HTTP User-Agent Header Handling Remote Overflow</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>53334</PluginId>
+<PluginName>Detect RPC over UDP</PluginName>
+<Family>RPC</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>15642</PluginId>
+<PluginName>HTTP Header Value Remote Format String</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>22203</PluginId>
+<PluginName>Apache on Windows mod_alias URL Validation Canonicalization CGI Source Disclosure</PluginName>
+<Family>CGI abuses</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10195</PluginId>
+<PluginName>HTTP Proxy Open Relay Detection</PluginName>
+<Family>Firewalls</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>12104</PluginId>
+<PluginName>Novell NetWare LDAP Server Anonymous Bind</PluginName>
+<Family>Netware</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10119</PluginId>
+<PluginName>Microsoft IIS Malformed HTTP Request Header Remote DoS</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10320</PluginId>
+<PluginName>Web Server Long URL Handling Remote Overflow DoS</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10179</PluginId>
+<PluginName>TCP/IP IGMP Overlap Remote DoS (pimp)</PluginName>
+<Family>Denial of Service</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10185</PluginId>
+<PluginName>POP Server Detection</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>53847</PluginId>
+<PluginName>FTP Service AUTH TLS Plaintext Command Injection</PluginName>
+<Family>FTP</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10249</PluginId>
+<PluginName>Multiple Mail Server EXPN/VRFY Information Disclosure</PluginName>
+<Family>SMTP problems</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>15643</PluginId>
+<PluginName>IceWarp Web Mail Multiple Flaws (2)</PluginName>
+<Family>CGI abuses</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>42255</PluginId>
+<PluginName>NFS Server Superfluous</PluginName>
+<Family>RPC</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>35009</PluginId>
+<PluginName>ClamAV &lt; 0.94.2 cli_check_jpeg_exploit() Malformed JPEG File DoS</PluginName>
+<Family>Gain a shell remotely</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>15984</PluginId>
+<PluginName>NFS Share User Mountable</PluginName>
+<Family>RPC</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11235</PluginId>
+<PluginName>Web Server HTTP OPTIONS Method URL Handling Remote Overflow</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>21223</PluginId>
+<PluginName>Winmail Server Webmail Unspecified Vulnerability</PluginName>
+<Family>CGI abuses</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11664</PluginId>
+<PluginName>Microsoft Media Services ISAPI nsiislog.dll Multiple Overflows</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>19608</PluginId>
+<PluginName>Tetrinet server detection</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>34244</PluginId>
+<PluginName>XEROX WorkCentre Samba Overflow (XRX08-009)</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>52014</PluginId>
+<PluginName>VMSA-2010-0012 : VMware vCenter Update Manager fix for Jetty Web server addresses important security vulnerabilities (DEPRECATED)</PluginName>
+<Family>VMware ESX Local Security Checks</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10260</PluginId>
+<PluginName>Multiple MTA HELO Command Remote Overflow</PluginName>
+<Family>SMTP problems</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>46016</PluginId>
+<PluginName>Windows Media Service Server Detection</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>50345</PluginId>
+<PluginName>HTTP X-Frame-Options Response Header Usage</PluginName>
+<Family>CGI abuses</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10546</PluginId>
+<PluginName>Microsoft Windows LAN Manager SNMP LanMan Users Disclosure</PluginName>
+<Family>SNMP</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>46255</PluginId>
+<PluginName>HP Mercury LoadRunner Agent Remote Command Execution</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10279</PluginId>
+<PluginName>TCP/IP IP Fragment Re-Assembly Remote DoS (teardrop)</PluginName>
+<Family>Denial of Service</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>51971</PluginId>
+<PluginName>VMSA-2011-0003 : Third party component updates for VMware vCenter Server, vCenter Update Manager, ESXi and ESX</PluginName>
+<Family>VMware ESX Local Security Checks</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>33950</PluginId>
+<PluginName>MS Executable Detection</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>51835</PluginId>
+<PluginName>Microsoft Office Document Conversions Launcher Detection</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>32133</PluginId>
+<PluginName>Symantec pcAnywhere Access Server Detection</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>52611</PluginId>
+<PluginName>SMTP Service STARTTLS Plaintext Command Injection</PluginName>
+<Family>SMTP problems</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11353</PluginId>
+<PluginName>NFS Predictable Filehandles Filesystem Access</PluginName>
+<Family>RPC</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11993</PluginId>
+<PluginName>Yahoo Messenger Detection</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11778</PluginId>
+<PluginName>Web Server Potentially Hosting Copyrighted Material</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>34473</PluginId>
+<PluginName>HTTP CONNECT Proxy Detection</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10227</PluginId>
+<PluginName>RPC rstatd Service Detection</PluginName>
+<Family>RPC</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>25701</PluginId>
+<PluginName>LDAP Crafted Search Request Server Information Disclosure</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10661</PluginId>
+<PluginName>Microsoft IIS 5 .printer ISAPI Filter Enabled</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>14810</PluginId>
+<PluginName>JRun Multiple Vulnerabilities (OF, XSS, ID, Hijacking)</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10585</PluginId>
+<PluginName>Microsoft IIS Frontpage Server Extensions (FPSE) Malformed Form DoS</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10208</PluginId>
+<PluginName>3270 Mapper Service Detection</PluginName>
+<Family>RPC</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10226</PluginId>
+<PluginName>rquotad Service Detection</PluginName>
+<Family>RPC</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11852</PluginId>
+<PluginName>MTA Open Mail Relaying Allowed (thorough test)</PluginName>
+<Family>SMTP problems</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10386</PluginId>
+<PluginName>Web Server No 404 Error Code Check</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>15905</PluginId>
+<PluginName>PHProjekt setup.php Authentication Bypass Arbitrary Code Execution</PluginName>
+<Family>CGI abuses</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>41028</PluginId>
+<PluginName>SNMP Agent Default Community Name (public)</PluginName>
+<Family>SNMP</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>42088</PluginId>
+<PluginName>SMTP Service STARTTLS Command Support</PluginName>
+<Family>SMTP problems</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11412</PluginId>
+<PluginName>Microsoft IIS WebDAV ntdll.dll Remote Overflow (MS03-007)</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10673</PluginId>
+<PluginName>Microsoft SQL Server sa Account Default Blank Password</PluginName>
+<Family>Databases</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>55905</PluginId>
+<PluginName>ClamAV &lt; 0.97.2 &apos;cli_hm_scan&apos; Denial of Service</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10988</PluginId>
+<PluginName>Novell NetWare ncp Service NDS Object Enumeration</PluginName>
+<Family>Netware</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>40825</PluginId>
+<PluginName>MS09-053: Microsoft IIS FTPd NLST Command Remote Buffer Overflow (975191) (uncredentialed check)</PluginName>
+<Family>FTP</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>47579</PluginId>
+<PluginName>Microsoft SharePoint Service Help.aspx &apos;tid&apos; Parameter DoS</PluginName>
+<Family>CGI abuses</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>31683</PluginId>
+<PluginName>Multiple Vendor NIS rpc.ypupdated YP Map Update Arbitrary Remote Command Execution</PluginName>
+<Family>RPC</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11153</PluginId>
+<PluginName>Service Detection (HELP Request)</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>15891</PluginId>
+<PluginName>Timbuktu Detection (TCP)</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10088</PluginId>
+<PluginName>Anonymous FTP Writeable root Directory</PluginName>
+<Family>FTP</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>51125</PluginId>
+<PluginName>ClamAV &lt; 0.96.5 Multiple Vulnerabilities</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>20393</PluginId>
+<PluginName>WinProxy &lt; 6.1a Multiple Vulnerabilities (credentialed check)</PluginName>
+<Family>Firewalls</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>15910</PluginId>
+<PluginName>Microsoft W3Who ISAPI w3who.dll Multiple Remote Vulnerabilities</PluginName>
+<Family>CGI abuses</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10078</PluginId>
+<PluginName>Microsoft FrontPage Extensions authors.pwd Information Disclosure</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>51080</PluginId>
+<PluginName>Web Server Uses Basic Authentication over HTTPS</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>42087</PluginId>
+<PluginName>POP3 Service STLS Command Support</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>12201</PluginId>
+<PluginName>Web Server HTTP Basic Authorization Header Remote Overflow DoS</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10631</PluginId>
+<PluginName>Microsoft IIS WebDAV Malformed PROPFIND Request Remote DoS</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>49705</PluginId>
+<PluginName>Web Server Harvested Email Addresses</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>46706</PluginId>
+<PluginName>ClamAV &lt; 0.96.1 Multiple Vulnerabilities</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>18642</PluginId>
+<PluginName>XEROX WorkCentre Multiple Vulnerabilities (XRX05-006)</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>55133</PluginId>
+<PluginName>Active Directory Certificate Services Web Enrollment Anonymous Access</PluginName>
+<Family>CGI abuses</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10663</PluginId>
+<PluginName>DHCP Server Detection</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10548</PluginId>
+<PluginName>Microsoft Windows LAN Manager SNMP LanMan Shares Disclosure</PluginName>
+<Family>SNMP</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>59726</PluginId>
+<PluginName>ClamAV &lt; 0.97.5 Multiple Vulnerabilities</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10133</PluginId>
+<PluginName>TCP/IP SYN Loopback Request Remote DoS (land.c)</PluginName>
+<Family>Denial of Service</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10358</PluginId>
+<PluginName>Microsoft IIS /iisadmin Unrestricted Access</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>54629</PluginId>
+<PluginName>WINS Server Detection</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>58535</PluginId>
+<PluginName>VMSA-2012-0006 : VMware Workstation, ESXi, and ESX address several security issues</PluginName>
+<Family>VMware ESX Local Security Checks</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>45478</PluginId>
+<PluginName>LDAP User Enumeration</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>16273</PluginId>
+<PluginName>IceWarp Web Mail Multiple Flaws (3)</PluginName>
+<Family>CGI abuses</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11889</PluginId>
+<PluginName>Exchange XEXCH50 Remote Buffer Overflow</PluginName>
+<Family>SMTP problems</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10103</PluginId>
+<PluginName>HP LaserJet LCD Display Modification</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>20227</PluginId>
+<PluginName>Winmail Server &lt;= 4.2 Build 0824 Multiple Vulnerabilities</PluginName>
+<Family>CGI abuses</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11414</PluginId>
+<PluginName>IMAP Service Banner Retrieval</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10573</PluginId>
+<PluginName>Microsoft IIS 5.0 ServerVariables_Jscript.asp Path Disclosure</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>56632</PluginId>
+<PluginName>Microsoft Host Integration Server Detection</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>45517</PluginId>
+<PluginName>MS10-024: Vulnerabilities in Microsoft Exchange and Windows SMTP Service Could Allow Denial of Service (981832) (uncredentialed check)</PluginName>
+<Family>SMTP problems</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10862</PluginId>
+<PluginName>Microsoft SQL Server Default Credentials</PluginName>
+<Family>Databases</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>24004</PluginId>
+<PluginName>WebDAV Directory Enumeration</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11618</PluginId>
+<PluginName>TCP/IP SYN+FIN Packet Filtering Weakness</PluginName>
+<Family>Firewalls</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>12122</PluginId>
+<PluginName>Novell Groupwise Servlet Manager Default Password</PluginName>
+<Family>Netware</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10622</PluginId>
+<PluginName>PPTP Detection</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10640</PluginId>
+<PluginName>Kerberos Server Spoofed Packet Amplification DoS (PingPong)</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>12213</PluginId>
+<PluginName>TCP/IP Sequence Prediction Blind Reset Spoofing DoS</PluginName>
+<Family>Denial of Service</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>15641</PluginId>
+<PluginName>HTTP Header Name Remote Format String</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>40876</PluginId>
+<PluginName>Citrix Licensing Service Detection</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>26024</PluginId>
+<PluginName>PostgreSQL Server Detection</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>32373</PluginId>
+<PluginName>FTP Server Any Command Accepted (possible backdoor/proxy)</PluginName>
+<Family>FTP</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10117</PluginId>
+<PluginName>Microsoft IIS Traversal GET Request Remote DoS</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>35708</PluginId>
+<PluginName>UPnP Internet Gateway Device (IGD) External IP Address Reachable</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>20377</PluginId>
+<PluginName>Windows Server Update Services (WSUS) Detection</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>39436</PluginId>
+<PluginName>ClamAV Version Detection</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11819</PluginId>
+<PluginName>TFTP Daemon Detection</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>23868</PluginId>
+<PluginName>Kerio MailServer &lt; 6.3.1 Long LDAP Query DoS</PluginName>
+<Family>Denial of Service</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11058</PluginId>
+<PluginName>RPC rusers Remote Information Disclosure</PluginName>
+<Family>RPC</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10145</PluginId>
+<PluginName>MS99-059: Microsoft SQL Server Crafted TCP Packet Remote DoS (uncredentialed check)</PluginName>
+<Family>Databases</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>14640</PluginId>
+<PluginName>Cerbere HTTP Proxy Server Host: Header Remote DoS</PluginName>
+<Family>Firewalls</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10006</PluginId>
+<PluginName>Symantec pcAnywhere Status Service Detection (UDP)</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11032</PluginId>
+<PluginName>Web Server Directory Enumeration</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>19784</PluginId>
+<PluginName>IceWarp Web Mail Multiple Flaws (4)</PluginName>
+<Family>CGI abuses</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>44987</PluginId>
+<PluginName>HTTP Session Cookies</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>36128</PluginId>
+<PluginName>HP LaserJet Detection</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>17694</PluginId>
+<PluginName>Apache on Windows mod_alias URL Validation Canonicalization CGI Source Disclosure</PluginName>
+<Family>CGI abuses</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10498</PluginId>
+<PluginName>Web Server HTTP Dangerous Method Detection</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10262</PluginId>
+<PluginName>MTA Open Mail Relaying Allowed</PluginName>
+<Family>SMTP problems</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>38157</PluginId>
+<PluginName>Microsoft SharePoint Server Detection</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>35556</PluginId>
+<PluginName>Mono ASP.NET action Attribute XSS</PluginName>
+<Family>CGI abuses : XSS</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10662</PluginId>
+<PluginName>Web mirroring</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>57877</PluginId>
+<PluginName>Skype for Windows &lt; 5.8.0.154 Unspecified Vulnerability (uncredentialed check)</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10671</PluginId>
+<PluginName>MS01-026 / MS01-044: Microsoft IIS Remote Command Execution (uncredentialed check)</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11951</PluginId>
+<PluginName>DNS Server Fingerprinting</PluginName>
+<Family>DNS</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10826</PluginId>
+<PluginName>Novell NetWare Management Portal Unrestricted Access</PluginName>
+<Family>Netware</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11638</PluginId>
+<PluginName>Microsoft BizTalk Server Multiple Remote Vulnerabilities</PluginName>
+<Family>CGI abuses</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>42057</PluginId>
+<PluginName>Web Server Allows Password Auto-Completion</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>19772</PluginId>
+<PluginName>Skype Detection</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>52610</PluginId>
+<PluginName>POP3 Service STLS Plaintext Command Injection</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11422</PluginId>
+<PluginName>Web Server Unconfigured - Default Install Page Present</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10930</PluginId>
+<PluginName>Multiple Web Server on Windows MS/DOS Device Request Remote DOS</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10576</PluginId>
+<PluginName>Microsoft IIS / Site Server viewcode.asp Arbitrary File Access</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10356</PluginId>
+<PluginName>Microsoft IIS WebHits null.htw .asp Source Disclosure</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>21027</PluginId>
+<PluginName>XEROX WorkCentre Multiple Vulnerabilities (XRX06-002)</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11455</PluginId>
+<PluginName>Microsoft FrontPage Unpassworded Installation</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10547</PluginId>
+<PluginName>Microsoft Windows LAN Manager SNMP LanMan Services Disclosure</PluginName>
+<Family>SNMP</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11078</PluginId>
+<PluginName>Web Server HTTP Header Handling Remote Overflow</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>58902</PluginId>
+<PluginName>MS12-026: Vulnerabilities in Forefront Unified Access Gateway (UAG) Could Allow Information Disclosure (2663860) (uncredentialed check)</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>53848</PluginId>
+<PluginName>NNTP Service STARTTLS Plaintext Command Injection</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10372</PluginId>
+<PluginName>Microsoft IIS repost.asp File Upload</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>35296</PluginId>
+<PluginName>SNMP Protocol Version Detection</PluginName>
+<Family>SNMP</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>54582</PluginId>
+<PluginName>SMTP Service Cleartext Login Permitted</PluginName>
+<Family>SMTP problems</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>12237</PluginId>
+<PluginName>RPC bootparamd NIS Domain Name Disclosure</PluginName>
+<Family>RPC</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>49712</PluginId>
+<PluginName>ClamAV &lt; 0.96.3 Multiple Vulnerabilities</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11899</PluginId>
+<PluginName>RPC nibindd Service Detection</PluginName>
+<Family>RPC</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11067</PluginId>
+<PluginName>Microsoft SQL Server Authentication Function Remote Overflow</PluginName>
+<Family>Databases</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>21245</PluginId>
+<PluginName>GDB Server Detection</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10666</PluginId>
+<PluginName>Apple Filing Protocol Server Detection</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>34022</PluginId>
+<PluginName>SNMP Query Routing Information Disclosure</PluginName>
+<Family>SNMP</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10363</PluginId>
+<PluginName>Microsoft IIS/PWS %2e Request ASP Source Disclosure</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10991</PluginId>
+<PluginName>Microsoft IIS global.asa Remote Information Disclosure</PluginName>
+<Family>CGI abuses</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>24244</PluginId>
+<PluginName>Microsoft .NET Custom Errors Not Set</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11305</PluginId>
+<PluginName>HTTP Proxy Open gopher:// Request Relaying</PluginName>
+<Family>Firewalls</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>36131</PluginId>
+<PluginName>ClamAV &lt; 0.95.1 Multiple Vulnerabilities</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>24018</PluginId>
+<PluginName>TCP Channel Detection</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>18528</PluginId>
+<PluginName>SMTP Server Connection Check</PluginName>
+<Family>SMTP problems</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10667</PluginId>
+<PluginName>Microsoft IIS 5.0 WebDAV Malformed PROPFIND Request Remote DoS</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>25423</PluginId>
+<PluginName>SNMPc Management Server Default Credentials</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>48432</PluginId>
+<PluginName>Web Application Session Cookies Not Marked HttpOnly</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10342</PluginId>
+<PluginName>VNC Software Detection</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>53335</PluginId>
+<PluginName>RPC portmapper (TCP)</PluginName>
+<Family>RPC</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>18266</PluginId>
+<PluginName>XEROX DocuCentre / WorkCentre Postscript Interpreter Traversal (XRX05-001)</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10829</PluginId>
+<PluginName>UPnP Client Detection</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>17636</PluginId>
+<PluginName>Microsoft Outlook Web Access (OWA) owalogon.asp Redirection Account Enumeration</PluginName>
+<Family>CGI abuses</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10271</PluginId>
+<PluginName>TCP/IP ACK Packet Saturation Remote DoS (stream.c)</PluginName>
+<Family>Denial of Service</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>24242</PluginId>
+<PluginName>Microsoft .NET Handlers Enumeration</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>21050</PluginId>
+<PluginName>Kerio MailServer IMAP Server Crafted LOGIN Command DoS</PluginName>
+<Family>Denial of Service</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>34729</PluginId>
+<PluginName>ClamAV &lt; 0.94.1 get_unicode_name() Off-by-One Buffer Overflow</PluginName>
+<Family>Gain a shell remotely</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>18100</PluginId>
+<PluginName>XEROX Document Centre Device Detection</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10515</PluginId>
+<PluginName>Web Server HTTP Authorization Header Remote Overflow</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10118</PluginId>
+<PluginName>Microsoft IIS FTP Server NLST Command Overflow DoS</PluginName>
+<Family>FTP</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>20950</PluginId>
+<PluginName>BlackBerry Enterprise Server Attachment Handling Buffer Overflows</PluginName>
+<Family>Gain a shell remotely</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11127</PluginId>
+<PluginName>Web Server HTTP 1.0 Header Remote Overflow</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>12068</PluginId>
+<PluginName>X-News Password MD5 Hash Authentication Bypass</PluginName>
+<Family>CGI abuses</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11002</PluginId>
+<PluginName>DNS Server Detection</PluginName>
+<Family>DNS</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>43100</PluginId>
+<PluginName>SNMP Query WLAN SSID (Cisco)</PluginName>
+<Family>SNMP</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10723</PluginId>
+<PluginName>LDAP Server NULL Bind Connection Information Disclosure</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>15828</PluginId>
+<PluginName>Youngzsoft CMailServer &lt; 5.2.1 Multiple Remote Vulnerabilities</PluginName>
+<Family>SMTP problems</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11270</PluginId>
+<PluginName>Multiple Anti-Virus SMTP Message Long Line Parsing DoS</PluginName>
+<Family>SMTP problems</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>41058</PluginId>
+<PluginName>Web Application Firewall Detection</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10192</PluginId>
+<PluginName>HTTP Proxy CONNECT Request Relaying</PluginName>
+<Family>Firewalls</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>54581</PluginId>
+<PluginName>Anonymous SMTP Authentication Enabled</PluginName>
+<Family>SMTP problems</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10276</PluginId>
+<PluginName>TCP/IP &apos;Chorusing&apos; Windows DoS</PluginName>
+<Family>Denial of Service</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10551</PluginId>
+<PluginName>SNMP Request Network Interfaces Enumeration</PluginName>
+<Family>SNMP</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11923</PluginId>
+<PluginName>Microsoft FrontPage Server Extensions (fp30reg.dll) Debug Function Remote Overflow (MS03-051 / 813360)</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>50985</PluginId>
+<PluginName>VMSA-2010-0018 : VMware hosted products and ESX patches resolve multiple security issues</PluginName>
+<Family>VMware ESX Local Security Checks</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>25491</PluginId>
+<PluginName>Symantec Ghost Solution Status Server Detection</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11028</PluginId>
+<PluginName>Microsoft IIS .HTR Filter Multiple Overflows (MS02-028)</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>11772</PluginId>
+<PluginName>SMTP Generic Overflow Detection</PluginName>
+<Family>SMTP problems</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>20949</PluginId>
+<PluginName>BlackBerry Enterprise Server / Unite! Detection</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10215</PluginId>
+<PluginName>RPC etherstatd Service Detection</PluginName>
+<Family>RPC</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>59817</PluginId>
+<PluginName>Microsoft IIS 6.0 PHP NTFS Stream Authentication Bypass</PluginName>
+<Family>CGI abuses</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>19689</PluginId>
+<PluginName>Embedded Web Server Detection</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>25336</PluginId>
+<PluginName>avast! Management Server Detection</PluginName>
+<Family>Service detection</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10172</PluginId>
+<PluginName>HP LaserJet Printer Unauthenticated Access</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>56306</PluginId>
+<PluginName>Web Server Allows Password Auto-Completion (PCI-DSS variant)</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10405</PluginId>
+<PluginName>Microsoft IIS FrontPage Server Extensions (FPSE) shtml.exe Path Disclosure</PluginName>
+<Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>30218</PluginId>
+<PluginName>Terminal Services Encryption Level is not FIPS-140 Compliant</PluginName>
+<Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10239</PluginId>
+<PluginName>CDE RPC tooltalk Service Multiple Overflows</PluginName>
+<Family>RPC</Family>
+<Status>enabled</Status>
+</PluginItem></IndividualPluginSelection>
+</Policy></NessusClientData_v2>
