@@ -1,0 +1,54 @@
+GET
+GET /
+GET / HTTP/999.99
+GET / HTTP/1.0
+GET / HTP/1.0
+GET / HHTP/999/99
+GET / hhtp/999.99
+GET / http/999.99
+GET / HTTP/Q.9
+GET / HTTP/9.Q
+GET / HTTP/1.X
+GET / HTTP/1.10
+GET / HTTP/1.1.0
+GET / HTTP/1.2
+GET / HTTP/2.1
+GET / HTTP/1,0
+GET / HTTP/1.0X
+GET / HTTP/
+GET/HTTP/1.0
+GET/ HTTP/1.0
+GET /HTTP/1.0
+GET/HTTP /1.0
+GET/HTTP/1.0
+GET/HTTP/1 .0
+GET/HTTP/1. 0
+GET / HTTP /1.0
+HEAD /.\\ HTTP/1.0
+HEAD /asdfasdfasdfasdfasdfasdf/../HTTP/1.0
+HEAD /asdfasdfasdfasdfasdfasdf/..HTTP/1.0
+HEAD ././././././././././././././ HTTP/1.0
+HEAD ./././././././././qwert/././././ HTTP/1.0
+HEAD /.. HTTP/1.0
+HEAD /../ HTTP/1.0
+HEAD /../../../../../ HTTP/1.0
+HEAD .. HTTP/1.0
+HEAD\t/\tHTTP/1.0
+HEAD ///////////// HTTP/1.0
+Head / HTTP/1.0
+\nHEAD / HTTP/1.0
+ HEAD / HTTP/1.0
+HEAD / HQWERTY/1.0
+HEAD %s HTTP/1.0' % url
+HEAD %s' % url
+HEAD http:// HTTP/1.0
+HEAD http:/ HTTP/1.0
+HEAD http: HTTP/1.0
+HEAD h HTTP/1.0
+HELLO
+GET \0 / HTTP/1.0
+GET / \0 HTTP/1.0
+GET / HTTP/1.0\0
+GET / H
+ GET / HTTP/1.0
+ '*1000 + 'GET / HTTP/1.0

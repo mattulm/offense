@@ -38,3 +38,17 @@ register
 search
 sql
 uploads
+gusetbook
+guest
+accounts
+account
+login
+register
+images
+img
+icons
+sql
+db
+php
+admin
+script

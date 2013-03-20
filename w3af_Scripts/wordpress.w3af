@@ -1,0 +1,79 @@
+# -----------------------------------------------------------------------------------------------------------
+#                                              W3AF AUDIT SCRIPT FOR WEB APPLICATION
+# -----------------------------------------------------------------------------------------------------------
+# edelman wordpress scan
+#
+http-settings
+set timeout 60
+back
+#
+plugins
+# -----------------------------------------------------------------------------------------------------------
+# Step 1 : Configure DISCOVERY plugins
+# -----------------------------------------------------------------------------------------------------------
+discovery findBackdoor, sitemapReader, phpinfo, fingerprint_os, findDVCS, wordpress_fingerprint, phpEggs, robotsReader, fingerprint_WAF, allowedMethods, wordpress_fullpathdisclosure, detectReverseProxy, pykto, serverHeader, hmap, halberd, allowedMethods, detectTransparentProxy, wordpress_enumerate_users
+discovery config allowedMethods
+set reportDavOnly True
+set execOneTime True
+back
+discovery config hmap
+set genFpF False
+back
+discovery config serverHeader
+set execOneTime True
+back
+discovery config pykto 
+set dbFile plugins/discovery/pykto/scan_database.db
+back
+# -----------------------------------------------------------------------------------------------------------
+# Step 2 : Configure AUDIT plugins
+# -----------------------------------------------------------------------------------------------------------
+audit LDAPi,blindSqli, buffOverflow, eval, htaccessMethods, localFileInclude, mxInjection, osCommanding, globalRedirect, preg_replace, responseSplitting, sqli, xpath, xsrf, xss, xst, ssi
+audit config xss
+set numberOfChecks 5
+set checkStored True
+back
+audit config blindSqli
+set eq_limit 0.9
+back
+audit config eval
+set useTimeDelay True
+set useEcho True
+back
+# -----------------------------------------------------------------------------------------------------------
+# Step 3 : Configure GREP plugins
+# -----------------------------------------------------------------------------------------------------------
+grep error500, domXss, metaTags, dotNetEventValidation, findComments, pathDisclosure, collectCookies, errorPages, httpAuthDetect, strangeParameters, ajax, clickJacking
+grep config domXss
+set simpleGrep False
+set smartGrep True
+back
+grep config metaTags
+set search404 False
+back
+grep config findComments
+set search404 False
+back
+# -----------------------------------------------------------------------------------------------------------
+# Step 4 : Configure OUTPUT plugins
+# -----------------------------------------------------------------------------------------------------------
+output htmlFile
+output config htmlFile
+set fileName <target_site>_w3af.html
+set verbose False
+back
+back
+# -----------------------------------------------------------------------------------------------------------
+# Step 5 : Define target URL
+# -----------------------------------------------------------------------------------------------------------
+target
+set targetOS unix
+set targetFramework php
+set target http://<target_site>
+back
+# -----------------------------------------------------------------------------------------------------------
+# Step 6 : Start audit
+# -----------------------------------------------------------------------------------------------------------
+start
+exit
+# -----------------------------------------------------------------------------------------------------------

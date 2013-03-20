@@ -1,0 +1,16 @@
+# super scan with w3af
+plugins
+discovery webSpider,hmap,fingerprint_os,fingerprint_WAF,findvhost,allowedMethods,robotsReader
+audit all
+output console
+output htmlFile
+output config htmlFile
+set fileName <target_host>_w3af_scan2.html
+back
+back
+target
+set targetOS unix
+set targetFramework php
+set target http://<target_host>
+back
+start

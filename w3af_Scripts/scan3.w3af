@@ -1,0 +1,43 @@
+# -----------------------------------------------------------------------------------------------------------
+#                                              W3AF AUDIT SCRIPT FOR WEB APPLICATION
+# -----------------------------------------------------------------------------------------------------------
+http-settings
+set timeout 60
+back
+plugins
+# Step 1 : Configure DISCOVERY plugins
+discovery serverHeader, dotNetErrors
+discovery config serverHeader
+set execOneTime True
+back
+# Step 2 : Configure AUDIT plugins
+audit LDAPi,eval,frontpage,generic,globalRedirect,phishingVector,responseSplitting,sqli,xpath,xsrf,xss,xst
+audit config xss
+set numberOfChecks 15
+back
+# Step 3 : Configure GREP plugins
+grep error500, domXss, metaTags, dotNetEventValidation, findComments, pathDisclosure, collectCookies, errorPages, httpAuthDetect
+grep config domXss
+set simpleGrep False
+set smartGrep True
+back
+grep config metaTags
+set search404 False
+back
+grep config findComments
+set search404 False
+back
+# Step 4 : Configure OUTPUT plugins
+output htmlFile
+output config htmlFile
+set fileName trust.edelman.com_w3af_scan3.html
+set verbose False
+back
+back
+# Step 5 : Define target URL
+target
+set target http://trust.edelman.com
+back
+# Step 6 : Start audit
+start
+exit
