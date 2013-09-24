@@ -1,13 +1,13 @@
 <NessusClientData_v2>
 <Policy><policyName>Web App Tests - not safe - Linux - mysql</policyName>
 <policyOwner>mtju</policyOwner>
-<visibility>shared</visibility>
+<visibility>private</visibility>
 <policyComments>This is a test for Web Applications. Tests for most CGI parameters. generally slow, not safe, and experimental checks.</policyComments>
 <Preferences>
 <ServerPreferences>
 <preference>
 <name>max_simult_tcp_sessions</name>
-<value>unlimited</value>
+<value>5</value>
 </preference>
 <preference>
 <name>use_mac_addr</name>
@@ -43,7 +43,7 @@
 </preference>
 <preference>
 <name>host.max_simult_tcp_sessions</name>
-<value>unlimited</value>
+<value>5</value>
 </preference>
 <preference>
 <name>audit_trail</name>
@@ -127,7 +127,7 @@
 </preference>
 <preference>
 <name>seq</name>
-<value>3301</value>
+<value>8526</value>
 </preference>
 <preference>
 <name>silent_dependencies</name>
@@ -135,7 +135,7 @@
 </preference>
 <preference>
 <name>port_range</name>
-<value>default</value>
+<value>3306</value>
 </preference>
 <preference>
 <name>plugin_upload</name>
@@ -312,68 +312,84 @@
 <preferenceValues></preferenceValues>
 <selectedValue></selectedValue>
 </item><item>
- <pluginName>Apple Profile Manager API Settings</pluginName>
- <pluginId>60032</pluginId>
-<fullName>Apple Profile Manager API Settings[entry]:Apple Profile Manager server :</fullName>
-<preferenceName>Apple Profile Manager server :</preferenceName>
-<preferenceType>entry</preferenceType>
+ <pluginName>amap (NASL wrapper)</pluginName>
+ <pluginId>14663</pluginId>
+<fullName>amap (NASL wrapper)[file]:File containing machine readable results :</fullName>
+<preferenceName>File containing machine readable results :</preferenceName>
+<preferenceType>file</preferenceType>
 <preferenceValues></preferenceValues>
 <selectedValue></selectedValue>
 </item><item>
- <pluginName>Apple Profile Manager API Settings</pluginName>
- <pluginId>60032</pluginId>
-<fullName>Apple Profile Manager API Settings[entry]:Apple Profile Manager port :</fullName>
-<preferenceName>Apple Profile Manager port :</preferenceName>
-<preferenceType>entry</preferenceType>
-<preferenceValues>443</preferenceValues>
-<selectedValue></selectedValue>
+ <pluginName>amap (NASL wrapper)</pluginName>
+ <pluginId>14663</pluginId>
+<fullName>amap (NASL wrapper)[radio]:Mode</fullName>
+<preferenceName>Mode</preferenceName>
+<preferenceType>radio</preferenceType>
+<preferenceValues>Map applications;Just grab banners;Port scan only</preferenceValues>
+<selectedValue>Just grab banners</selectedValue>
 </item><item>
- <pluginName>Apple Profile Manager API Settings</pluginName>
- <pluginId>60032</pluginId>
-<fullName>Apple Profile Manager API Settings[entry]:Apple Profile Manager username :</fullName>
-<preferenceName>Apple Profile Manager username :</preferenceName>
-<preferenceType>entry</preferenceType>
-<preferenceValues></preferenceValues>
-<selectedValue></selectedValue>
-</item><item>
- <pluginName>Apple Profile Manager API Settings</pluginName>
- <pluginId>60032</pluginId>
-<fullName>Apple Profile Manager API Settings[password]:Apple Profile Manager password :</fullName>
-<preferenceName>Apple Profile Manager password :</preferenceName>
-<preferenceType>password</preferenceType>
-<preferenceValues></preferenceValues>
-<selectedValue></selectedValue>
-</item><item>
- <pluginName>Apple Profile Manager API Settings</pluginName>
- <pluginId>60032</pluginId>
-<fullName>Apple Profile Manager API Settings[checkbox]:SSL :</fullName>
-<preferenceName>SSL :</preferenceName>
-<preferenceType>checkbox</preferenceType>
-<preferenceValues>yes</preferenceValues>
-<selectedValue></selectedValue>
-</item><item>
- <pluginName>Apple Profile Manager API Settings</pluginName>
- <pluginId>60032</pluginId>
-<fullName>Apple Profile Manager API Settings[checkbox]:Verify SSL Certificate :</fullName>
-<preferenceName>Verify SSL Certificate :</preferenceName>
+ <pluginName>amap (NASL wrapper)</pluginName>
+ <pluginId>14663</pluginId>
+<fullName>amap (NASL wrapper)[checkbox]:Quicker</fullName>
+<preferenceName>Quicker</preferenceName>
 <preferenceType>checkbox</preferenceType>
 <preferenceValues>no</preferenceValues>
-<selectedValue></selectedValue>
+<selectedValue>yes</selectedValue>
 </item><item>
- <pluginName>Apple Profile Manager API Settings</pluginName>
- <pluginId>60032</pluginId>
-<fullName>Apple Profile Manager API Settings[checkbox]:Force Device Updates :</fullName>
-<preferenceName>Force Device Updates :</preferenceName>
+ <pluginName>amap (NASL wrapper)</pluginName>
+ <pluginId>14663</pluginId>
+<fullName>amap (NASL wrapper)[checkbox]:UDP scan (disabled in safe_checks)</fullName>
+<preferenceName>UDP scan (disabled in safe_checks)</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>no</preferenceValues>
+<selectedValue>yes</selectedValue>
+</item><item>
+ <pluginName>amap (NASL wrapper)</pluginName>
+ <pluginId>14663</pluginId>
+<fullName>amap (NASL wrapper)[checkbox]:SSL (disabled in safe_checks)</fullName>
+<preferenceName>SSL (disabled in safe_checks)</preferenceName>
 <preferenceType>checkbox</preferenceType>
 <preferenceValues>yes</preferenceValues>
+<selectedValue>yes</selectedValue>
+</item><item>
+ <pluginName>amap (NASL wrapper)</pluginName>
+ <pluginId>14663</pluginId>
+<fullName>amap (NASL wrapper)[checkbox]:RPC (disabled in safe_checks)</fullName>
+<preferenceName>RPC (disabled in safe_checks)</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>yes</preferenceValues>
+<selectedValue>yes</selectedValue>
+</item><item>
+ <pluginName>amap (NASL wrapper)</pluginName>
+ <pluginId>14663</pluginId>
+<fullName>amap (NASL wrapper)[entry]:Parallel  tasks</fullName>
+<preferenceName>Parallel  tasks</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
 <selectedValue></selectedValue>
 </item><item>
- <pluginName>Apple Profile Manager API Settings</pluginName>
- <pluginId>60032</pluginId>
-<fullName>Apple Profile Manager API Settings[entry]:Device Update Timeout (Minutes) :</fullName>
-<preferenceName>Device Update Timeout (Minutes) :</preferenceName>
+ <pluginName>amap (NASL wrapper)</pluginName>
+ <pluginId>14663</pluginId>
+<fullName>amap (NASL wrapper)[entry]:Connection retries</fullName>
+<preferenceName>Connection retries</preferenceName>
 <preferenceType>entry</preferenceType>
-<preferenceValues>5</preferenceValues>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>amap (NASL wrapper)</pluginName>
+ <pluginId>14663</pluginId>
+<fullName>amap (NASL wrapper)[entry]:Connection timeout</fullName>
+<preferenceName>Connection timeout</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>amap (NASL wrapper)</pluginName>
+ <pluginId>14663</pluginId>
+<fullName>amap (NASL wrapper)[entry]:Read timeout</fullName>
+<preferenceName>Read timeout</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
 <selectedValue></selectedValue>
 </item><item>
  <pluginName>Cleartext protocols settings</pluginName>
@@ -478,7 +494,7 @@
 <preferenceName>Scan Network Printers</preferenceName>
 <preferenceType>checkbox</preferenceType>
 <preferenceValues>no</preferenceValues>
-<selectedValue>yes</selectedValue>
+<selectedValue>no</selectedValue>
 </item><item>
  <pluginName>Do not scan fragile devices</pluginName>
  <pluginId>22481</pluginId>
@@ -486,7 +502,7 @@
 <preferenceName>Scan Novell Netware hosts</preferenceName>
 <preferenceType>checkbox</preferenceType>
 <preferenceValues>no</preferenceValues>
-<selectedValue>yes</selectedValue>
+<selectedValue>no</selectedValue>
 </item><item>
  <pluginName>Service Detection</pluginName>
  <pluginId>22964</pluginId>
@@ -494,7 +510,7 @@
 <preferenceName>Test SSL based services</preferenceName>
 <preferenceType>radio</preferenceType>
 <preferenceValues>Known SSL ports;All;None</preferenceValues>
-<selectedValue>All</selectedValue>
+<selectedValue>Known SSL ports</selectedValue>
 </item><item>
  <pluginName>Global variable settings</pluginName>
  <pluginId>12288</pluginId>
@@ -542,7 +558,7 @@
 <preferenceName>Thorough tests (slow)</preferenceName>
 <preferenceType>checkbox</preferenceType>
 <preferenceValues>no</preferenceValues>
-<selectedValue>yes</selectedValue>
+<selectedValue>no</selectedValue>
 </item><item>
  <pluginName>Global variable settings</pluginName>
  <pluginId>12288</pluginId>
@@ -712,6 +728,142 @@
 <preferenceValues>no</preferenceValues>
 <selectedValue>no</selectedValue>
 </item><item>
+ <pluginName>Hydra: HTTP</pluginName>
+ <pluginId>15873</pluginId>
+<fullName>Hydra: HTTP[entry]:Web page :</fullName>
+<preferenceName>Web page :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Hydra: Cisco enable</pluginName>
+ <pluginId>15870</pluginId>
+<fullName>Hydra: Cisco enable[entry]:Logon password :</fullName>
+<preferenceName>Logon password :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Hydra: LDAP</pluginName>
+ <pluginId>15877</pluginId>
+<fullName>Hydra: LDAP[entry]:DN :</fullName>
+<preferenceName>DN :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Hydra (NASL wrappers options)</pluginName>
+ <pluginId>15868</pluginId>
+<fullName>Hydra (NASL wrappers options)[checkbox]:Always enable Hydra (slow)</fullName>
+<preferenceName>Always enable Hydra (slow)</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>no</preferenceValues>
+<selectedValue>no</selectedValue>
+</item><item>
+ <pluginName>Hydra (NASL wrappers options)</pluginName>
+ <pluginId>15868</pluginId>
+<fullName>Hydra (NASL wrappers options)[file]:Logins file :</fullName>
+<preferenceName>Logins file :</preferenceName>
+<preferenceType>file</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Hydra (NASL wrappers options)</pluginName>
+ <pluginId>15868</pluginId>
+<fullName>Hydra (NASL wrappers options)[file]:Passwords file :</fullName>
+<preferenceName>Passwords file :</preferenceName>
+<preferenceType>file</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Hydra (NASL wrappers options)</pluginName>
+ <pluginId>15868</pluginId>
+<fullName>Hydra (NASL wrappers options)[entry]:Number of parallel tasks :</fullName>
+<preferenceName>Number of parallel tasks :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues>16</preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Hydra (NASL wrappers options)</pluginName>
+ <pluginId>15868</pluginId>
+<fullName>Hydra (NASL wrappers options)[entry]:Timeout (in seconds) :</fullName>
+<preferenceName>Timeout (in seconds) :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues>30</preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Hydra (NASL wrappers options)</pluginName>
+ <pluginId>15868</pluginId>
+<fullName>Hydra (NASL wrappers options)[checkbox]:Try empty passwords</fullName>
+<preferenceName>Try empty passwords</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>yes</preferenceValues>
+<selectedValue>no</selectedValue>
+</item><item>
+ <pluginName>Hydra (NASL wrappers options)</pluginName>
+ <pluginId>15868</pluginId>
+<fullName>Hydra (NASL wrappers options)[checkbox]:Try login as password</fullName>
+<preferenceName>Try login as password</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>yes</preferenceValues>
+<selectedValue>no</selectedValue>
+</item><item>
+ <pluginName>Hydra (NASL wrappers options)</pluginName>
+ <pluginId>15868</pluginId>
+<fullName>Hydra (NASL wrappers options)[checkbox]:Exit as soon as an account is found</fullName>
+<preferenceName>Exit as soon as an account is found</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>no</preferenceValues>
+<selectedValue>no</selectedValue>
+</item><item>
+ <pluginName>Hydra (NASL wrappers options)</pluginName>
+ <pluginId>15868</pluginId>
+<fullName>Hydra (NASL wrappers options)[checkbox]:Add accounts found by other plugins to login file</fullName>
+<preferenceName>Add accounts found by other plugins to login file</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>yes</preferenceValues>
+<selectedValue>no</selectedValue>
+</item><item>
+ <pluginName>Hydra: PostgreSQL</pluginName>
+ <pluginId>18660</pluginId>
+<fullName>Hydra: PostgreSQL[entry]:Database name (optional) :</fullName>
+<preferenceName>Database name (optional) :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Hydra: HTTP proxy</pluginName>
+ <pluginId>15874</pluginId>
+<fullName>Hydra: HTTP proxy[entry]:Web site (optional) :</fullName>
+<preferenceName>Web site (optional) :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Hydra: SMB</pluginName>
+ <pluginId>15884</pluginId>
+<fullName>Hydra: SMB[radio]:Check local / domain accounts</fullName>
+<preferenceName>Check local / domain accounts</preferenceName>
+<preferenceType>radio</preferenceType>
+<preferenceValues>Local accounts; Domain Accounts; Either</preferenceValues>
+<selectedValue>Local accounts</selectedValue>
+</item><item>
+ <pluginName>Hydra: SMB</pluginName>
+ <pluginId>15884</pluginId>
+<fullName>Hydra: SMB[checkbox]:Interpret passwords as NTLM hashes</fullName>
+<preferenceName>Interpret passwords as NTLM hashes</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>no</preferenceValues>
+<selectedValue>no</selectedValue>
+</item><item>
+ <pluginName>Hydra: SAP R3</pluginName>
+ <pluginId>15883</pluginId>
+<fullName>Hydra: SAP R3[entry]:Client ID (between 0 and 99) :</fullName>
+<preferenceName>Client ID (between 0 and 99) :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
  <pluginName>Patch Management: IBM Tivoli Endpoint Manager Server Settings</pluginName>
  <pluginId>62558</pluginId>
 <fullName>Patch Management: IBM Tivoli Endpoint Manager Server Settings[entry]:Web Reports Server :</fullName>
@@ -750,7 +902,7 @@
 <preferenceName>SSL :</preferenceName>
 <preferenceType>checkbox</preferenceType>
 <preferenceValues>no</preferenceValues>
-<selectedValue></selectedValue>
+<selectedValue>no</selectedValue>
 </item><item>
  <pluginName>IBM iSeries Credentials</pluginName>
  <pluginId>57861</pluginId>
@@ -1048,14 +1200,6 @@
 <preferenceValues>no</preferenceValues>
 <selectedValue>no</selectedValue>
 </item><item>
- <pluginName>Nessus TCP scanner</pluginName>
- <pluginId>10335</pluginId>
-<fullName>Nessus TCP scanner[radio]:Firewall detection :</fullName>
-<preferenceName>Firewall detection :</preferenceName>
-<preferenceType>radio</preferenceType>
-<preferenceValues>Automatic (normal);Disabled (softer);Do not detect RST rate limitation (soft);Ignore closed ports (aggressive)</preferenceValues>
-<selectedValue>Disabled (softer)</selectedValue>
-</item><item>
  <pluginName>Nessus SYN scanner</pluginName>
  <pluginId>11219</pluginId>
 <fullName>Nessus SYN scanner[radio]:Firewall detection :</fullName>
@@ -1063,6 +1207,14 @@
 <preferenceType>radio</preferenceType>
 <preferenceValues>Automatic (normal);Disabled (softer);Do not detect RST rate limitation (soft);Ignore closed ports (aggressive)</preferenceValues>
 <selectedValue>Automatic (normal)</selectedValue>
+</item><item>
+ <pluginName>Nessus TCP scanner</pluginName>
+ <pluginId>10335</pluginId>
+<fullName>Nessus TCP scanner[radio]:Firewall detection :</fullName>
+<preferenceName>Firewall detection :</preferenceName>
+<preferenceType>radio</preferenceType>
+<preferenceValues>Automatic (normal);Disabled (softer);Do not detect RST rate limitation (soft);Ignore closed ports (aggressive)</preferenceValues>
+<selectedValue>Disabled (softer)</selectedValue>
 </item><item>
  <pluginName>News Server (NNTP) Information Disclosure</pluginName>
  <pluginId>11033</pluginId>
@@ -1150,7 +1302,7 @@
 <preferenceName>Do an ICMP ping</preferenceName>
 <preferenceType>checkbox</preferenceType>
 <preferenceValues>yes</preferenceValues>
-<selectedValue>yes</selectedValue>
+<selectedValue>no</selectedValue>
 </item><item>
  <pluginName>Ping the remote host</pluginName>
  <pluginId>10180</pluginId>
@@ -1190,7 +1342,7 @@
 <preferenceName>Test the local Nessus host</preferenceName>
 <preferenceType>checkbox</preferenceType>
 <preferenceValues>yes</preferenceValues>
-<selectedValue>yes</selectedValue>
+<selectedValue>no</selectedValue>
 </item><item>
  <pluginName>Ping the remote host</pluginName>
  <pluginId>10180</pluginId>
@@ -1584,6 +1736,86 @@
 <preferenceValues>OpenSSH_5.0</preferenceValues>
 <selectedValue>OpenSSH_5.0</selectedValue>
 </item><item>
+ <pluginName>SSH settings</pluginName>
+ <pluginId>14273</pluginId>
+<fullName>SSH settings[entry]:Additional SSH user name (1) :</fullName>
+<preferenceName>Additional SSH user name (1) :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>SSH settings</pluginName>
+ <pluginId>14273</pluginId>
+<fullName>SSH settings[password]:Additional SSH password (1) :</fullName>
+<preferenceName>Additional SSH password (1) :</preferenceName>
+<preferenceType>password</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>SSH settings</pluginName>
+ <pluginId>14273</pluginId>
+<fullName>SSH settings[entry]:Additional SSH user name (2) :</fullName>
+<preferenceName>Additional SSH user name (2) :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>SSH settings</pluginName>
+ <pluginId>14273</pluginId>
+<fullName>SSH settings[password]:Additional SSH password (2) :</fullName>
+<preferenceName>Additional SSH password (2) :</preferenceName>
+<preferenceType>password</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>SSH settings</pluginName>
+ <pluginId>14273</pluginId>
+<fullName>SSH settings[entry]:Additional SSH user name (3) :</fullName>
+<preferenceName>Additional SSH user name (3) :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>SSH settings</pluginName>
+ <pluginId>14273</pluginId>
+<fullName>SSH settings[password]:Additional SSH password (3) :</fullName>
+<preferenceName>Additional SSH password (3) :</preferenceName>
+<preferenceType>password</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>SSH settings</pluginName>
+ <pluginId>14273</pluginId>
+<fullName>SSH settings[entry]:Additional SSH user name (4) :</fullName>
+<preferenceName>Additional SSH user name (4) :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>SSH settings</pluginName>
+ <pluginId>14273</pluginId>
+<fullName>SSH settings[password]:Additional SSH password (4) :</fullName>
+<preferenceName>Additional SSH password (4) :</preferenceName>
+<preferenceType>password</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>SSH settings</pluginName>
+ <pluginId>14273</pluginId>
+<fullName>SSH settings[entry]:Additional SSH user name (5) :</fullName>
+<preferenceName>Additional SSH user name (5) :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>SSH settings</pluginName>
+ <pluginId>14273</pluginId>
+<fullName>SSH settings[password]:Additional SSH password (5) :</fullName>
+<preferenceName>Additional SSH password (5) :</preferenceName>
+<preferenceType>password</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
  <pluginName>SMB Registry : Start the Registry Service during the scan</pluginName>
  <pluginId>35703</pluginId>
 <fullName>SMB Registry : Start the Registry Service during the scan[checkbox]:Start the registry service during the scan</fullName>
@@ -1610,8 +1842,8 @@
 </item><item>
  <pluginName>VMware SOAP API Settings</pluginName>
  <pluginId>57395</pluginId>
-<fullName>VMware SOAP API Settings[password]:VMware password (unsafe!) :</fullName>
-<preferenceName>VMware password (unsafe!) :</preferenceName>
+<fullName>VMware SOAP API Settings[password]:VMware password :</fullName>
+<preferenceName>VMware password :</preferenceName>
 <preferenceType>password</preferenceType>
 <preferenceValues></preferenceValues>
 <selectedValue></selectedValue>
@@ -1622,7 +1854,7 @@
 <preferenceName>Ignore SSL Certificate :</preferenceName>
 <preferenceType>checkbox</preferenceType>
 <preferenceValues>no</preferenceValues>
-<selectedValue></selectedValue>
+<selectedValue>no</selectedValue>
 </item><item>
  <pluginName>Web Application Tests Settings</pluginName>
  <pluginId>39471</pluginId>
@@ -1654,7 +1886,7 @@
 <preferenceName>Combinations of arguments values</preferenceName>
 <preferenceType>radio</preferenceType>
 <preferenceValues>one value;some pairs;all pairs (slower but efficient);some combinations;all combinations (extremely slow)</preferenceValues>
-<selectedValue>all pairs (slower but efficient)</selectedValue>
+<selectedValue>some combinations</selectedValue>
 </item><item>
  <pluginName>Web Application Tests Settings</pluginName>
  <pluginId>39471</pluginId>
@@ -1670,7 +1902,7 @@
 <preferenceName>Stop at first flaw</preferenceName>
 <preferenceType>radio</preferenceType>
 <preferenceValues>per CGI;per port (quicker);per parameter (slow);look for all flaws (slower)</preferenceValues>
-<selectedValue>look for all flaws (slower)</selectedValue>
+<selectedValue>per CGI</selectedValue>
 </item><item>
  <pluginName>Web Application Tests Settings</pluginName>
  <pluginId>39471</pluginId>
@@ -1782,7 +2014,7 @@
 <preferenceName>SSL :</preferenceName>
 <preferenceType>checkbox</preferenceType>
 <preferenceValues>no</preferenceValues>
-<selectedValue></selectedValue>
+<selectedValue>no</selectedValue>
 </item></PluginsPreferences>
 </Preferences>
 <FamilySelection>
@@ -1816,6 +2048,10 @@
 </FamilyItem>
 <FamilyItem>
 <FamilyName>Service detection</FamilyName>
+<Status>mixed</Status>
+</FamilyItem>
+<FamilyItem>
+<FamilyName>Brute force attacks</FamilyName>
 <Status>mixed</Status>
 </FamilyItem>
 <FamilyItem>
@@ -1928,10 +2164,6 @@
 </FamilyItem>
 <FamilyItem>
 <FamilyName>Junos Local Security Checks</FamilyName>
-<Status>disabled</Status>
-</FamilyItem>
-<FamilyItem>
-<FamilyName>Mobile Devices</FamilyName>
 <Status>disabled</Status>
 </FamilyItem>
 <FamilyItem>
@@ -2788,6 +3020,10 @@
 <PluginName>op5 Monitor Persistent Session Cookie</PluginName>
 <Family>CGI abuses</Family>
 <Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>15873</PluginId>
+<PluginName>Hydra: HTTP</PluginName>
+<Family>Brute force attacks</Family>
+<Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>33279</PluginId>
 <PluginName>CGIWrap Charset Specification Weakness Error Message XSS</PluginName>
 <Family>CGI abuses : XSS</Family>
@@ -2937,7 +3173,7 @@
 <Family>Web Servers</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>31730</PluginId>
-<PluginName>CUPS &lt; 1.3.7 Multiple Vulnerabilities (Overflow, Info Disc)</PluginName>
+<PluginName>CUPS &lt; 1.3.7 Multiple Vulnerabilities</PluginName>
 <Family>Misc.</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>18400</PluginId>
@@ -3461,7 +3697,7 @@
 <Family>Misc.</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>16093</PluginId>
-<PluginName>MySQL Eventum Multiple Script XSS</PluginName>
+<PluginName>MySQL Eventum index.php email Parameter XSS</PluginName>
 <Family>CGI abuses : XSS</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>19227</PluginId>
@@ -4389,7 +4625,7 @@
 <Family>CGI abuses</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>34460</PluginId>
-<PluginName>Obsolete Web Server Detection</PluginName>
+<PluginName>Unsupported Web Server Detection</PluginName>
 <Family>Web Servers</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>51987</PluginId>
@@ -4666,10 +4902,6 @@
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>25243</PluginId>
 <PluginName>YaNC yanc.html.php listid Parameter SQL Injection</PluginName>
-<Family>CGI abuses</Family>
-<Status>enabled</Status>
-</PluginItem><PluginItem><PluginId>55512</PluginId>
-<PluginName>Adobe ColdFusion Remote Development Services</PluginName>
 <Family>CGI abuses</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>18539</PluginId>
@@ -5034,7 +5266,7 @@
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>11737</PluginId>
 <PluginName>NETGEAR Router Default Password (password) for &apos;admin&apos; Account</PluginName>
-<Family>Misc.</Family>
+<Family>CGI abuses</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>20129</PluginId>
 <PluginName>e107 Detection</PluginName>
@@ -5856,6 +6088,10 @@
 <PluginName>Samba &lt; 2.2.8 Multiple Vulnerabilities</PluginName>
 <Family>Gain a shell remotely</Family>
 <Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>18661</PluginId>
+<PluginName>Hydra: MySQL</PluginName>
+<Family>Brute force attacks</Family>
+<Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>10820</PluginId>
 <PluginName>F5 Device Default Support Password</PluginName>
 <Family>Misc.</Family>
@@ -5874,10 +6110,6 @@
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>12038</PluginId>
 <PluginName>Photopost PHP Pro photo Parameter SQL Injection</PluginName>
-<Family>CGI abuses</Family>
-<Status>enabled</Status>
-</PluginItem><PluginItem><PluginId>59715</PluginId>
-<PluginName>Adobe ColdFusion HTTP Response Splitting (APSB12-15)</PluginName>
 <Family>CGI abuses</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>26072</PluginId>
@@ -6548,12 +6780,12 @@
 <PluginName>SquirrelMail &lt; 1.4.6 Multiple Vulnerabilities</PluginName>
 <Family>CGI abuses</Family>
 <Status>enabled</Status>
-</PluginItem><PluginItem><PluginId>38152</PluginId>
-<PluginName>Linksys WVC54GCA Wireless-G &apos;/img/main.cgi&apos; Information Disclosure</PluginName>
-<Family>CGI abuses</Family>
-<Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>22267</PluginId>
 <PluginName>phpCOIN Multiple Script _CCFG Parameter Remote File Inclusion</PluginName>
+<Family>CGI abuses</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>38152</PluginId>
+<PluginName>Linksys WVC54GCA Wireless-G &apos;/img/main.cgi&apos; Information Disclosure</PluginName>
 <Family>CGI abuses</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>47028</PluginId>
@@ -7200,6 +7432,10 @@
 <PluginName>Plone Detection</PluginName>
 <Family>CGI abuses</Family>
 <Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>18660</PluginId>
+<PluginName>Hydra: PostgreSQL</PluginName>
+<Family>Brute force attacks</Family>
+<Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>11601</PluginId>
 <PluginName>MailMaxWeb Cookie Application Path Disclosure</PluginName>
 <Family>CGI abuses</Family>
@@ -7328,10 +7564,6 @@
 <PluginName>Imail IMAP Server Login Functions Remote Overflow</PluginName>
 <Family>Gain a shell remotely</Family>
 <Status>enabled</Status>
-</PluginItem><PluginItem><PluginId>40667</PluginId>
-<PluginName>Adobe ColdFusion On Apache Double Encoded NULL Byte Request File Content Disclosure</PluginName>
-<Family>CGI abuses</Family>
-<Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>18257</PluginId>
 <PluginName>BakBone NetVault &lt; 7.1.2 / 7.3.1 Multiple Remote Overflows</PluginName>
 <Family>Gain a shell remotely</Family>
@@ -7423,6 +7655,10 @@
 </PluginItem><PluginItem><PluginId>33577</PluginId>
 <PluginName>CUPS &lt; 1.3.8 PNG File Handling Multiple Overflows</PluginName>
 <Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>15874</PluginId>
+<PluginName>Hydra: HTTP proxy</PluginName>
+<Family>Brute force attacks</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>11264</PluginId>
 <PluginName>Default Password (wh00t!) for &apos;root&apos; Account</PluginName>
@@ -9292,10 +9528,6 @@
 <PluginName>PHP 5.x &lt; 5.1.0 Multiple Vulnerabilities</PluginName>
 <Family>CGI abuses</Family>
 <Status>enabled</Status>
-</PluginItem><PluginItem><PluginId>39790</PluginId>
-<PluginName>Adobe ColdFusion FCKeditor &apos;CurrentFolder&apos; File Upload</PluginName>
-<Family>CGI abuses</Family>
-<Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>17813</PluginId>
 <PluginName>MySQL &lt; 5.0.51a / 5.1.23 / 6.0.4 Denial of Service</PluginName>
 <Family>Databases</Family>
@@ -9448,10 +9680,6 @@
 <PluginName>OpenSSL 1.0.1 &lt; 1.0.1c TLS/DTLS CBC Denial of Service</PluginName>
 <Family>Web Servers</Family>
 <Status>enabled</Status>
-</PluginItem><PluginItem><PluginId>55513</PluginId>
-<PluginName>Adobe ColdFusion Remote Development Services Enabled Without Authentication</PluginName>
-<Family>CGI abuses</Family>
-<Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>16059</PluginId>
 <PluginName>ZeroBoard &lt; 4.1pl5 Multiple Remote Vulnerabilities</PluginName>
 <Family>CGI abuses</Family>
@@ -9498,10 +9726,6 @@
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>15924</PluginId>
 <PluginName>Blog Torrent &lt; 0.81 btdownload.php Multiple Vulnerabilities</PluginName>
-<Family>CGI abuses</Family>
-<Status>enabled</Status>
-</PluginItem><PluginItem><PluginId>42339</PluginId>
-<PluginName>Adobe ColdFusion Detection</PluginName>
 <Family>CGI abuses</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>47151</PluginId>
@@ -10264,13 +10488,13 @@
 <PluginName>Squirrelcart index.php Multiple Parameter SQL Injection</PluginName>
 <Family>CGI abuses</Family>
 <Status>enabled</Status>
-</PluginItem><PluginItem><PluginId>25950</PluginId>
-<PluginName>RealNetworks Helix DNA Server RTSP Service Crafted Require Header Remote Overflow</PluginName>
-<Family>Gain a shell remotely</Family>
-<Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>21238</PluginId>
 <PluginName>phpWebFTP index.php language Parameter Local File Inclusion</PluginName>
 <Family>CGI abuses</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>25950</PluginId>
+<PluginName>RealNetworks Helix DNA Server RTSP Service Crafted Require Header Remote Overflow</PluginName>
+<Family>Gain a shell remotely</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>20176</PluginId>
 <PluginName>MailWatch authenticate() Function SQL Injection</PluginName>
@@ -11205,7 +11429,7 @@
 <Family>CGI abuses</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>11652</PluginId>
-<PluginName>Mantis Detection</PluginName>
+<PluginName>MantisBT Detection</PluginName>
 <Family>CGI abuses</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>11502</PluginId>
@@ -13145,7 +13369,7 @@
 <Family>CGI abuses</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>46738</PluginId>
-<PluginName>Dell OpenManage &apos;HelpViewer&apos; Redirect</PluginName>
+<PluginName>Dell OpenManage Server Administrator &apos;HelpViewer&apos; Redirect</PluginName>
 <Family>CGI abuses</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>18494</PluginId>
@@ -13984,13 +14208,13 @@
 <PluginName>Bugzilla Multiple Remote Command Execution</PluginName>
 <Family>CGI abuses</Family>
 <Status>enabled</Status>
-</PluginItem><PluginItem><PluginId>57917</PluginId>
-<PluginName>Default Password (nasadmin) for &apos;nasadmin&apos; Account</PluginName>
-<Family>Default Unix Accounts</Family>
-<Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>17821</PluginId>
 <PluginName>MySQL 3.20.32 - 3.23.52 Weak Default Configuration</PluginName>
 <Family>Databases</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>57917</PluginId>
+<PluginName>Default Password (nasadmin) for &apos;nasadmin&apos; Account</PluginName>
+<Family>Default Unix Accounts</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>45414</PluginId>
 <PluginName>VMware ESX WebAccess Context Data XSS (VMSA-2010-0005)</PluginName>
@@ -14797,7 +15021,7 @@
 <Family>CGI abuses</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>11893</PluginId>
-<PluginName>Cfengine cfservd ReceiveTransaction Function Remote Overflow</PluginName>
+<PluginName>Cfengine cfservd ReceiveTransaction Function Remote Overflow (intrusive check)</PluginName>
 <Family>Gain a shell remotely</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>56242</PluginId>
@@ -15232,6 +15456,10 @@
 <PluginName>Samba &lt; 3.0.24 Multiple Flaws</PluginName>
 <Family>Misc.</Family>
 <Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>15888</PluginId>
+<PluginName>Hydra: SSH2</PluginName>
+<Family>Brute force attacks</Family>
+<Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>35281</PluginId>
 <PluginName>IceWarp Merak Mail Server &lt; 9.4.0 IMG Tag XSS</PluginName>
 <Family>CGI abuses : XSS</Family>
@@ -15540,13 +15768,13 @@
 <PluginName>Liferay Portal 6.1.0 Forward Target Handling Security Bypass</PluginName>
 <Family>CGI abuses</Family>
 <Status>enabled</Status>
-</PluginItem><PluginItem><PluginId>55446</PluginId>
-<PluginName>ManageEngine ServiceDesk Plus FileDownload.jsp FILENAME Parameter Traversal Arbitrary File Access</PluginName>
-<Family>CGI abuses</Family>
-<Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>56379</PluginId>
 <PluginName>phpMyAdmin 3.4.x &lt; 3.4.5 Cross-site Scripting (PMASA-2011-14)</PluginName>
 <Family>CGI abuses : XSS</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>55446</PluginId>
+<PluginName>ManageEngine ServiceDesk Plus FileDownload.jsp FILENAME Parameter Traversal Arbitrary File Access</PluginName>
+<Family>CGI abuses</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>15393</PluginId>
 <PluginName>Horde IMP HTML MIME Viewer Multiple XSS</PluginName>
@@ -16096,10 +16324,6 @@
 <PluginName>OpenSSL 1.0.0 &lt; 1.0.0j DTLS CBC Denial of Service</PluginName>
 <Family>Web Servers</Family>
 <Status>enabled</Status>
-</PluginItem><PluginItem><PluginId>53297</PluginId>
-<PluginName>Adobe ColdFusion Admin Requires No Authentication</PluginName>
-<Family>CGI abuses</Family>
-<Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>23641</PluginId>
 <PluginName>MODx CMS base_path Parameter Remote File Inclusion</PluginName>
 <Family>CGI abuses</Family>
@@ -16461,7 +16685,7 @@
 <Family>Gain a shell remotely</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>19396</PluginId>
-<PluginName>FlatNuke &lt; 2.5.6 Multiple Remote Vulnerabilities (XSS, Disc, Command Exe)</PluginName>
+<PluginName>FlatNuke &lt; 2.5.6 Multiple Remote Vulnerabilities</PluginName>
 <Family>CGI abuses</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>10778</PluginId>
@@ -17372,13 +17596,13 @@
 <PluginName>ManageEngine ADManager Plus &apos;computerName&apos; Parameter XSS</PluginName>
 <Family>CGI abuses : XSS</Family>
 <Status>enabled</Status>
-</PluginItem><PluginItem><PluginId>56299</PluginId>
-<PluginName>Linux /proc/cpuinfo</PluginName>
-<Family>Misc.</Family>
-<Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>21631</PluginId>
 <PluginName>LifeType index.php articleId Parameter SQL Injection</PluginName>
 <Family>CGI abuses</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>56299</PluginId>
+<PluginName>Linux /proc/cpuinfo</PluginName>
+<Family>Misc.</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>25971</PluginId>
 <PluginName>PHP &lt; 5.2.4 Multiple Vulnerabilities</PluginName>
@@ -17509,7 +17733,7 @@
 <Family>CGI abuses</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>61612</PluginId>
-<PluginName>HP SAN/iQ &lt;= 9.5 Root Shell Command Injection</PluginName>
+<PluginName>HP SAN/iQ &lt;= 10.0 Root Shell Command Injection</PluginName>
 <Family>Gain a shell remotely</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>42479</PluginId>
@@ -17571,6 +17795,10 @@
 </PluginItem><PluginItem><PluginId>18250</PluginId>
 <PluginName>Woltlab Burning Board Detection</PluginName>
 <Family>CGI abuses</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>15868</PluginId>
+<PluginName>Hydra (NASL wrappers options)</PluginName>
+<Family>Brute force attacks</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>11743</PluginId>
 <PluginName>PostNuke &lt; 0.7.2.3 Multiple Script XSS</PluginName>
@@ -18009,7 +18237,7 @@
 <Family>Misc.</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>14317</PluginId>
-<PluginName>Cfengine cfservd ReceiveTransaction Function Remote Overflow</PluginName>
+<PluginName>Cfengine cfservd ReceiveTransaction Function Remote Overflow (version check)</PluginName>
 <Family>Gain a shell remotely</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>35726</PluginId>
@@ -18256,13 +18484,13 @@
 <PluginName>Comersus BackOffice comersus_backoffice_menu.asp Multiple Parameter SQL Injection</PluginName>
 <Family>CGI abuses</Family>
 <Status>enabled</Status>
-</PluginItem><PluginItem><PluginId>50526</PluginId>
-<PluginName>Apache Tomcat 3.x &lt; 3.3.2 Multiple Vulnerabilities</PluginName>
-<Family>Web Servers</Family>
-<Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>25702</PluginId>
 <PluginName>McAfee Common Management Agent 3.6.0.546 Multiple Vulnerabilities</PluginName>
 <Family>CGI abuses</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>50526</PluginId>
+<PluginName>Apache Tomcat 3.x &lt; 3.3.2 Multiple Vulnerabilities</PluginName>
+<Family>Web Servers</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>49658</PluginId>
 <PluginName>Syncrify Detection</PluginName>

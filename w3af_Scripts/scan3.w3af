@@ -11,9 +11,16 @@ discovery config serverHeader
 set execOneTime True
 back
 # Step 2 : Configure AUDIT plugins
-audit LDAPi,eval,frontpage,generic,globalRedirect,phishingVector,responseSplitting,sqli,xpath,xsrf,xss,xst
+audit LDAPi,blindSQLi,buffOverflow,eval,htaccesMethods,localFileInclude,mxInjection,osCommanding,globalRedirect,responseSplitting,sqli,xpath,xsrf,xss,xst
 audit config xss
-set numberOfChecks 15
+set numberOfChecks 5
+back
+set config blindSQLi
+set eq_limit 0.9
+back
+set config eval
+set useTimeDelay True
+set useEcho True
 back
 # Step 3 : Configure GREP plugins
 grep error500, domXss, metaTags, dotNetEventValidation, findComments, pathDisclosure, collectCookies, errorPages, httpAuthDetect
@@ -30,13 +37,13 @@ back
 # Step 4 : Configure OUTPUT plugins
 output htmlFile
 output config htmlFile
-set fileName trust.edelman.com_w3af_scan3.html
+set fileName citizenship2012.edelman.com_w3af_scan3.html
 set verbose False
 back
 back
 # Step 5 : Define target URL
 target
-set target http://trust.edelman.com
+set target http://citizenship2012.edelman.com
 back
 # Step 6 : Start audit
 start

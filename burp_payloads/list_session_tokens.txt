@@ -1,0 +1,6 @@
+Jsessionid
+Aspsessionid
+Asp.net_SessionId
+Cfid
+cftoken
+Phpsessid

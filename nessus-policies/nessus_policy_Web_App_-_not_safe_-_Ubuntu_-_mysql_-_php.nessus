@@ -1,7 +1,7 @@
 <NessusClientData_v2>
 <Policy><policyName>Web App - not safe - Ubuntu - mysql - php</policyName>
 <policyOwner>mtju</policyOwner>
-<visibility>shared</visibility>
+<visibility>private</visibility>
 <policyComments>This is a test for Web Applications. Tests for most CGI parameters. generally slow, not safe, and experimental checks.</policyComments>
 <Preferences>
 <ServerPreferences>
@@ -127,7 +127,7 @@
 </preference>
 <preference>
 <name>seq</name>
-<value>9012</value>
+<value>8837</value>
 </preference>
 <preference>
 <name>silent_dependencies</name>
@@ -135,7 +135,7 @@
 </preference>
 <preference>
 <name>port_range</name>
-<value>default</value>
+<value>22,80,443,3306</value>
 </preference>
 <preference>
 <name>plugin_upload</name>
@@ -312,68 +312,84 @@
 <preferenceValues></preferenceValues>
 <selectedValue></selectedValue>
 </item><item>
- <pluginName>Apple Profile Manager API Settings</pluginName>
- <pluginId>60032</pluginId>
-<fullName>Apple Profile Manager API Settings[entry]:Apple Profile Manager server :</fullName>
-<preferenceName>Apple Profile Manager server :</preferenceName>
-<preferenceType>entry</preferenceType>
+ <pluginName>amap (NASL wrapper)</pluginName>
+ <pluginId>14663</pluginId>
+<fullName>amap (NASL wrapper)[file]:File containing machine readable results :</fullName>
+<preferenceName>File containing machine readable results :</preferenceName>
+<preferenceType>file</preferenceType>
 <preferenceValues></preferenceValues>
 <selectedValue></selectedValue>
 </item><item>
- <pluginName>Apple Profile Manager API Settings</pluginName>
- <pluginId>60032</pluginId>
-<fullName>Apple Profile Manager API Settings[entry]:Apple Profile Manager port :</fullName>
-<preferenceName>Apple Profile Manager port :</preferenceName>
-<preferenceType>entry</preferenceType>
-<preferenceValues>443</preferenceValues>
+ <pluginName>amap (NASL wrapper)</pluginName>
+ <pluginId>14663</pluginId>
+<fullName>amap (NASL wrapper)[radio]:Mode</fullName>
+<preferenceName>Mode</preferenceName>
+<preferenceType>radio</preferenceType>
+<preferenceValues>Map applications;Just grab banners;Port scan only</preferenceValues>
 <selectedValue></selectedValue>
 </item><item>
- <pluginName>Apple Profile Manager API Settings</pluginName>
- <pluginId>60032</pluginId>
-<fullName>Apple Profile Manager API Settings[entry]:Apple Profile Manager username :</fullName>
-<preferenceName>Apple Profile Manager username :</preferenceName>
-<preferenceType>entry</preferenceType>
-<preferenceValues></preferenceValues>
-<selectedValue></selectedValue>
-</item><item>
- <pluginName>Apple Profile Manager API Settings</pluginName>
- <pluginId>60032</pluginId>
-<fullName>Apple Profile Manager API Settings[password]:Apple Profile Manager password :</fullName>
-<preferenceName>Apple Profile Manager password :</preferenceName>
-<preferenceType>password</preferenceType>
-<preferenceValues></preferenceValues>
-<selectedValue></selectedValue>
-</item><item>
- <pluginName>Apple Profile Manager API Settings</pluginName>
- <pluginId>60032</pluginId>
-<fullName>Apple Profile Manager API Settings[checkbox]:SSL :</fullName>
-<preferenceName>SSL :</preferenceName>
-<preferenceType>checkbox</preferenceType>
-<preferenceValues>yes</preferenceValues>
-<selectedValue></selectedValue>
-</item><item>
- <pluginName>Apple Profile Manager API Settings</pluginName>
- <pluginId>60032</pluginId>
-<fullName>Apple Profile Manager API Settings[checkbox]:Verify SSL Certificate :</fullName>
-<preferenceName>Verify SSL Certificate :</preferenceName>
+ <pluginName>amap (NASL wrapper)</pluginName>
+ <pluginId>14663</pluginId>
+<fullName>amap (NASL wrapper)[checkbox]:Quicker</fullName>
+<preferenceName>Quicker</preferenceName>
 <preferenceType>checkbox</preferenceType>
 <preferenceValues>no</preferenceValues>
 <selectedValue></selectedValue>
 </item><item>
- <pluginName>Apple Profile Manager API Settings</pluginName>
- <pluginId>60032</pluginId>
-<fullName>Apple Profile Manager API Settings[checkbox]:Force Device Updates :</fullName>
-<preferenceName>Force Device Updates :</preferenceName>
+ <pluginName>amap (NASL wrapper)</pluginName>
+ <pluginId>14663</pluginId>
+<fullName>amap (NASL wrapper)[checkbox]:UDP scan (disabled in safe_checks)</fullName>
+<preferenceName>UDP scan (disabled in safe_checks)</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>no</preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>amap (NASL wrapper)</pluginName>
+ <pluginId>14663</pluginId>
+<fullName>amap (NASL wrapper)[checkbox]:SSL (disabled in safe_checks)</fullName>
+<preferenceName>SSL (disabled in safe_checks)</preferenceName>
 <preferenceType>checkbox</preferenceType>
 <preferenceValues>yes</preferenceValues>
 <selectedValue></selectedValue>
 </item><item>
- <pluginName>Apple Profile Manager API Settings</pluginName>
- <pluginId>60032</pluginId>
-<fullName>Apple Profile Manager API Settings[entry]:Device Update Timeout (Minutes) :</fullName>
-<preferenceName>Device Update Timeout (Minutes) :</preferenceName>
+ <pluginName>amap (NASL wrapper)</pluginName>
+ <pluginId>14663</pluginId>
+<fullName>amap (NASL wrapper)[checkbox]:RPC (disabled in safe_checks)</fullName>
+<preferenceName>RPC (disabled in safe_checks)</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>yes</preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>amap (NASL wrapper)</pluginName>
+ <pluginId>14663</pluginId>
+<fullName>amap (NASL wrapper)[entry]:Parallel  tasks</fullName>
+<preferenceName>Parallel  tasks</preferenceName>
 <preferenceType>entry</preferenceType>
-<preferenceValues>5</preferenceValues>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>amap (NASL wrapper)</pluginName>
+ <pluginId>14663</pluginId>
+<fullName>amap (NASL wrapper)[entry]:Connection retries</fullName>
+<preferenceName>Connection retries</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>amap (NASL wrapper)</pluginName>
+ <pluginId>14663</pluginId>
+<fullName>amap (NASL wrapper)[entry]:Connection timeout</fullName>
+<preferenceName>Connection timeout</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>amap (NASL wrapper)</pluginName>
+ <pluginId>14663</pluginId>
+<fullName>amap (NASL wrapper)[entry]:Read timeout</fullName>
+<preferenceName>Read timeout</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
 <selectedValue></selectedValue>
 </item><item>
  <pluginName>Cleartext protocols settings</pluginName>
@@ -712,6 +728,142 @@
 <preferenceValues>no</preferenceValues>
 <selectedValue>no</selectedValue>
 </item><item>
+ <pluginName>Hydra: HTTP</pluginName>
+ <pluginId>15873</pluginId>
+<fullName>Hydra: HTTP[entry]:Web page :</fullName>
+<preferenceName>Web page :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Hydra: Cisco enable</pluginName>
+ <pluginId>15870</pluginId>
+<fullName>Hydra: Cisco enable[entry]:Logon password :</fullName>
+<preferenceName>Logon password :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Hydra: LDAP</pluginName>
+ <pluginId>15877</pluginId>
+<fullName>Hydra: LDAP[entry]:DN :</fullName>
+<preferenceName>DN :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Hydra (NASL wrappers options)</pluginName>
+ <pluginId>15868</pluginId>
+<fullName>Hydra (NASL wrappers options)[checkbox]:Always enable Hydra (slow)</fullName>
+<preferenceName>Always enable Hydra (slow)</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>no</preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Hydra (NASL wrappers options)</pluginName>
+ <pluginId>15868</pluginId>
+<fullName>Hydra (NASL wrappers options)[file]:Logins file :</fullName>
+<preferenceName>Logins file :</preferenceName>
+<preferenceType>file</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Hydra (NASL wrappers options)</pluginName>
+ <pluginId>15868</pluginId>
+<fullName>Hydra (NASL wrappers options)[file]:Passwords file :</fullName>
+<preferenceName>Passwords file :</preferenceName>
+<preferenceType>file</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Hydra (NASL wrappers options)</pluginName>
+ <pluginId>15868</pluginId>
+<fullName>Hydra (NASL wrappers options)[entry]:Number of parallel tasks :</fullName>
+<preferenceName>Number of parallel tasks :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues>16</preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Hydra (NASL wrappers options)</pluginName>
+ <pluginId>15868</pluginId>
+<fullName>Hydra (NASL wrappers options)[entry]:Timeout (in seconds) :</fullName>
+<preferenceName>Timeout (in seconds) :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues>30</preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Hydra (NASL wrappers options)</pluginName>
+ <pluginId>15868</pluginId>
+<fullName>Hydra (NASL wrappers options)[checkbox]:Try empty passwords</fullName>
+<preferenceName>Try empty passwords</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>yes</preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Hydra (NASL wrappers options)</pluginName>
+ <pluginId>15868</pluginId>
+<fullName>Hydra (NASL wrappers options)[checkbox]:Try login as password</fullName>
+<preferenceName>Try login as password</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>yes</preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Hydra (NASL wrappers options)</pluginName>
+ <pluginId>15868</pluginId>
+<fullName>Hydra (NASL wrappers options)[checkbox]:Exit as soon as an account is found</fullName>
+<preferenceName>Exit as soon as an account is found</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>no</preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Hydra (NASL wrappers options)</pluginName>
+ <pluginId>15868</pluginId>
+<fullName>Hydra (NASL wrappers options)[checkbox]:Add accounts found by other plugins to login file</fullName>
+<preferenceName>Add accounts found by other plugins to login file</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>yes</preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Hydra: PostgreSQL</pluginName>
+ <pluginId>18660</pluginId>
+<fullName>Hydra: PostgreSQL[entry]:Database name (optional) :</fullName>
+<preferenceName>Database name (optional) :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Hydra: HTTP proxy</pluginName>
+ <pluginId>15874</pluginId>
+<fullName>Hydra: HTTP proxy[entry]:Web site (optional) :</fullName>
+<preferenceName>Web site (optional) :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Hydra: SMB</pluginName>
+ <pluginId>15884</pluginId>
+<fullName>Hydra: SMB[radio]:Check local / domain accounts</fullName>
+<preferenceName>Check local / domain accounts</preferenceName>
+<preferenceType>radio</preferenceType>
+<preferenceValues>Local accounts; Domain Accounts; Either</preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Hydra: SMB</pluginName>
+ <pluginId>15884</pluginId>
+<fullName>Hydra: SMB[checkbox]:Interpret passwords as NTLM hashes</fullName>
+<preferenceName>Interpret passwords as NTLM hashes</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>no</preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Hydra: SAP R3</pluginName>
+ <pluginId>15883</pluginId>
+<fullName>Hydra: SAP R3[entry]:Client ID (between 0 and 99) :</fullName>
+<preferenceName>Client ID (between 0 and 99) :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
  <pluginName>Patch Management: IBM Tivoli Endpoint Manager Server Settings</pluginName>
  <pluginId>62558</pluginId>
 <fullName>Patch Management: IBM Tivoli Endpoint Manager Server Settings[entry]:Web Reports Server :</fullName>
@@ -1048,14 +1200,6 @@
 <preferenceValues>no</preferenceValues>
 <selectedValue>no</selectedValue>
 </item><item>
- <pluginName>Nessus TCP scanner</pluginName>
- <pluginId>10335</pluginId>
-<fullName>Nessus TCP scanner[radio]:Firewall detection :</fullName>
-<preferenceName>Firewall detection :</preferenceName>
-<preferenceType>radio</preferenceType>
-<preferenceValues>Automatic (normal);Disabled (softer);Do not detect RST rate limitation (soft);Ignore closed ports (aggressive)</preferenceValues>
-<selectedValue>Disabled (softer)</selectedValue>
-</item><item>
  <pluginName>Nessus SYN scanner</pluginName>
  <pluginId>11219</pluginId>
 <fullName>Nessus SYN scanner[radio]:Firewall detection :</fullName>
@@ -1063,6 +1207,14 @@
 <preferenceType>radio</preferenceType>
 <preferenceValues>Automatic (normal);Disabled (softer);Do not detect RST rate limitation (soft);Ignore closed ports (aggressive)</preferenceValues>
 <selectedValue>Automatic (normal)</selectedValue>
+</item><item>
+ <pluginName>Nessus TCP scanner</pluginName>
+ <pluginId>10335</pluginId>
+<fullName>Nessus TCP scanner[radio]:Firewall detection :</fullName>
+<preferenceName>Firewall detection :</preferenceName>
+<preferenceType>radio</preferenceType>
+<preferenceValues>Automatic (normal);Disabled (softer);Do not detect RST rate limitation (soft);Ignore closed ports (aggressive)</preferenceValues>
+<selectedValue>Disabled (softer)</selectedValue>
 </item><item>
  <pluginName>News Server (NNTP) Information Disclosure</pluginName>
  <pluginId>11033</pluginId>
@@ -1584,6 +1736,86 @@
 <preferenceValues>OpenSSH_5.0</preferenceValues>
 <selectedValue>OpenSSH_5.0</selectedValue>
 </item><item>
+ <pluginName>SSH settings</pluginName>
+ <pluginId>14273</pluginId>
+<fullName>SSH settings[entry]:Additional SSH user name (1) :</fullName>
+<preferenceName>Additional SSH user name (1) :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>SSH settings</pluginName>
+ <pluginId>14273</pluginId>
+<fullName>SSH settings[password]:Additional SSH password (1) :</fullName>
+<preferenceName>Additional SSH password (1) :</preferenceName>
+<preferenceType>password</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>SSH settings</pluginName>
+ <pluginId>14273</pluginId>
+<fullName>SSH settings[entry]:Additional SSH user name (2) :</fullName>
+<preferenceName>Additional SSH user name (2) :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>SSH settings</pluginName>
+ <pluginId>14273</pluginId>
+<fullName>SSH settings[password]:Additional SSH password (2) :</fullName>
+<preferenceName>Additional SSH password (2) :</preferenceName>
+<preferenceType>password</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>SSH settings</pluginName>
+ <pluginId>14273</pluginId>
+<fullName>SSH settings[entry]:Additional SSH user name (3) :</fullName>
+<preferenceName>Additional SSH user name (3) :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>SSH settings</pluginName>
+ <pluginId>14273</pluginId>
+<fullName>SSH settings[password]:Additional SSH password (3) :</fullName>
+<preferenceName>Additional SSH password (3) :</preferenceName>
+<preferenceType>password</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>SSH settings</pluginName>
+ <pluginId>14273</pluginId>
+<fullName>SSH settings[entry]:Additional SSH user name (4) :</fullName>
+<preferenceName>Additional SSH user name (4) :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>SSH settings</pluginName>
+ <pluginId>14273</pluginId>
+<fullName>SSH settings[password]:Additional SSH password (4) :</fullName>
+<preferenceName>Additional SSH password (4) :</preferenceName>
+<preferenceType>password</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>SSH settings</pluginName>
+ <pluginId>14273</pluginId>
+<fullName>SSH settings[entry]:Additional SSH user name (5) :</fullName>
+<preferenceName>Additional SSH user name (5) :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>SSH settings</pluginName>
+ <pluginId>14273</pluginId>
+<fullName>SSH settings[password]:Additional SSH password (5) :</fullName>
+<preferenceName>Additional SSH password (5) :</preferenceName>
+<preferenceType>password</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
  <pluginName>SMB Registry : Start the Registry Service during the scan</pluginName>
  <pluginId>35703</pluginId>
 <fullName>SMB Registry : Start the Registry Service during the scan[checkbox]:Start the registry service during the scan</fullName>
@@ -1610,8 +1842,8 @@
 </item><item>
  <pluginName>VMware SOAP API Settings</pluginName>
  <pluginId>57395</pluginId>
-<fullName>VMware SOAP API Settings[password]:VMware password (unsafe!) :</fullName>
-<preferenceName>VMware password (unsafe!) :</preferenceName>
+<fullName>VMware SOAP API Settings[password]:VMware password :</fullName>
+<preferenceName>VMware password :</preferenceName>
 <preferenceType>password</preferenceType>
 <preferenceValues></preferenceValues>
 <selectedValue></selectedValue>
@@ -1819,6 +2051,10 @@
 <Status>mixed</Status>
 </FamilyItem>
 <FamilyItem>
+<FamilyName>Brute force attacks</FamilyName>
+<Status>enabled</Status>
+</FamilyItem>
+<FamilyItem>
 <FamilyName>CGI abuses : XSS</FamilyName>
 <Status>mixed</Status>
 </FamilyItem>
@@ -1928,10 +2164,6 @@
 </FamilyItem>
 <FamilyItem>
 <FamilyName>Junos Local Security Checks</FamilyName>
-<Status>disabled</Status>
-</FamilyItem>
-<FamilyItem>
-<FamilyName>Mobile Devices</FamilyName>
 <Status>disabled</Status>
 </FamilyItem>
 <FamilyItem>
@@ -2945,7 +3177,7 @@
 <Family>Web Servers</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>31730</PluginId>
-<PluginName>CUPS &lt; 1.3.7 Multiple Vulnerabilities (Overflow, Info Disc)</PluginName>
+<PluginName>CUPS &lt; 1.3.7 Multiple Vulnerabilities</PluginName>
 <Family>Misc.</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>18400</PluginId>
@@ -3149,7 +3381,7 @@
 <Family>CGI abuses</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>58615</PluginId>
-<PluginName>SuSE Security Update:  apache2-mod_php53 (2012-03-09)</PluginName>
+<PluginName>SuSE 11.2 Security Update : PHP5 (SAT Patch Number 5958)</PluginName>
 <Family>SuSE Local Security Checks</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>56008</PluginId>
@@ -3473,7 +3705,7 @@
 <Family>Misc.</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>16093</PluginId>
-<PluginName>MySQL Eventum Multiple Script XSS</PluginName>
+<PluginName>MySQL Eventum index.php email Parameter XSS</PluginName>
 <Family>CGI abuses : XSS</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>19227</PluginId>
@@ -3549,7 +3781,7 @@
 <Family>Databases</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>58740</PluginId>
-<PluginName>SuSE Security Update:  apache2-mod_php5 (2012-03-09)</PluginName>
+<PluginName>SuSE 11.1 Security Update : PHP5 (SAT Patch Number 5964)</PluginName>
 <Family>SuSE Local Security Checks</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>10421</PluginId>
@@ -3808,13 +4040,13 @@
 <PluginName>PHP &lt; 4.0.4 IMAP Module imap_open() Function Overflow</PluginName>
 <Family>Web Servers</Family>
 <Status>enabled</Status>
-</PluginItem><PluginItem><PluginId>42468</PluginId>
-<PluginName>CUPS &lt; 1.4.2 kerberos Parameter XSS</PluginName>
-<Family>Misc.</Family>
-<Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>15770</PluginId>
 <PluginName>phpMyAdmin &lt; 2.6.0-pl3 Multiple XSS</PluginName>
 <Family>CGI abuses : XSS</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>42468</PluginId>
+<PluginName>CUPS &lt; 1.4.2 kerberos Parameter XSS</PluginName>
+<Family>Misc.</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>19287</PluginId>
 <PluginName>PHPNews auth.php Multiple Parameter SQL Injection</PluginName>
@@ -3868,13 +4100,13 @@
 <PluginName>Active Auction Multiple Vulnerabilities (SQLi, XSS)</PluginName>
 <Family>CGI abuses</Family>
 <Status>enabled</Status>
-</PluginItem><PluginItem><PluginId>10410</PluginId>
-<PluginName>ISS ICEcap Default Password</PluginName>
-<Family>CGI abuses</Family>
-<Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>16245</PluginId>
 <PluginName>Citadel/UX select() Bitmap Array Index Remote Oerflow</PluginName>
 <Family>Gain a shell remotely</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>10410</PluginId>
+<PluginName>ISS ICEcap Default Password</PluginName>
+<Family>CGI abuses</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>59445</PluginId>
 <PluginName>SuSE 10 Security Update : PHP5 (ZYPP Patch Number 8133)</PluginName>
@@ -4388,13 +4620,13 @@
 <PluginName>Flyspray install-0.9.7.php adodbpath Parameter Remote File Inclusion</PluginName>
 <Family>CGI abuses</Family>
 <Status>enabled</Status>
-</PluginItem><PluginItem><PluginId>17749</PluginId>
-<PluginName>OpenSSL &lt; 0.9.6l Denial of Service</PluginName>
-<Family>Web Servers</Family>
-<Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>35610</PluginId>
 <PluginName>Jaws language Parameter Multiple Local File Includes</PluginName>
 <Family>CGI abuses</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>17749</PluginId>
+<PluginName>OpenSSL &lt; 0.9.6l Denial of Service</PluginName>
+<Family>Web Servers</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>55907</PluginId>
 <PluginName>HP iNode Management Center Buffer Overflow (HPSB3C02687) (remote check)</PluginName>
@@ -4437,7 +4669,7 @@
 <Family>CGI abuses</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>34460</PluginId>
-<PluginName>Obsolete Web Server Detection</PluginName>
+<PluginName>Unsupported Web Server Detection</PluginName>
 <Family>Web Servers</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>51987</PluginId>
@@ -5086,7 +5318,7 @@
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>11737</PluginId>
 <PluginName>NETGEAR Router Default Password (password) for &apos;admin&apos; Account</PluginName>
-<Family>Misc.</Family>
+<Family>CGI abuses</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>20129</PluginId>
 <PluginName>e107 Detection</PluginName>
@@ -5693,7 +5925,7 @@
 <Family>CGI abuses</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>56699</PluginId>
-<PluginName>RHSA-2011-1423: php53</PluginName>
+<PluginName>RHEL 5 / 6 : php53 and php (RHSA-2011-1423)</PluginName>
 <Family>Red Hat Local Security Checks</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>16210</PluginId>
@@ -8821,7 +9053,7 @@
 <Family>FreeBSD Local Security Checks</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>59753</PluginId>
-<PluginName>RHSA-2012-1047: php53</PluginName>
+<PluginName>RHEL 5 : php53 (RHSA-2012-1047)</PluginName>
 <Family>Red Hat Local Security Checks</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>47862</PluginId>
@@ -10017,7 +10249,7 @@
 <Family>CGI abuses</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>56577</PluginId>
-<PluginName>RHSA-2011-1386: kernel</PluginName>
+<PluginName>RHEL 5 : kernel (RHSA-2011-1386)</PluginName>
 <Family>Red Hat Local Security Checks</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>46740</PluginId>
@@ -10424,13 +10656,13 @@
 <PluginName>Squirrelcart index.php Multiple Parameter SQL Injection</PluginName>
 <Family>CGI abuses</Family>
 <Status>enabled</Status>
-</PluginItem><PluginItem><PluginId>21238</PluginId>
-<PluginName>phpWebFTP index.php language Parameter Local File Inclusion</PluginName>
-<Family>CGI abuses</Family>
-<Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>25950</PluginId>
 <PluginName>RealNetworks Helix DNA Server RTSP Service Crafted Require Header Remote Overflow</PluginName>
 <Family>Gain a shell remotely</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>21238</PluginId>
+<PluginName>phpWebFTP index.php language Parameter Local File Inclusion</PluginName>
+<Family>CGI abuses</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>20176</PluginId>
 <PluginName>MailWatch authenticate() Function SQL Injection</PluginName>
@@ -10440,13 +10672,13 @@
 <PluginName>Mambo Open Source &lt; 4.5.2.3 Multiple Vulnerabilities</PluginName>
 <Family>CGI abuses</Family>
 <Status>enabled</Status>
-</PluginItem><PluginItem><PluginId>25493</PluginId>
-<PluginName>XOOPS XFSection Module modify.php dir_module Parameter Remote File Inclusion</PluginName>
-<Family>CGI abuses</Family>
-<Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>10422</PluginId>
 <PluginName>MBDMS Database Server Long String Remote Overflow</PluginName>
 <Family>Gain a shell remotely</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>25493</PluginId>
+<PluginName>XOOPS XFSection Module modify.php dir_module Parameter Remote File Inclusion</PluginName>
+<Family>CGI abuses</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>59757</PluginId>
 <PluginName>Symantec LiveUpdate Administrator &lt; 2.3.2 Privilege Escalation (SYM12-009)</PluginName>
@@ -10796,13 +11028,13 @@
 <PluginName>IlohaMail Configuration Scripts Remote Disclosure</PluginName>
 <Family>CGI abuses</Family>
 <Status>enabled</Status>
-</PluginItem><PluginItem><PluginId>44118</PluginId>
-<PluginName>TYPO3 Default Credentials</PluginName>
-<Family>CGI abuses</Family>
-<Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>58387</PluginId>
 <PluginName>HP Data Protector Media Operations DBServer opcode 0x10 Traversal Arbitrary File Access</PluginName>
 <Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>44118</PluginId>
+<PluginName>TYPO3 Default Credentials</PluginName>
+<Family>CGI abuses</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>15968</PluginId>
 <PluginName>ASP-Rider verify.asp username Parameter SQL Injection</PluginName>
@@ -11389,7 +11621,7 @@
 <Family>CGI abuses</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>11652</PluginId>
-<PluginName>Mantis Detection</PluginName>
+<PluginName>MantisBT Detection</PluginName>
 <Family>CGI abuses</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>11502</PluginId>
@@ -11441,7 +11673,7 @@
 <Family>Debian Local Security Checks</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>59031</PluginId>
-<PluginName>RHSA-2012-0547: php53</PluginName>
+<PluginName>RHEL 5 : php53 (RHSA-2012-0547)</PluginName>
 <Family>Red Hat Local Security Checks</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>11046</PluginId>
@@ -12201,7 +12433,7 @@
 <Family>CGI abuses</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>42176</PluginId>
-<PluginName>SuSE Security Update:  apache2-mod_php5 (2009-09-24)</PluginName>
+<PluginName>SuSE 11 Security Update : PHP5 (SAT Patch Number 1339)</PluginName>
 <Family>SuSE Local Security Checks</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>17302</PluginId>
@@ -12657,7 +12889,7 @@
 <Family>Gain a shell remotely</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>57929</PluginId>
-<PluginName>RHSA-2012-0126: glibc</PluginName>
+<PluginName>RHEL 5 : glibc (RHSA-2012-0126)</PluginName>
 <Family>Red Hat Local Security Checks</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>58816</PluginId>
@@ -13185,7 +13417,7 @@
 <Family>CGI abuses</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>56404</PluginId>
-<PluginName>RHSA-2011-1350: kernel</PluginName>
+<PluginName>RHEL 6 : kernel (RHSA-2011-1350)</PluginName>
 <Family>Red Hat Local Security Checks</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>10847</PluginId>
@@ -13221,7 +13453,7 @@
 <Family>Web Servers</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>55165</PluginId>
-<PluginName>SuSE Security Update:  apache2-mod_php5 (2011-06-01)</PluginName>
+<PluginName>SuSE 11.1 Security Update : PHP5 (SAT Patch Number 4663)</PluginName>
 <Family>SuSE Local Security Checks</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>51586</PluginId>
@@ -13381,7 +13613,7 @@
 <Family>CGI abuses</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>46738</PluginId>
-<PluginName>Dell OpenManage &apos;HelpViewer&apos; Redirect</PluginName>
+<PluginName>Dell OpenManage Server Administrator &apos;HelpViewer&apos; Redirect</PluginName>
 <Family>CGI abuses</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>18494</PluginId>
@@ -13537,7 +13769,7 @@
 <Family>CGI abuses</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>57928</PluginId>
-<PluginName>RHSA-2012-0125: glibc</PluginName>
+<PluginName>RHEL 4 : glibc (RHSA-2012-0125)</PluginName>
 <Family>Red Hat Local Security Checks</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>53332</PluginId>
@@ -14233,7 +14465,7 @@
 <Family>Web Servers</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>57494</PluginId>
-<PluginName>RHSA-2012-0019: php53</PluginName>
+<PluginName>RHEL 5 / 6 : php53 and php (RHSA-2012-0019)</PluginName>
 <Family>Red Hat Local Security Checks</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>51919</PluginId>
@@ -14345,7 +14577,7 @@
 <Family>CGI abuses</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>50973</PluginId>
-<PluginName>SuSE Security Update:  apache2-mod_php5 (2010-11-05)</PluginName>
+<PluginName>SuSE 11 / 11.1 Security Update : PHP5 (SAT Patch Numbers 3489 / 3490)</PluginName>
 <Family>SuSE Local Security Checks</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>17349</PluginId>
@@ -14609,11 +14841,11 @@
 <Family>CGI abuses</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>51867</PluginId>
-<PluginName>RHSA-2011-0196: php53</PluginName>
+<PluginName>RHEL 5 : php53 (RHSA-2011-0196)</PluginName>
 <Family>Red Hat Local Security Checks</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>57820</PluginId>
-<PluginName>RHSA-2012-0092: php53</PluginName>
+<PluginName>RHEL 5 : php53 (RHSA-2012-0092)</PluginName>
 <Family>Red Hat Local Security Checks</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>14771</PluginId>
@@ -14701,7 +14933,7 @@
 <Family>Gain a shell remotely</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>41369</PluginId>
-<PluginName>SuSE Security Update:  apache2-mod_php5 (2009-06-18)</PluginName>
+<PluginName>SuSE 11 Security Update : PHP5 (SAT Patch Number 1015)</PluginName>
 <Family>SuSE Local Security Checks</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>22296</PluginId>
@@ -15085,7 +15317,7 @@
 <Family>CGI abuses</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>11893</PluginId>
-<PluginName>Cfengine cfservd ReceiveTransaction Function Remote Overflow</PluginName>
+<PluginName>Cfengine cfservd ReceiveTransaction Function Remote Overflow (intrusive check)</PluginName>
 <Family>Gain a shell remotely</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>53652</PluginId>
@@ -15860,13 +16092,13 @@
 <PluginName>Liferay Portal 6.1.0 Forward Target Handling Security Bypass</PluginName>
 <Family>CGI abuses</Family>
 <Status>enabled</Status>
-</PluginItem><PluginItem><PluginId>55446</PluginId>
-<PluginName>ManageEngine ServiceDesk Plus FileDownload.jsp FILENAME Parameter Traversal Arbitrary File Access</PluginName>
-<Family>CGI abuses</Family>
-<Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>56379</PluginId>
 <PluginName>phpMyAdmin 3.4.x &lt; 3.4.5 Cross-site Scripting (PMASA-2011-14)</PluginName>
 <Family>CGI abuses : XSS</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>55446</PluginId>
+<PluginName>ManageEngine ServiceDesk Plus FileDownload.jsp FILENAME Parameter Traversal Arbitrary File Access</PluginName>
+<Family>CGI abuses</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>15393</PluginId>
 <PluginName>Horde IMP HTML MIME Viewer Multiple XSS</PluginName>
@@ -16825,7 +17057,7 @@
 <Family>Gain a shell remotely</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>19396</PluginId>
-<PluginName>FlatNuke &lt; 2.5.6 Multiple Remote Vulnerabilities (XSS, Disc, Command Exe)</PluginName>
+<PluginName>FlatNuke &lt; 2.5.6 Multiple Remote Vulnerabilities</PluginName>
 <Family>CGI abuses</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>10778</PluginId>
@@ -16952,12 +17184,12 @@
 <PluginName>Gallery stepOrder Parameter Local File Inclusion</PluginName>
 <Family>CGI abuses</Family>
 <Status>enabled</Status>
-</PluginItem><PluginItem><PluginId>21239</PluginId>
-<PluginName>MyBB global.php Global Parameter Overwrite</PluginName>
-<Family>CGI abuses</Family>
-<Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>18653</PluginId>
 <PluginName>Jinzora Multiple Script include_path Parameter Remote File Inclusion (2)</PluginName>
+<Family>CGI abuses</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>21239</PluginId>
+<PluginName>MyBB global.php Global Parameter Overwrite</PluginName>
 <Family>CGI abuses</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>10606</PluginId>
@@ -17740,13 +17972,13 @@
 <PluginName>ManageEngine ADManager Plus &apos;computerName&apos; Parameter XSS</PluginName>
 <Family>CGI abuses : XSS</Family>
 <Status>enabled</Status>
-</PluginItem><PluginItem><PluginId>21631</PluginId>
-<PluginName>LifeType index.php articleId Parameter SQL Injection</PluginName>
-<Family>CGI abuses</Family>
-<Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>56299</PluginId>
 <PluginName>Linux /proc/cpuinfo</PluginName>
 <Family>Misc.</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>21631</PluginId>
+<PluginName>LifeType index.php articleId Parameter SQL Injection</PluginName>
+<Family>CGI abuses</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>25971</PluginId>
 <PluginName>PHP &lt; 5.2.4 Multiple Vulnerabilities</PluginName>
@@ -17877,7 +18109,7 @@
 <Family>CGI abuses</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>61612</PluginId>
-<PluginName>HP SAN/iQ &lt;= 9.5 Root Shell Command Injection</PluginName>
+<PluginName>HP SAN/iQ &lt;= 10.0 Root Shell Command Injection</PluginName>
 <Family>Gain a shell remotely</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>42479</PluginId>
@@ -18233,7 +18465,7 @@
 <Family>CGI abuses</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>53282</PluginId>
-<PluginName>SuSE Security Update:  apache2-mod_php5 (2011-03-10)</PluginName>
+<PluginName>SuSE 11.1 Security Update : PHP5 (SAT Patch Number 4133)</PluginName>
 <Family>SuSE Local Security Checks</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>19313</PluginId>
@@ -18353,7 +18585,7 @@
 <Family>CGI abuses</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>44686</PluginId>
-<PluginName>SuSE Security Update:  apache2-mod_php5 (2010-02-12)</PluginName>
+<PluginName>SuSE 11 Security Update : PHP5 (SAT Patch Number 1978)</PluginName>
 <Family>SuSE Local Security Checks</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>12236</PluginId>
@@ -18401,7 +18633,7 @@
 <Family>Misc.</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>14317</PluginId>
-<PluginName>Cfengine cfservd ReceiveTransaction Function Remote Overflow</PluginName>
+<PluginName>Cfengine cfservd ReceiveTransaction Function Remote Overflow (version check)</PluginName>
 <Family>Gain a shell remotely</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>35726</PluginId>
@@ -18660,13 +18892,13 @@
 <PluginName>Comersus BackOffice comersus_backoffice_menu.asp Multiple Parameter SQL Injection</PluginName>
 <Family>CGI abuses</Family>
 <Status>enabled</Status>
-</PluginItem><PluginItem><PluginId>25702</PluginId>
-<PluginName>McAfee Common Management Agent 3.6.0.546 Multiple Vulnerabilities</PluginName>
-<Family>CGI abuses</Family>
-<Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>50526</PluginId>
 <PluginName>Apache Tomcat 3.x &lt; 3.3.2 Multiple Vulnerabilities</PluginName>
 <Family>Web Servers</Family>
+<Status>enabled</Status>
+</PluginItem><PluginItem><PluginId>25702</PluginId>
+<PluginName>McAfee Common Management Agent 3.6.0.546 Multiple Vulnerabilities</PluginName>
+<Family>CGI abuses</Family>
 <Status>enabled</Status>
 </PluginItem><PluginItem><PluginId>49658</PluginId>
 <PluginName>Syncrify Detection</PluginName>

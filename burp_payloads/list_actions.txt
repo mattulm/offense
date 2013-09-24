@@ -1,0 +1,17 @@
+Login
+login
+Register
+register
+Create
+create
+Admin
+admin
+Logout
+logout
+Add
+Delete
+Register
+Edit
+Remove
+Create
+Update

@@ -2,7 +2,6 @@
 <Policy><policyName>Prepare for PCI-DSS audits (section 11.2.2)</policyName>
 <policyOwner>Tenable Policy Distribution Service</policyOwner>
 <visibility>shared</visibility>
-<policyComments></policyComments>
 <Preferences>
 <ServerPreferences>
 <preference>
@@ -128,10 +127,6 @@
 <preference>
 <name>port_range</name>
 <value>1-65535</value>
-</preference>
-<preference>
-<name>allow_post_scan_editing</name>
-<value>yes</value>
 </preference>
 <preference>
 <name>plugin_upload</name>
@@ -308,68 +303,84 @@
 <preferenceValues></preferenceValues>
 <selectedValue></selectedValue>
 </item><item>
- <pluginName>Apple Profile Manager API Settings</pluginName>
- <pluginId>60032</pluginId>
-<fullName>Apple Profile Manager API Settings[entry]:Apple Profile Manager server :</fullName>
-<preferenceName>Apple Profile Manager server :</preferenceName>
-<preferenceType>entry</preferenceType>
+ <pluginName>amap (NASL wrapper)</pluginName>
+ <pluginId>14663</pluginId>
+<fullName>amap (NASL wrapper)[file]:File containing machine readable results :</fullName>
+<preferenceName>File containing machine readable results :</preferenceName>
+<preferenceType>file</preferenceType>
 <preferenceValues></preferenceValues>
 <selectedValue></selectedValue>
 </item><item>
- <pluginName>Apple Profile Manager API Settings</pluginName>
- <pluginId>60032</pluginId>
-<fullName>Apple Profile Manager API Settings[entry]:Apple Profile Manager port :</fullName>
-<preferenceName>Apple Profile Manager port :</preferenceName>
-<preferenceType>entry</preferenceType>
-<preferenceValues>443</preferenceValues>
+ <pluginName>amap (NASL wrapper)</pluginName>
+ <pluginId>14663</pluginId>
+<fullName>amap (NASL wrapper)[radio]:Mode</fullName>
+<preferenceName>Mode</preferenceName>
+<preferenceType>radio</preferenceType>
+<preferenceValues>Map applications;Just grab banners;Port scan only</preferenceValues>
 <selectedValue></selectedValue>
 </item><item>
- <pluginName>Apple Profile Manager API Settings</pluginName>
- <pluginId>60032</pluginId>
-<fullName>Apple Profile Manager API Settings[entry]:Apple Profile Manager username :</fullName>
-<preferenceName>Apple Profile Manager username :</preferenceName>
-<preferenceType>entry</preferenceType>
-<preferenceValues></preferenceValues>
-<selectedValue></selectedValue>
-</item><item>
- <pluginName>Apple Profile Manager API Settings</pluginName>
- <pluginId>60032</pluginId>
-<fullName>Apple Profile Manager API Settings[password]:Apple Profile Manager password :</fullName>
-<preferenceName>Apple Profile Manager password :</preferenceName>
-<preferenceType>password</preferenceType>
-<preferenceValues></preferenceValues>
-<selectedValue></selectedValue>
-</item><item>
- <pluginName>Apple Profile Manager API Settings</pluginName>
- <pluginId>60032</pluginId>
-<fullName>Apple Profile Manager API Settings[checkbox]:SSL :</fullName>
-<preferenceName>SSL :</preferenceName>
-<preferenceType>checkbox</preferenceType>
-<preferenceValues>yes</preferenceValues>
-<selectedValue></selectedValue>
-</item><item>
- <pluginName>Apple Profile Manager API Settings</pluginName>
- <pluginId>60032</pluginId>
-<fullName>Apple Profile Manager API Settings[checkbox]:Verify SSL Certificate :</fullName>
-<preferenceName>Verify SSL Certificate :</preferenceName>
+ <pluginName>amap (NASL wrapper)</pluginName>
+ <pluginId>14663</pluginId>
+<fullName>amap (NASL wrapper)[checkbox]:Quicker</fullName>
+<preferenceName>Quicker</preferenceName>
 <preferenceType>checkbox</preferenceType>
 <preferenceValues>no</preferenceValues>
 <selectedValue></selectedValue>
 </item><item>
- <pluginName>Apple Profile Manager API Settings</pluginName>
- <pluginId>60032</pluginId>
-<fullName>Apple Profile Manager API Settings[checkbox]:Force Device Updates :</fullName>
-<preferenceName>Force Device Updates :</preferenceName>
+ <pluginName>amap (NASL wrapper)</pluginName>
+ <pluginId>14663</pluginId>
+<fullName>amap (NASL wrapper)[checkbox]:UDP scan (disabled in safe_checks)</fullName>
+<preferenceName>UDP scan (disabled in safe_checks)</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>no</preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>amap (NASL wrapper)</pluginName>
+ <pluginId>14663</pluginId>
+<fullName>amap (NASL wrapper)[checkbox]:SSL (disabled in safe_checks)</fullName>
+<preferenceName>SSL (disabled in safe_checks)</preferenceName>
 <preferenceType>checkbox</preferenceType>
 <preferenceValues>yes</preferenceValues>
 <selectedValue></selectedValue>
 </item><item>
- <pluginName>Apple Profile Manager API Settings</pluginName>
- <pluginId>60032</pluginId>
-<fullName>Apple Profile Manager API Settings[entry]:Device Update Timeout (Minutes) :</fullName>
-<preferenceName>Device Update Timeout (Minutes) :</preferenceName>
+ <pluginName>amap (NASL wrapper)</pluginName>
+ <pluginId>14663</pluginId>
+<fullName>amap (NASL wrapper)[checkbox]:RPC (disabled in safe_checks)</fullName>
+<preferenceName>RPC (disabled in safe_checks)</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>yes</preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>amap (NASL wrapper)</pluginName>
+ <pluginId>14663</pluginId>
+<fullName>amap (NASL wrapper)[entry]:Parallel  tasks</fullName>
+<preferenceName>Parallel  tasks</preferenceName>
 <preferenceType>entry</preferenceType>
-<preferenceValues>5</preferenceValues>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>amap (NASL wrapper)</pluginName>
+ <pluginId>14663</pluginId>
+<fullName>amap (NASL wrapper)[entry]:Connection retries</fullName>
+<preferenceName>Connection retries</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>amap (NASL wrapper)</pluginName>
+ <pluginId>14663</pluginId>
+<fullName>amap (NASL wrapper)[entry]:Connection timeout</fullName>
+<preferenceName>Connection timeout</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>amap (NASL wrapper)</pluginName>
+ <pluginId>14663</pluginId>
+<fullName>amap (NASL wrapper)[entry]:Read timeout</fullName>
+<preferenceName>Read timeout</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
 <selectedValue></selectedValue>
 </item><item>
  <pluginName>Cleartext protocols settings</pluginName>
@@ -708,6 +719,142 @@
 <preferenceValues>no</preferenceValues>
 <selectedValue>no</selectedValue>
 </item><item>
+ <pluginName>Hydra: HTTP</pluginName>
+ <pluginId>15873</pluginId>
+<fullName>Hydra: HTTP[entry]:Web page :</fullName>
+<preferenceName>Web page :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Hydra: Cisco enable</pluginName>
+ <pluginId>15870</pluginId>
+<fullName>Hydra: Cisco enable[entry]:Logon password :</fullName>
+<preferenceName>Logon password :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Hydra: LDAP</pluginName>
+ <pluginId>15877</pluginId>
+<fullName>Hydra: LDAP[entry]:DN :</fullName>
+<preferenceName>DN :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Hydra (NASL wrappers options)</pluginName>
+ <pluginId>15868</pluginId>
+<fullName>Hydra (NASL wrappers options)[checkbox]:Always enable Hydra (slow)</fullName>
+<preferenceName>Always enable Hydra (slow)</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>no</preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Hydra (NASL wrappers options)</pluginName>
+ <pluginId>15868</pluginId>
+<fullName>Hydra (NASL wrappers options)[file]:Logins file :</fullName>
+<preferenceName>Logins file :</preferenceName>
+<preferenceType>file</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Hydra (NASL wrappers options)</pluginName>
+ <pluginId>15868</pluginId>
+<fullName>Hydra (NASL wrappers options)[file]:Passwords file :</fullName>
+<preferenceName>Passwords file :</preferenceName>
+<preferenceType>file</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Hydra (NASL wrappers options)</pluginName>
+ <pluginId>15868</pluginId>
+<fullName>Hydra (NASL wrappers options)[entry]:Number of parallel tasks :</fullName>
+<preferenceName>Number of parallel tasks :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues>16</preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Hydra (NASL wrappers options)</pluginName>
+ <pluginId>15868</pluginId>
+<fullName>Hydra (NASL wrappers options)[entry]:Timeout (in seconds) :</fullName>
+<preferenceName>Timeout (in seconds) :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues>30</preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Hydra (NASL wrappers options)</pluginName>
+ <pluginId>15868</pluginId>
+<fullName>Hydra (NASL wrappers options)[checkbox]:Try empty passwords</fullName>
+<preferenceName>Try empty passwords</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>yes</preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Hydra (NASL wrappers options)</pluginName>
+ <pluginId>15868</pluginId>
+<fullName>Hydra (NASL wrappers options)[checkbox]:Try login as password</fullName>
+<preferenceName>Try login as password</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>yes</preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Hydra (NASL wrappers options)</pluginName>
+ <pluginId>15868</pluginId>
+<fullName>Hydra (NASL wrappers options)[checkbox]:Exit as soon as an account is found</fullName>
+<preferenceName>Exit as soon as an account is found</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>no</preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Hydra (NASL wrappers options)</pluginName>
+ <pluginId>15868</pluginId>
+<fullName>Hydra (NASL wrappers options)[checkbox]:Add accounts found by other plugins to login file</fullName>
+<preferenceName>Add accounts found by other plugins to login file</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>yes</preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Hydra: PostgreSQL</pluginName>
+ <pluginId>18660</pluginId>
+<fullName>Hydra: PostgreSQL[entry]:Database name (optional) :</fullName>
+<preferenceName>Database name (optional) :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Hydra: HTTP proxy</pluginName>
+ <pluginId>15874</pluginId>
+<fullName>Hydra: HTTP proxy[entry]:Web site (optional) :</fullName>
+<preferenceName>Web site (optional) :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Hydra: SMB</pluginName>
+ <pluginId>15884</pluginId>
+<fullName>Hydra: SMB[radio]:Check local / domain accounts</fullName>
+<preferenceName>Check local / domain accounts</preferenceName>
+<preferenceType>radio</preferenceType>
+<preferenceValues>Local accounts; Domain Accounts; Either</preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Hydra: SMB</pluginName>
+ <pluginId>15884</pluginId>
+<fullName>Hydra: SMB[checkbox]:Interpret passwords as NTLM hashes</fullName>
+<preferenceName>Interpret passwords as NTLM hashes</preferenceName>
+<preferenceType>checkbox</preferenceType>
+<preferenceValues>no</preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>Hydra: SAP R3</pluginName>
+ <pluginId>15883</pluginId>
+<fullName>Hydra: SAP R3[entry]:Client ID (between 0 and 99) :</fullName>
+<preferenceName>Client ID (between 0 and 99) :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
  <pluginName>Patch Management: IBM Tivoli Endpoint Manager Server Settings</pluginName>
  <pluginId>62558</pluginId>
 <fullName>Patch Management: IBM Tivoli Endpoint Manager Server Settings[entry]:Web Reports Server :</fullName>
@@ -1044,14 +1191,6 @@
 <preferenceValues>no</preferenceValues>
 <selectedValue>no</selectedValue>
 </item><item>
- <pluginName>Nessus TCP scanner</pluginName>
- <pluginId>10335</pluginId>
-<fullName>Nessus TCP scanner[radio]:Firewall detection :</fullName>
-<preferenceName>Firewall detection :</preferenceName>
-<preferenceType>radio</preferenceType>
-<preferenceValues>Automatic (normal);Disabled (softer);Do not detect RST rate limitation (soft);Ignore closed ports (aggressive)</preferenceValues>
-<selectedValue>Automatic (normal);Disabled (softer);Do not detect RST rate limitation (soft);Ignore closed ports (aggressive)</selectedValue>
-</item><item>
  <pluginName>Nessus SYN scanner</pluginName>
  <pluginId>11219</pluginId>
 <fullName>Nessus SYN scanner[radio]:Firewall detection :</fullName>
@@ -1059,6 +1198,14 @@
 <preferenceType>radio</preferenceType>
 <preferenceValues>Automatic (normal);Disabled (softer);Do not detect RST rate limitation (soft);Ignore closed ports (aggressive)</preferenceValues>
 <selectedValue>Automatic (normal)</selectedValue>
+</item><item>
+ <pluginName>Nessus TCP scanner</pluginName>
+ <pluginId>10335</pluginId>
+<fullName>Nessus TCP scanner[radio]:Firewall detection :</fullName>
+<preferenceName>Firewall detection :</preferenceName>
+<preferenceType>radio</preferenceType>
+<preferenceValues>Automatic (normal);Disabled (softer);Do not detect RST rate limitation (soft);Ignore closed ports (aggressive)</preferenceValues>
+<selectedValue>Automatic (normal);Disabled (softer);Do not detect RST rate limitation (soft);Ignore closed ports (aggressive)</selectedValue>
 </item><item>
  <pluginName>News Server (NNTP) Information Disclosure</pluginName>
  <pluginId>11033</pluginId>
@@ -1580,6 +1727,86 @@
 <preferenceValues>OpenSSH_5.0</preferenceValues>
 <selectedValue>OpenSSH_5.0</selectedValue>
 </item><item>
+ <pluginName>SSH settings</pluginName>
+ <pluginId>14273</pluginId>
+<fullName>SSH settings[entry]:Additional SSH user name (1) :</fullName>
+<preferenceName>Additional SSH user name (1) :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>SSH settings</pluginName>
+ <pluginId>14273</pluginId>
+<fullName>SSH settings[password]:Additional SSH password (1) :</fullName>
+<preferenceName>Additional SSH password (1) :</preferenceName>
+<preferenceType>password</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>SSH settings</pluginName>
+ <pluginId>14273</pluginId>
+<fullName>SSH settings[entry]:Additional SSH user name (2) :</fullName>
+<preferenceName>Additional SSH user name (2) :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>SSH settings</pluginName>
+ <pluginId>14273</pluginId>
+<fullName>SSH settings[password]:Additional SSH password (2) :</fullName>
+<preferenceName>Additional SSH password (2) :</preferenceName>
+<preferenceType>password</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>SSH settings</pluginName>
+ <pluginId>14273</pluginId>
+<fullName>SSH settings[entry]:Additional SSH user name (3) :</fullName>
+<preferenceName>Additional SSH user name (3) :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>SSH settings</pluginName>
+ <pluginId>14273</pluginId>
+<fullName>SSH settings[password]:Additional SSH password (3) :</fullName>
+<preferenceName>Additional SSH password (3) :</preferenceName>
+<preferenceType>password</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>SSH settings</pluginName>
+ <pluginId>14273</pluginId>
+<fullName>SSH settings[entry]:Additional SSH user name (4) :</fullName>
+<preferenceName>Additional SSH user name (4) :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>SSH settings</pluginName>
+ <pluginId>14273</pluginId>
+<fullName>SSH settings[password]:Additional SSH password (4) :</fullName>
+<preferenceName>Additional SSH password (4) :</preferenceName>
+<preferenceType>password</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>SSH settings</pluginName>
+ <pluginId>14273</pluginId>
+<fullName>SSH settings[entry]:Additional SSH user name (5) :</fullName>
+<preferenceName>Additional SSH user name (5) :</preferenceName>
+<preferenceType>entry</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
+ <pluginName>SSH settings</pluginName>
+ <pluginId>14273</pluginId>
+<fullName>SSH settings[password]:Additional SSH password (5) :</fullName>
+<preferenceName>Additional SSH password (5) :</preferenceName>
+<preferenceType>password</preferenceType>
+<preferenceValues></preferenceValues>
+<selectedValue></selectedValue>
+</item><item>
  <pluginName>SMB Registry : Start the Registry Service during the scan</pluginName>
  <pluginId>35703</pluginId>
 <fullName>SMB Registry : Start the Registry Service during the scan[checkbox]:Start the registry service during the scan</fullName>
@@ -1606,8 +1833,8 @@
 </item><item>
  <pluginName>VMware SOAP API Settings</pluginName>
  <pluginId>57395</pluginId>
-<fullName>VMware SOAP API Settings[password]:VMware password (unsafe!) :</fullName>
-<preferenceName>VMware password (unsafe!) :</preferenceName>
+<fullName>VMware SOAP API Settings[password]:VMware password :</fullName>
+<preferenceName>VMware password :</preferenceName>
 <preferenceType>password</preferenceType>
 <preferenceValues></preferenceValues>
 <selectedValue></selectedValue>
@@ -1954,10 +2181,10 @@
 <FamilyName>CISCO</FamilyName>
 <Status>enabled</Status>
 </FamilyItem>
-<FamilyItem><FamilyName>Mobile Devices</FamilyName>
+<FamilyItem><FamilyName>Scientific Linux Local Security Checks</FamilyName>
 <Status>enabled</Status>
 </FamilyItem>
-<FamilyItem><FamilyName>Scientific Linux Local Security Checks</FamilyName>
+<FamilyItem><FamilyName>Brute force attacks</FamilyName>
 <Status>enabled</Status>
 </FamilyItem>
 </FamilySelection>

@@ -1,0 +1,8 @@
+Find ISAKMP service
+   Nmap -P0 -sU -p 500
+Find PPTP service
+   nmap -P0 -sT -p 1723
+   nmap -P0 -sS -p 1723
+Find SSL
+   nmap -P0 -sT -p 443
+   nmap -P0 -sS -p 443

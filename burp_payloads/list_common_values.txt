@@ -1,0 +1,16 @@
+On
+on
+True
+true
+false
+False
+1
+0
+Yes
+yes
+No
+no
+Positive
+positive
+Negative
+negative

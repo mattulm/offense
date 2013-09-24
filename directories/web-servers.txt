@@ -1,5 +1,0 @@
-cgi-bin
-home
-jboss
-weblogic
-logic

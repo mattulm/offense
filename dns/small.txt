@@ -201,6 +201,8 @@ aoss
 ap
 apod-kaia
 apps
+apt
+apts
 arbeid
 archive
 arcweb

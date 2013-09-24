@@ -1,0 +1,76 @@
+#
+# Default Apache Directories
+#
+icons
+error
+cgi-bin
+home
+
+
+#
+# JBOSS Applicatino Server
+#
+jboss
+
+
+#
+# Oracle WebLogic Application Server
+#
+weblogic
+logic
+
+
+#
+# phpMyAdmin directories
+#
+phpmyadmin
+master-config
+setup
+themes
+locale
+libraries
+auth
+config
+engines
+export
+gis
+import
+php-gettext
+schema
+tcpdf
+transformations
+fonts
+frames
+lib
+original
+js
+canvg
+codemirror
+lib
+mode
+mysql
+jqplot
+plugins
+jquery
+openlayers
+img
+theme
+default
+img
+pmd
+rte
+examples
+
+#
+# Cold FUsion
+#
+CFIDE
+cfide
+
+
+#
+# Monitoring servers
+#
+monit
+munin
+webalizer
