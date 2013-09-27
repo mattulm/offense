@@ -36,3 +36,8 @@ system.hideme
 core
 core.system
 email_console
+themes
+pics
+img
+image
+images
