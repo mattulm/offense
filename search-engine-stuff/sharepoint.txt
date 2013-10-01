@@ -1,0 +1,12 @@
+Google:
+inurl:"/_layouts/viewlsts.aspx"
+
+
+
+
+
+
+
+
+Bing:
+instreamset: url:viewlsts.aspx

