@@ -73,6 +73,7 @@ Anchor Tags
 	
 Image Tags:
 	<img src='zzzz'onerror='alert("_Hello_")' />
+	&lt;img src='zzzz'onerror='alert("_Hello_")' /&gt;
 	<img src='zzzz'onerror='prompt("_Hello_")' />
 	<img src='zzzz' onerror='confirm("_Hello_")' />
 	
