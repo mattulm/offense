@@ -14,3 +14,11 @@ Positive
 positive
 Negative
 negative
+pos
+neg
+Pos
+Neg
+Y
+N
+y
+n
