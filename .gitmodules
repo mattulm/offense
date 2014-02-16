@@ -1,3 +1,9 @@
 [submodule "exploit/veil"]
 	path = exploit/veil
 	url = https://github.com/Veil-Framework/Veil.git
+[submodule "MSFstuff/MSFResourceScripts"]
+	path = MSFstuff/MSFResourceScripts
+	url = https://github.com/ChrisTruncer/MSFResource-Scripts.git
+[submodule "exploit/MiscScripts1"]
+	path = exploit/MiscScripts1
+	url = https://github.com/ChrisTruncer/PenTestScripts.git
