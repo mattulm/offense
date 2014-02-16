@@ -1,5 +1,0 @@
-Port 82 -- McAfee EPO XFER Utility POrt
-port 5556 -- SBClientManager -- sncryption service
-	SafeBoot Client Manager or McAfee Endpoint Encryption Client Manager
-port 8081 -- Framework Services (EPO)
-port 8088 -- NetRef~1.exe ???
