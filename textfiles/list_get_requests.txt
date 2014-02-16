@@ -1,3 +1,4 @@
+HELLO
 GET
 GET /
 GET / HTTP/999.99
@@ -24,6 +25,12 @@ GET/HTTP/1.0
 GET/HTTP/1 .0
 GET/HTTP/1. 0
 GET / HTTP /1.0
+GET \0 / HTTP/1.0
+GET / \0 HTTP/1.0
+GET / HTTP/1.0\0
+GET / H
+ GET / HTTP/1.0
+ '*1000 + 'GET / HTTP/1.0
 HEAD /.\\ HTTP/1.0
 HEAD /asdfasdfasdfasdfasdfasdf/../HTTP/1.0
 HEAD /asdfasdfasdfasdfasdfasdf/..HTTP/1.0
@@ -45,10 +52,3 @@ HEAD http:// HTTP/1.0
 HEAD http:/ HTTP/1.0
 HEAD http: HTTP/1.0
 HEAD h HTTP/1.0
-HELLO
-GET \0 / HTTP/1.0
-GET / \0 HTTP/1.0
-GET / HTTP/1.0\0
-GET / H
- GET / HTTP/1.0
- '*1000 + 'GET / HTTP/1.0

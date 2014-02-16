@@ -43,7 +43,7 @@ back
 back
 # Step 5 : Define target URL
 target
-set target http://citizenship2012.edelman.com
+set target http://www.google.com
 back
 # Step 6 : Start audit
 start

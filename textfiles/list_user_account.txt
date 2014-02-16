@@ -1,0 +1,14 @@
+admin
+wpadmin
+administrator
+user
+sql
+mysql
+phpmyadmin
+php
+pma
+root
+web
+webmaster
+webadmin
+internet

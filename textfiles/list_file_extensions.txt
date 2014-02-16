@@ -14,6 +14,8 @@ pyt
 dll
 nsf
 ntf
+tmb
+db
 html
 htm
 shtml
@@ -49,4 +51,18 @@ new
 cs
 DS_store
 ds_store
+dll
+cfm
+jsp
+js
+css
+xml
+asp
+aspx
+axh
+swf
+img
+jpg
+png
+gif
 

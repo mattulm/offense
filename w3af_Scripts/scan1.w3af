@@ -11,6 +11,5 @@ back
 target
 set targetOS unix
 set targetFramework php
-set target http://trust.edelman.com
 back
 start

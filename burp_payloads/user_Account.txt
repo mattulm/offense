@@ -1,4 +1,0 @@
-admin
-wpadmin
-administrator
-user
