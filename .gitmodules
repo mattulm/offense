@@ -1,0 +1,3 @@
+[submodule "exploit/veil"]
+	path = exploit/veil
+	url = https://github.com/Veil-Framework/Veil.git
