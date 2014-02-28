@@ -65,4 +65,4 @@ img
 jpg
 png
 gif
-
+csi
