@@ -7,3 +7,6 @@
 [submodule "exploit/MiscScripts1"]
 	path = exploit/MiscScripts1
 	url = https://github.com/ChrisTruncer/PenTestScripts.git
+[submodule "docs/h5sc"]
+	path = docs/h5sc
+	url = https://github.com/cure53/H5SC.git
