@@ -10,3 +10,6 @@
 [submodule "docs/h5sc"]
 	path = docs/h5sc
 	url = https://github.com/cure53/H5SC.git
+[submodule "misc/blackthorne"]
+	path = misc/blackthorne
+	url = https://github.com/blackthorne/Pentest-utils.git
