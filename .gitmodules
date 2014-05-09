@@ -31,3 +31,21 @@
 [submodule "web/sql/BBQsql"]
 	path = web/sql/BBQsql
 	url = https://github.com/Neohapsis/bbqsql.git
+[submodule "exploit/SET"]
+	path = exploit/SET
+	url = https://github.com/trustedsec/social-engineer-toolkit.git
+[submodule "exploit/PowerSploit"]
+	path = exploit/PowerSploit
+	url = https://github.com/mattifestation/PowerSploit.git
+[submodule "web/shell/Weevely"]
+	path = web/shell/Weevely
+	url = https://github.com/epinna/Weevely.git
+[submodule "web/scan/WPscan"]
+	path = web/scan/WPscan
+	url = https://github.com/wpscanteam/wpscan.git
+[submodule "web/BlackSheep"]
+	path = web/BlackSheep
+	url = https://github.com/neuroo/blacksheep.git
+[submodule "web/scan/grabber"]
+	path = web/scan/grabber
+	url = https://github.com/neuroo/grabber.git
