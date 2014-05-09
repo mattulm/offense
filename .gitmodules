@@ -49,3 +49,21 @@
 [submodule "web/scan/grabber"]
 	path = web/scan/grabber
 	url = https://github.com/neuroo/grabber.git
+[submodule "web/sql/sqlmap"]
+	path = web/sql/sqlmap
+	url = https://github.com/sqlmapproject/sqlmap.git
+[submodule "web/scan/wweb"]
+	path = web/scan/wweb
+	url = https://github.com/urbanadventurer/WhatWeb.git
+[submodule "web/scan/wp-fingerprint"]
+	path = web/scan/wp-fingerprint
+	url = https://github.com/ancat/wp-fingerprint.git
+[submodule "web/burpextensions"]
+	path = web/burpextensions
+	url = https://github.com/Meatballs1/burp-extensions.git
+[submodule "web/sql/SQLbrute"]
+	path = web/sql/SQLbrute
+	url = https://github.com/GDSSecurity/SQLBrute.git
+[submodule "web/scan/SPscan"]
+	path = web/scan/SPscan
+	url = https://github.com/toddsiegel/spscan.git
