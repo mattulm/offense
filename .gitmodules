@@ -67,3 +67,30 @@
 [submodule "web/scan/SPscan"]
 	path = web/scan/SPscan
 	url = https://github.com/toddsiegel/spscan.git
+[submodule "exploit/msfscripts"]
+	path = exploit/msfscripts
+	url = https://github.com/ChrisTruncer/MSFResource-Scripts.git
+[submodule "enum/ptscripts"]
+	path = enum/ptscripts
+	url = https://github.com/ChrisTruncer/PenTestScripts.git
+[submodule "exploit/CortanaScripts"]
+	path = exploit/CortanaScripts
+	url = https://github.com/ChrisTruncer/CortanaScripts.git
+[submodule "scan/nmapSLtools"]
+	path = scan/nmapSLtools
+	url = https://github.com/SpiderLabs/Nmap-Tools.git
+[submodule "misc/webappdefaultsdb"]
+	path = misc/webappdefaultsdb
+	url = https://github.com/pwnwiki/webappdefaultsdb.git
+[submodule "MSFstuff/metassh"]
+	path = MSFstuff/metassh
+	url = https://github.com/dirtyfilthy/metassh.git
+[submodule "MSFstuff/MSF"]
+	path = MSFstuff/MSF
+	url = https://github.com/rapid7/metasploit-framework.git
+[submodule "misc/vFeed"]
+	path = misc/vFeed
+	url = https://github.com/toolswatch/vFeed.git
+[submodule "exploit/mobixPE"]
+	path = exploit/mobixPE
+	url = https://github.com/mubix/post-exploitation.git
