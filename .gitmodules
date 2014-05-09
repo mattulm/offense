@@ -13,3 +13,21 @@
 [submodule "misc/blackthorne"]
 	path = misc/blackthorne
 	url = https://github.com/blackthorne/Pentest-utils.git
+[submodule "web/sql/NoSQLMap"]
+	path = web/sql/NoSQLMap
+	url = https://github.com/tcstool/NoSQLMap.git
+[submodule "web/scan/nikto"]
+	path = web/scan/nikto
+	url = https://github.com/sullo/nikto.git
+[submodule "web/scan/halberd"]
+	path = web/scan/halberd
+	url = https://github.com/jmbr/halberd.git
+[submodule "enum/dns/dnsrecon"]
+	path = enum/dns/dnsrecon
+	url = https://github.com/darkoperator/dnsrecon.git
+[submodule "web/scan/SSLyze"]
+	path = web/scan/SSLyze
+	url = https://github.com/iSECPartners/sslyze.git
+[submodule "web/sql/BBQsql"]
+	path = web/sql/BBQsql
+	url = https://github.com/Neohapsis/bbqsql.git
