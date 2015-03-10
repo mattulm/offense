@@ -1,0 +1,28 @@
+Windows 7 machine
+	Immunity Debugger
+	OllyDbg
+	Ida Free
+	Python
+	Wireshark
+	Nmap
+	Nessus
+	Git
+	CCleaner
+	KeepNotes
+	WinRAR
+	volatility stand-alone
+	miniGW - the free compiler program for Win32 binaries
+	WinDirStat
+	
+	Firefox
+X		Foxy Proxy
+X		User-Agent Switcher
+X		XSS & SQLi ones?
+	Chrome
+	Opera
+		Tester Plugins?
+	Java
+X	OpenVPN
+	Burp
+X	Tor
+	

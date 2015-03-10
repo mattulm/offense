@@ -1,0 +1,4 @@
+Ultimate LInux or customized Kali?
+	DNSrecon, DNSmap, DNSenum
+	burp
+	metasploit, postgresql, powersploit, armitage, fasttrack, set, 
