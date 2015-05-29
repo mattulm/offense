@@ -1,0 +1,8 @@
+Domain Assessment:
+	host
+	who.is
+	dig -T MX NS A CNAME AAAA CERT PTR SOA
+	DNSenum/ fierce
+	
+	
+	

