@@ -10,7 +10,15 @@ Website Assessment Automated:
 		Other Enumeration Sites:
 			Netcraft, MX Toolbox, DNSTools.com, WebBoar, etc.			ON SITE NOW
 ------------------------------------------------------------------------------------			
-		
+	Through Burp
+		easywins	=	
+		whatweb 	=	whatweb -a=4 -U=Mozilla -v -t 5 <domain.com>
+		drone		=
+	
+	
+	
+	
+	
 	
 	Spider the site.
 		wget or mirror the whole site as well.
@@ -30,19 +38,16 @@ Website Assessment Automated:
 			Run strings against them?
 	
 		skipfish
-		Burp Pro
 		RatProxy
 		
 	nmap
 	nikto
-	whatweb 	=	whatweb -a=4 -U=Mozilla -v -t 5 <domain.com>
-
 	w3af
 
 				
 	
 	If Appropriate:
-		wpscan
+		wpscan, plecost, Blind ELephant
 		BlindElephant
 		Are there Web Services......???
 	
