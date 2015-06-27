@@ -7,8 +7,10 @@ Website Assessment Automated:
 		
 		Google, Bing, & Yahoo Searches
 			intitle:, inurl:, site:, filetype:, etc.
+			
 		Other Enumeration Sites:
 			Netcraft, MX Toolbox, DNSTools.com, WebBoar, etc.			ON SITE NOW
+
 ------------------------------------------------------------------------------------			
 	Through Burp
 		easywins	=	
