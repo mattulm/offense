@@ -1,10 +1,7 @@
 #!/bin/sh
-## Tool :: cdncheck
-## Description :: take results and scan for the CDN information.
 ## Global Variables
 d=$(date +"%Y%m%d")
 t=$(date +"%H%M")
-##
 ##
 ## Create the files we need to run our scanner
 ## We are going to use the output from the httpx scanner
