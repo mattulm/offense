@@ -6,3 +6,19 @@ WindowsEvent
 | summarize ObjectCount = dcount(ObjectDN), TargetList = make_set(ObjectDN) by SubjectUserName, SubjectUserSid, bin(TimeGenerated, 5m)
 | where ObjectCount > 25
 | project TimeGenerated, SubjectUserName, ObjectCount, TargetList
+
+
+Field,Value to Watch,Reason
+Event ID,4662,Indicates an operation on an AD object.
+Access Mask,0x20000,This is the specific mask for READ_CONTROL (reading the DACL).
+Object Type,bf967a86-0de6-11d0-a285-00aa003049e2,This GUID identifies the object as a Computer.
+Volume,High Count,A normal user might read 1 or 2 computer objects; an attacker/script reads all of them.
+
+
+This detection is notoriously "noisy" if not tuned. In a real production environment, certain legitimate services "DACL-walk" all the time:
+
+Vulnerability Scanners (Nessus/Qualys): They audit everything.
+AD Sync Tools (Azure AD Connect): Constant reads to sync changes.
+Inventory Systems (SCCM/MECM): Frequently query computer attributes.
+
+The Fix: The SOC must whitelist the Service Accounts for these tools. Any Standard User performing this behavior is a 99% guaranteed indicator of a Red Team or an actual attacker performing RBCD reconnaissance.
