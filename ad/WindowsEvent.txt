@@ -1,0 +1,8 @@
+WindowsEvent
+| where EventID == 4662
+| extend Properties = tostring(parse_xml(EventData).EventData.Data)
+| where Properties contains "nTSecurityDescriptor" 
+| where ObjectType contains "bf967a86-0de6-11d0-a285-00aa003049e2" // GUID for Computer Object
+| summarize ObjectCount = dcount(ObjectDN), TargetList = make_set(ObjectDN) by SubjectUserName, SubjectUserSid, bin(TimeGenerated, 5m)
+| where ObjectCount > 25
+| project TimeGenerated, SubjectUserName, ObjectCount, TargetList
