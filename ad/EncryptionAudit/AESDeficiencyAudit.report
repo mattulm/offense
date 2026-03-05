@@ -1,0 +1,65 @@
+# 🛡️ Remediation Guide: Enabling AES Kerberos Encryption
+
+## Overview
+
+Active Directory is transitioning away from legacy encryption (RC4/DES) to modern, secure standards (**AES-128** and **AES-256**). Your application has been identified as using an account that currently lacks these modern security bits.
+
+**Risk:** Failure to remediate will eventually lead to authentication failures as legacy algorithms are disabled globally by Security Policy.
+
+---
+
+## 📋 The Two-Step Remediation Process
+
+Enabling AES is not just a checkbox; it requires the account to actually possess the mathematical keys required for AES.
+
+### Step 1: Password Reset (Key Generation)
+
+Active Directory only generates AES keys (hashes) when a password is set or changed. If your service account password hasn't been changed since the "Windows Server 2008" era, it literally does not have AES keys in the database.
+
+* **Action:** Perform a standard password reset/rotate for the Service Account.
+* **Why:** This triggers AD to generate the `msDS-SupportedEncryptionTypes` hashes for AES-128 and AES-256.
+
+### Step 2: Attribute Update (The "Flip")
+
+Once the password is reset, the account must be told it is *allowed* to use these new keys.
+
+* **Action:** Update the `msDS-SupportedEncryptionTypes` attribute to a value of **24** (which enables both AES 128 and 256).
+* **How:** This can be done via Active Directory Users & Computers (Attribute Editor tab) or via PowerShell:
+```powershell
+Set-ADUser -Identity "YourAccountName" -Replace @{"msDS-SupportedEncryptionTypes"=24}
+
+```
+
+---
+
+## ⚠️ Known Compatibility Risks (Check these first!)
+
+Before applying these changes in Production, verify if your application uses any of the following:
+
+1. **Ancient Java Versions:** Java 6 (Update 18 or older) does not support AES-256 without the "Unlimited Strength Jurisdiction Policy Files." Ensure your Java runtime is modern (Java 8+ recommended).
+2. **Hardcoded Encryption in Configs:** Check `krb5.conf` or `.keytab` files. If they are hardcoded to `rc4-hmac`, the application will fail until the config is updated to `aes256-cts-hmac-sha1-96`.
+3. **Legacy Operating Systems:** Windows Server 2003 or older (hopefully you don't have these!) do not support AES Kerberos.
+
+---
+
+## 🧪 Validation Steps
+
+After remediation, verify the fix by checking the Kerberos tickets on the application server:
+
+1. Log in to the application server.
+2. Open a command prompt and run: `klist`
+3. Look for the **KerbTicket Encryption Type**. It should now show:
+* `AES-256-CTS-HMAC-SHA1-96`
+* *OR* `AES-128-CTS-HMAC-SHA1-96`
+
+
+
+---
+
+## ❓ FAQ
+
+**Q: Can I just flip the bit without resetting the password?** **A:** No. If you flip the bit without a password reset, the client will try to use AES, but the Domain Controller won't have the AES keys to validate it, resulting in a **"Pre-authentication failed"** error.
+
+**Q: Will this cause downtime?** **A:** A password reset always requires updating the password in your application's configuration/vault (e.g., CyberArk, Kubernetes Secrets). The encryption change itself is transparent once the password is updated.
+
+---
