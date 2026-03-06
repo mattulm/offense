@@ -1,0 +1,6 @@
+Why It Was Done This Way
+Path Joining: We use os.path.join() rather than manual string concatenation. This ensures the script works across Windows, macOS, and Linux without issues regarding slashes (/ vs \).
+
+The -c Flag Requirement: By making the company flag required (required=True), we prevent the tool from running with empty logic, ensuring every execution has a valid target.
+
+Flush Mechanism: f.flush() is called inside the loop. In long-running scans, if the script is interrupted (Ctrl+C), flush() ensures that every bucket found up to that point is actually saved to the file rather than sitting in the memory buffer.
