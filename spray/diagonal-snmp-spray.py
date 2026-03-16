@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """
 SNMP Round-Robin Stealth Sprayer
-Author: Senior Security Dev
 Logic: (Host A:Pass 1) -> (Host B:Pass 2) -> (Host C:Pass 3)
 This ensures the longest possible time gap for a single host to see a 
 sequential password attempt.
