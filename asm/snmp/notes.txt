@@ -1,0 +1,8 @@
+Features:
+Validation: Before sending a single packet, it checks if the file exists and if you have permissions to read it.
+Bulk Processing: You can pass a targets.txt containing all the Warsaw IPs.
+Technology Summary: At the end, it groups identical banners. This is great for M&A reports (e.g., "We found 12 Cisco 2900 routers and 4 APC UPS units exposed").
+Silent Failures: It handles timeouts gracefully so one dead host doesn't hang the whole audit.
+
+
+Run: python3 snmp_enumerator.py -f <<file.txt>> -c <<string>>
